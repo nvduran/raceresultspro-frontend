@@ -21,6 +21,27 @@ dl {
     margin-bottom: 20px;
     margin-left: 130px;
   }
+
+
+  .info-text {
+    white-space: nowrap;
+    text-align: left;
+    font-size: 1rem;
+    color: $darkGray;
+    line-height: 100%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .btn-primary {
+    background-color: $darkGreen !important;
+    border-color: $darkGreen !important;
+    max-height: 2rem;
+    line-height: .8rem !important;
+    font-size: small !important;
+    border-radius: 2px !important;
+    margin-top: .6rem;
+  }
   
   .text {
     font-weight: 400;

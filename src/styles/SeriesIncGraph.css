@@ -20,6 +20,26 @@ dt {
   margin-left: 130px;
 }
 
+.info-text {
+  white-space: nowrap;
+  text-align: left;
+  font-size: 1rem;
+  color: rgb(102, 102, 102);
+  line-height: 100%;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: rgb(34, 39, 37) !important;
+  border-color: rgb(34, 39, 37) !important;
+  max-height: 2rem;
+  line-height: 0.8rem !important;
+  font-size: small !important;
+  border-radius: 2px !important;
+  margin-top: 0.6rem;
+}
+
 .text {
   font-weight: 400;
   display: flex;

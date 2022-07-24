@@ -109,23 +109,32 @@ export default function SeriesIncGraph() {
     return (
       <div>
         <Container className="graph-container">
-          <DropdownButton
-            id="dropdown-basic-button"
-            title={categoryChoice}
-            className="category_dropdown_graph"
-          >
-            {["Road", "Oval", "Dirt Road", "Dirt Oval"].map((cat) => {
-              return (
-                <Dropdown.Item
-                  onClick={() => handleCatChange(cat)}
-                  key={cat}
-                  className="category_dropdown_graph"
-                >
-                  {cat}
-                </Dropdown.Item>
-              );
-            })}
-          </DropdownButton>
+          <Row className="top-row">
+            <Col>
+              <p className="info-text">Series / Incidents per 1000 corners</p>
+            </Col>
+            <Col className="dropdown-col">
+              <DropdownButton
+                id="dropdown-basic-button"
+                title={categoryChoice}
+                className="category_dropdown_graph"
+              >
+                {["Road", "Oval", "Dirt Road", "Dirt Oval"].map((cat) => {
+                  return (
+                    <Dropdown.Item
+                      onClick={() => handleCatChange(cat)}
+                      key={cat}
+                      className="category_dropdown_graph"
+                    >
+                      {cat}
+                    </Dropdown.Item>
+                  );
+                })}
+              </DropdownButton>
+            </Col>
+            <Col></Col>
+          </Row>
+
           <dl>
             {filteredData.map((inc) => {
               // incidents per 1000 corners
