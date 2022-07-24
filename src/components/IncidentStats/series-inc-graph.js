@@ -9,11 +9,16 @@ import {
   Row,
   Col,
   Form,
+  Dropdown,
+  DropdownButton,
 } from "react-bootstrap";
 import "../../styles/SeriesIncGraph.css";
 
 export default function SeriesIncGraph() {
   const [filteredData, setFilteredData] = useState([]);
+  const [sortChoice, setSortChoice] = useState("ipc");
+  const [categoryChoice, setCategoryChoice] = useState("Road");
+  const [isLoaded, setIsLoaded] = useState(false);
   // fetch and RETURN the sorted incident data from the server
   const fetchData = async () => {
     let response = await fetch(
@@ -23,7 +28,7 @@ export default function SeriesIncGraph() {
     return data;
   };
 
-  const filterData = (data) => {
+  const filterData = (data, choice) => {
     let excludes = [
       "Global Endurance Pure Driving School Series",
       "Daytona 24",
@@ -51,6 +56,7 @@ export default function SeriesIncGraph() {
       "Winter Derby - Fixed",
       "Throwback Cup",
       "iRacing.com Indy 500",
+      "24 Heures du Fun",
     ];
     // filter out the excluded series
     let filtered = data[0].sorted_avgs.filter(
@@ -62,72 +68,98 @@ export default function SeriesIncGraph() {
     );
     // remove any from categoryArray with "1" in the first character of series
     filtered = filtered.filter((incident) => incident.series.charAt(0) !== "1");
+    // filter out data except where license_category === categoryChoice
+    filtered = filtered.filter(
+      (incident) => incident.license_category === choice
+    );
 
-    console.log(filtered);
     setFilteredData(filtered);
+    setIsLoaded(true);
   };
+
+  const handleCatChange = (choice) => {
+    //replace spaces with underscores in choice
+    choice = choice.replace(/ /g, "_");
+    setIsLoaded(false);
+    setCategoryChoice(choice);
+    fetchData().then((data) => {
+      filterData(data, choice);
+    });
+  };
+
+  // sort the data by the choice of sort
+  if (sortChoice === "ipc") {
+    // sort filteredData by (average_incidents / (event_laps_complete * corners_per_lap))
+    filteredData.sort((a, b) => {
+      return (
+        b.average_incidents / (b.event_laps_complete * b.corners_per_lap) -
+        a.average_incidents / (a.event_laps_complete * a.corners_per_lap)
+      );
+    });
+  }
 
   // first time the component is rendered, fetch the data
   useEffect(() => {
     fetchData().then((data) => {
-      filterData(data);
+      filterData(data, categoryChoice);
     });
   }, []);
 
-  return (
-    <div>
-      <Container>
-        <dl>
-          {filteredData.map((inc) => {
-            // (incidents / total corners)*1000
-            let classString =
-              "percentage percentage-" +
-              Math.round(
-                (inc.average_incidents /
-                  (inc.event_laps_complete * inc.corners_per_lap)) *
-                  1000
+  if (isLoaded) {
+    return (
+      <div>
+        <Container className="graph-container">
+          <DropdownButton
+            id="dropdown-basic-button"
+            title={categoryChoice}
+            className="category_dropdown_graph"
+          >
+            {["Road", "Oval", "Dirt Road", "Dirt Oval"].map((cat) => {
+              return (
+                <Dropdown.Item
+                  onClick={() => handleCatChange(cat)}
+                  key={cat}
+                  className="category_dropdown_graph"
+                >
+                  {cat}
+                </Dropdown.Item>
               );
-            return (
-              <div>
-                <dd className={classString}>
-                  <span className="text">{inc.series}</span>
-                  <span className="text-after">
-                    {Math.round(
-                      (inc.average_incidents /
-                        (inc.event_laps_complete * inc.corners_per_lap)) *
-                        1000
-                    )}
-                  </span>
-                </dd>
-              </div>
-            );
-          })}
-        </dl>
-      </Container>
-    </div>
-
-    //   <div>
-    //     <dl>
-    //       <dt>Browser market share June 2015</dt>
-    //       <dd className="percentage percentage-11">
-    //         <span className="text">IE 11: 11.33%</span>
-    //       </dd>
-    //       <dd className="percentage percentage-49">
-    //         <span className="text">Chrome: 49.77%</span>
-    //       </dd>
-    //       <dd className="percentage percentage-16">
-    //         <span className="text">Firefox: 16.09%</span>
-    //       </dd>
-    //       <dd className="percentage percentage-5">
-    //         <span className="text">Safari: 5.41%</span>
-    //       </dd>
-    //       <dd className="percentage percentage-2">
-    //         <span className="text">Opera: 1.62%</span>
-    //       </dd>
-    //       <dd className="percentage percentage-2">
-    //         <span className="text">Android 4.4: 2%</span>
-    //       </dd>
-    //     </dl>
-    //   </div>
-  );
+            })}
+          </DropdownButton>
+          <dl>
+            {filteredData.map((inc) => {
+              // incidents per 1000 corners
+              let classString =
+                "percentage percentage-" +
+                Math.round(
+                  (inc.average_incidents /
+                    (inc.event_laps_complete * inc.corners_per_lap)) *
+                    1000
+                );
+              return (
+                <div>
+                  <dd className={classString}>
+                    <span className="text">{inc.series}</span>
+                    <span className="text-after">
+                      {Math.round(
+                        (inc.average_incidents /
+                          (inc.event_laps_complete * inc.corners_per_lap)) *
+                          1000
+                      )}
+                    </span>
+                  </dd>
+                </div>
+              );
+            })}
+          </dl>
+        </Container>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
 }

@@ -1,3 +1,5 @@
+@import "../variables/Variables.scss";
+
 dl {
     display: flex;
     background-color: white;
@@ -21,9 +23,10 @@ dl {
   }
   
   .text {
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     align-items: center;
+    text-align: end;
     height: 40px;
     width: 130px;
     background-color: white;
@@ -57,10 +60,11 @@ dl {
     &:after {
       content: "";
       display: block;
-      background-color: #3d9970;
+      background-color: $brandColor;
       width: 50px;
       margin-bottom: 10px;
-      height: 90%;
+      height: 20%;
+      border-radius: 10px;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -89,3 +93,9 @@ dl {
     font-family: "fira-sans-2",sans-serif;
     color: #333;
   }
+
+  @media screen and (min-width: 830px) {
+    .graph-container{
+        margin-left: 30% !important; 
+      }
+}
