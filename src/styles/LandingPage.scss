@@ -9,7 +9,9 @@
     max-height: 40rem;
     padding: 0;
     margin: 0;
-    background-color: #7d7d7d;
+    background-image: url("../assets/graph-screenshot-upscale-16x9.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     aspect-ratio: 16/9;
 }
 
@@ -22,8 +24,14 @@
     height: 100%;
     min-height: 10rem;
     max-height: 40rem;
+    max-width: 1130;
     padding: 0;
     margin: 0;
     background-color: #a0a0a0;
+    
     aspect-ratio: 16/9;
+}
+
+.landing-container {
+    justify-content: center;
 }

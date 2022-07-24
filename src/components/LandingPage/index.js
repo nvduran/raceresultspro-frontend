@@ -15,12 +15,14 @@ import "../../styles/LandingPage.css";
 export default function LandingPage() {
   return (
     <div>
-      <Row className="iracing-stats-row">
-        <Col className="iracing-stats-col">iRacing Stats here</Col>
-      </Row>
-      <Row className="incident-stats-row">
-        <Col className="incident-stats-col">Incident Stats here</Col>
-      </Row>
+      <Container className="landing-container">
+        <Row className="iracing-stats-row">
+          <Col className="iracing-stats-col">iRacing Stats here</Col>
+        </Row>
+        <Row className="incident-stats-row">
+          <Col className="incident-stats-col">Incident Stats here</Col>
+        </Row>
+      </Container>
     </div>
   );
 }
