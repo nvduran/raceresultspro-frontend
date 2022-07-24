@@ -1,6 +1,28 @@
 @import "../variables/Variables.scss";
 
+
 .navbar {
-    background-color: $brandColor;
+    background-color: $darkGray;
+    max-height: 3rem;
+}
+
+.navbar a {
     color: azure;
+    line-height: 3rem;
+    font-size: .8rem;
+}
+
+.navbar a:hover {
+    color: $brandColor;
+}
+
+.nav-name a{
+    font-size: large;
+    padding-left: 2rem;
+}
+
+.nav-name::after {
+    content: ".pro";
+    font-size: 1rem;
+    color: $brandColor;
 }

@@ -10,13 +10,16 @@ import {
   Col,
   Form,
 } from "react-bootstrap";
-import "../../styles/NavBar.css";
+import "../../styles/LandingPage.css";
 
 export default function LandingPage() {
   return (
     <div>
-      <Row>
-        <Col>123123123123werwerwerwer</Col>
+      <Row className="iracing-stats-row">
+        <Col className="iracing-stats-col">iRacing Stats here</Col>
+      </Row>
+      <Row className="incident-stats-row">
+        <Col className="incident-stats-col">Incident Stats here</Col>
       </Row>
     </div>
   );

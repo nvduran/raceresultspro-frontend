@@ -1,4 +1,25 @@
 .navbar {
-  background-color: rgb(6, 214, 160);
+  background-color: rgb(65, 65, 65);
+  max-height: 3rem;
+}
+
+.navbar a {
   color: azure;
+  line-height: 3rem;
+  font-size: 0.8rem;
+}
+
+.navbar a:hover {
+  color: rgb(6, 214, 160);
+}
+
+.nav-name a {
+  font-size: large;
+  padding-left: 2rem;
+}
+
+.nav-name::after {
+  content: ".pro";
+  font-size: 1rem;
+  color: rgb(6, 214, 160);
 }/*# sourceMappingURL=NavBar.css.map */

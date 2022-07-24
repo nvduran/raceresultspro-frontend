@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import About from "./components/About";
+import IRatingStats from "./components/iRatingStats";
 import { Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/iratingstats" element={<IRatingStats />} />
       </Routes>
     </div>
   );
