@@ -10,12 +10,13 @@ import {
   Col,
   Form,
 } from "react-bootstrap";
-import IRatingGraph from "./irating-graph";
+import "../../styles/LandingPage.css";
+import SeriesIncGraph from "./series-inc-graph";
 
-export default function iRatingStats() {
+export default function IncidentStats() {
   return (
     <div>
-      <IRatingGraph />
+      <SeriesIncGraph />
     </div>
   );
 }

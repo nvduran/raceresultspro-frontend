@@ -22,6 +22,9 @@ export default function NavBar() {
         <Nav.Link href="/iratingstats">
           <a>iRating Stats</a>
         </Nav.Link>
+        <Nav.Link href="/incidentstats">
+          <a>Incident Stats</a>
+        </Nav.Link>
         <Nav.Link href="/about" className="nav-item">
           <a>About</a>
         </Nav.Link>
