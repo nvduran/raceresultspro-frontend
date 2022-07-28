@@ -15,6 +15,7 @@ import IRatingGraph from "./irating-graph";
 export default function iRatingStats() {
   return (
     <div>
+      123
       <IRatingGraph />
     </div>
   );

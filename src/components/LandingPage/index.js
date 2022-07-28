@@ -19,6 +19,7 @@ export default function LandingPage() {
   return (
     <div>
       <Container className="landing-container">
+        <Row className="hero-text-row">TEXT</Row>
         <Row className="iracing-stats-row">
           <Col className="iracing-stats-left">
             <FontAwesomeIcon icon={faClipboard} size="2x" />

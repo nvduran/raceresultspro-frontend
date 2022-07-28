@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import About from "./components/About";
 import IRatingStats from "./components/iRatingStats";
-import IncidentStats from "./components/IncidentStats";
+import IncidentStats from "./components/IncidentStats/index.js";
 import { Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
