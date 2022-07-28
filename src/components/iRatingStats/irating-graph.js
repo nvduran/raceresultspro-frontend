@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import { Bar, Line } from "react-chartjs-2";
 import { defaults } from "chart.js";
+import "../../styles/IRatingGraph.css";
 import "chart.js/auto";
 
 let irArr_url =
@@ -88,7 +89,6 @@ export default function RatingGraph(
     setChonks(sliceIntoChunks(irArr));
     setSortedRatings(irArr);
     // setIsLoaded(true);
-    console.log(irArr);
 
     findAvgRating(irArr.filter((idx) => idx !== 1350));
     medianRating(irArr.filter((idx) => idx !== 1350));
@@ -108,6 +108,7 @@ export default function RatingGraph(
     fetchRatingArr("road");
     // setPercentile90(percentile(sortedRatings, 0.9));
     // setPercentile50(percentile(sortedRatings, 0.6));
+    console.log(sortedRatings);
   }, []);
 
   const medianRating = (arr) => {
@@ -558,6 +559,39 @@ export default function RatingGraph(
         ) : null}
         <Container className="graph_container">
           <Bar data={data1} options={options}></Bar>
+          <Row className="disclaimer_text">
+            <p2>
+              * Excludes drivers who have not participated since before the
+              start of 2020. Excludes drivers with the initial rating of 1350.
+            </p2>
+          </Row>
+          <Row className="meme_row">
+            <Col className="meme_col">Mean: {irAvg}</Col>
+            <Col className="meme_col">Median: {irAvgMedian}</Col>
+          </Row>
+          <Container className="perc_container">
+            <Row>
+              <Col className="ir_text">iRating: </Col>
+            </Row>
+            <Row>
+              {/* FORM INPUT AREA */}
+              <Col className="input-form-col">
+                <Form.Control
+                  className="input-form-perc"
+                  onChange={handleChange}
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col className="perc_text">Percentile: </Col>
+            </Row>
+            <Row>
+              <Col className="perc_result">
+                {percentile === 0 ? "" : percentile}
+              </Col>
+            </Row>
+          </Container>
+          <Row className="invisiRow"></Row>
         </Container>
       </div>
     );
