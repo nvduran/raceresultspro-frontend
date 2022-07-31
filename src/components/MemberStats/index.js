@@ -25,7 +25,6 @@ export default function MemberStats(custId, setCustId) {
   const [IsLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    console.log("123123123");
     startGetData();
   }, []);
 
@@ -35,7 +34,13 @@ export default function MemberStats(custId, setCustId) {
     const data = await response.json();
     console.log(data);
     setMemberData(data[0]);
-    setIsLoaded(true);
+    if (data[0] === undefined) {
+      setTimeout(() => {
+        startGetData();
+      }, 1000);
+    } else {
+      setIsLoaded(true);
+    }
   };
 
   console.log(MemberData);
