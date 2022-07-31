@@ -1,0 +1,75 @@
+*{
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif; 
+  }
+
+.input-form {
+    margin-top: 2rem;
+    max-width: 50rem;
+}
+
+.input-form-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter-id-text {
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif; 
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.submit-button {
+    margin-top: 2rem;
+    background-color: rgb(6,214,160) !important;
+    border-color: rgb(6,214,160) !important;
+    margin-bottom: 5rem;
+}
+
+.text-muted {
+    cursor:pointer
+}
+
+.ui_id_img {
+    width: 40rem;
+    height: 15rem;
+    margin-bottom: 4rem;
+}
+
+.url_id_img {
+    width: 40rem;
+    height: 3rem;
+    margin-bottom: 4rem;
+}
+
+.helper_text {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    max-width: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(6,214,160) !important;
+    border-color: rgb(6,214,160) !important;
+}
+
+.example_users_top {
+    padding-top: 15rem;
+    margin-bottom: .6rem;
+    color: rgb(143, 143, 143);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.example_users_text {
+    cursor:pointer;
+    color: rgb(172, 172, 172);
+    font-size: .9rem;
+    font-weight: lighter;
+    margin-bottom: .3rem;
+}
+

@@ -25,6 +25,9 @@ export default function NavBar() {
         <Nav.Link href="/incidentstats">
           <a>Incident Stats</a>
         </Nav.Link>
+        <Nav.Link href="/SearchMember">
+          <a>Member Stats</a>
+        </Nav.Link>
         <Nav.Link href="/about" className="nav-item">
           <a>About</a>
         </Nav.Link>
