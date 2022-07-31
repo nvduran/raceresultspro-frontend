@@ -48,7 +48,7 @@ dl {
     display: flex;
     align-items: center;
     text-align: end;
-    height: 40px;
+    height: 20px !important;
     width: 130px;
     background-color: white;
     position: absolute;
@@ -74,8 +74,8 @@ dl {
     line-height: 1;
     text-transform: uppercase;
     width: 100%;
-    height: 30px;
-    margin-left: 150px;
+    height: 16px;
+    margin-left: 130px;
     
     
     &:after {
@@ -84,10 +84,10 @@ dl {
       background-color: $brandColor;
       width: 50px;
       margin-bottom: 0px;
-      height: 20%;
+      height: 40%;
       border-radius: 10px;
       position: relative;
-      top: 65%;
+      top: 60%;
       transform: translateY(-50%);
       transition: background-color .3s ease;
       cursor: pointer;
@@ -100,10 +100,10 @@ dl {
     }
   }
   
-  @for $i from 1 through 2000 {
+  @for $i from 0 through 2000 {
     .percentageir-#{$i} {
       &:after {
-        $value: ($i * 0.05%);
+        $value: ($i * 0.045%);
         width: $value;
       }
     }
@@ -120,3 +120,16 @@ dl {
         margin-left: 30% !important; 
       }
 }
+
+.invisiRow{
+    min-height: 20px;
+  }
+  
+  
+  .perc_containerir {
+    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, $brandColor 91.1% );
+    border-radius: 6px;
+    max-width: 15rem !important;
+    border: 1px solid rgb(248, 248, 248);
+    box-shadow: 2px 2px rgb(248, 248, 248); 
+  }

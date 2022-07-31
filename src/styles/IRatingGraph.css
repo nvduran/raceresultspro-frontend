@@ -11,6 +11,7 @@
 }
 
 .ir_text {
+  padding-top: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   line-height: 2rem;
@@ -20,7 +21,10 @@
 .input-form-perc {
   margin-top: 10px;
   margin-bottom: 1.2rem;
-  max-width: 10rem;
+  max-width: 14rem;
+  text-align: center;
+  max-height: 2rem;
+  border-radius: 3px !important;
 }
 
 .perc_text {
@@ -36,7 +40,7 @@
   line-height: 2rem;
   font-weight: lighter;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .disclaimer_text {
@@ -52,11 +56,12 @@
 }
 
 .perc_container {
-  background-color: rgb(245, 245, 245);
+  background-image: linear-gradient(109.6deg, rgb(24, 138, 141) 11.2%, rgb(6, 214, 160) 91.1%);
   border-radius: 6px;
   max-width: 15rem !important;
   border: 1px solid rgb(248, 248, 248);
   box-shadow: 2px 2px rgb(248, 248, 248);
+  color: white;
 }
 
 .graph_container {

@@ -245,68 +245,142 @@ export default function RatingGraphMobile() {
     return answer.toString();
   };
 
+  const handleCatChange = (cat) => {
+    setCategory(cat);
+    fetchRatingArr(cat);
+    setIsLoaded(false);
+    setPercentile(0);
+  };
+
+  const handleChange = (e) => {
+    setPercentile(calcPercentile(sortedRatings, e.target.value));
+    // setCustId(e.target.value);
+  };
+
+  function calcPercentile(arr, ir) {
+    let data = arr.filter((idx) => idx !== 1350);
+    for (let i = 0; i < data.length; i++) {
+      if (ir >= data[i]) {
+        let answer = ((data.length - i) / data.length) * 100;
+        return answer.toFixed(2);
+      }
+    }
+  }
+
   useEffect(() => {
     fetchRatingArr(category);
   }, []);
 
-  return (
-    <dl>
-      {chonks.map((chunk, index) => {
-        let classString = "percentageir percentageir-" + chunk;
-        if (index === 0) {
-          return (
-            <div key={index}>
-              <dd className={classString}>
-                <span className="text">0-500</span>
-              </dd>
-            </div>
-          );
-        } else if (index > 71) {
-        } else if (index === 71) {
-          return (
-            <div key={index}>
-              <dd className={classString}>
-                <span className="text">4000+</span>
-              </dd>
-            </div>
-          );
-        } else {
-          return (
-            <div key={index}>
-              <dd className={classString}>
-                <span className="text">
-                  {index * 50 - 50 + 500 + "-" + (index * 50 + 500)}
-                </span>
-              </dd>
-            </div>
-          );
-        }
-      })}
+  let categoryText = "";
+  if (category === "road") {
+    categoryText = "Road";
+  } else if (category === "oval") {
+    categoryText = "Oval";
+  } else if (category === "dirt") {
+    categoryText = "Dirt Road";
+  } else if (category === "dirt_oval") {
+    categoryText = "Dirt Oval";
+  }
 
-      {/* {filteredData.map((inc) => {
-          // incidents per 1000 corners
-          let classString =
-            "percentage percentage-" +
-            Math.round(
-              (inc.average_incidents /
-                (inc.event_laps_complete * inc.corners_per_lap)) *
-                1000
+  return (
+    <div>
+      <Row>
+        <Col>
+          <DropdownButton
+            id="dropdown-basic-button"
+            title={categoryText}
+            className="category_dropdown_graph"
+          >
+            <Dropdown.Item
+              onClick={() => {
+                handleCatChange("road");
+              }}
+              className="category_dropdown_graph"
+            >
+              Road
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => {
+                handleCatChange("oval");
+              }}
+            >
+              Oval
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => {
+                handleCatChange("dirt");
+              }}
+            >
+              Dirt Road
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => {
+                handleCatChange("dirt_oval");
+              }}
+            >
+              Dirt Oval
+            </Dropdown.Item>
+          </DropdownButton>
+        </Col>
+      </Row>
+      <dl>
+        {chonks.map((chunk, index) => {
+          let classString = "percentageir percentageir-" + chunk;
+          if (index === 0) {
+            return (
+              <div key={index}>
+                <dd className={classString}>
+                  <span className="text">0-500</span>
+                </dd>
+              </div>
             );
-          return (
-            <div>
-              <dd className={classString}>
-                <span className="text">{inc.series}</span>
-                <span className="text-after">
-                  {Math.round(
-                    (inc.average_incidents /
-                      (inc.event_laps_complete * inc.corners_per_lap)) *
-                      1000
-                  )}
-                </span>
-              </dd>
-            </div>
-          );
-        })} */}
-    </dl>
+          } else if (index > 71) {
+          } else if (index === 71) {
+            return (
+              <div key={index}>
+                <dd className={classString}>
+                  <span className="text">4000+</span>
+                </dd>
+              </div>
+            );
+          } else {
+            return (
+              <div key={index}>
+                <dd className={classString}>
+                  <span className="text">
+                    {index * 50 - 50 + 500 + "-" + (index * 50 + 500)}
+                  </span>
+                </dd>
+              </div>
+            );
+          }
+        })}
+      </dl>
+
+      <Row className="meme_row">
+        <Col className="meme_col">Mean: {irAvg}</Col>
+        <Col className="meme_col">Median: {irAvgMedian}</Col>
+      </Row>
+      <Container className="perc_containerir">
+        <Row>
+          <Col className="ir_text">iRating: </Col>
+        </Row>
+        <Row>
+          {/* FORM INPUT AREA */}
+          <Col className="input-form-col">
+            <Form.Control className="input-form-perc" onChange={handleChange} />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="perc_text">Percentile: </Col>
+        </Row>
+        <Row>
+          <Col className="perc_result">
+            {percentile === 0 ? "" : percentile}
+          </Col>
+        </Row>
+      </Container>
+      <Row className="invisiRow"></Row>
+    </div>
   );
 }
