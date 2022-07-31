@@ -17,9 +17,9 @@ import { faCarBurst } from "@fortawesome/free-solid-svg-icons";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="landing-background-div">
       <Container className="landing-container">
-        <Row className="hero-text-row">TEXT</Row>
+        <Row className="hero-text-row">iRacing Stats, all in one place.</Row>
         <Row className="iracing-stats-row">
           <Col className="iracing-stats-left">
             <FontAwesomeIcon icon={faClipboard} size="2x" />

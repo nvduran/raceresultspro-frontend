@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Padauk");
 * {
-  font-family: "Padauk";
+  font-family: "Padauk" !important;
 }
 
 .iracing-stats-col {
@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(230, 230, 230) 0%, rgb(204, 204, 204) 81.3%);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(246, 246, 246) 0%, rgb(232, 232, 232) 81.3%);
   color: rgb(34, 39, 37);
   max-width: 12rem !important;
   border-top-left-radius: 6px 6px;
@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(230, 230, 230) 0%, rgb(204, 204, 204) 81.3%);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(246, 246, 246) 0%, rgb(232, 232, 232) 81.3%);
   color: rgb(34, 39, 37);
   max-width: 12rem !important;
   border-top-left-radius: 6px 6px;
@@ -103,7 +103,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  font-size: 3rem;
-  color: rgb(25, 38, 33);
+  font-size: 1rem;
+  color: rgb(89, 89, 89);
   font-weight: lighter;
+  padding-top: 30px;
+  font-family: monospace !important;
 }/*# sourceMappingURL=LandingPage.css.map */
