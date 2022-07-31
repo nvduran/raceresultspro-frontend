@@ -11,6 +11,8 @@ import {
   Form,
 } from "react-bootstrap";
 import IRatingGraph from "./irating-graph";
+import IRatingGraphMobile from "./irating-graph-mobile";
+import "../../styles/IRatingGraph.css";
 
 export default function IRatingStats() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 800);
@@ -25,10 +27,14 @@ export default function IRatingStats() {
   });
 
   if (!isDesktop) {
-    return <div>MOBILE GRAPH</div>;
-  } else {
     return (
       <div>
+        <IRatingGraphMobile />
+      </div>
+    );
+  } else {
+    return (
+      <div className="page-background">
         <IRatingGraph />
       </div>
     );

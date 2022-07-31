@@ -1,0 +1,8104 @@
+dl {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  padding: 20px;
+}
+
+dt {
+  align-self: flex-start;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+
+.info-text {
+  white-space: nowrap;
+  text-align: left;
+  font-size: 1rem;
+  color: rgb(102, 102, 102);
+  line-height: 100%;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: rgb(34, 39, 37) !important;
+  border-color: rgb(34, 39, 37) !important;
+  max-height: 2rem;
+  line-height: 0.8rem !important;
+  font-size: small !important;
+  border-radius: 2px !important;
+  margin-top: 0.6rem;
+}
+
+.text {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  height: 40px;
+  width: 130px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  justify-content: flex-end;
+}
+
+.text-after {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 130px;
+  background-color: white;
+  position: absolute;
+  left: 140px;
+  justify-content: flex-start;
+}
+
+.percentageir {
+  font-size: 0.8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 30px;
+  margin-left: 150px;
+}
+.percentageir:after {
+  content: "";
+  display: block;
+  background-color: rgb(6, 214, 160);
+  width: 50px;
+  margin-bottom: 0px;
+  height: 20%;
+  border-radius: 10px;
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.percentageir:hover:after, .percentageir:focus:after {
+  background-color: #aaa;
+}
+
+.percentageir-1:after {
+  width: 0.05%;
+}
+
+.percentageir-2:after {
+  width: 0.1%;
+}
+
+.percentageir-3:after {
+  width: 0.15%;
+}
+
+.percentageir-4:after {
+  width: 0.2%;
+}
+
+.percentageir-5:after {
+  width: 0.25%;
+}
+
+.percentageir-6:after {
+  width: 0.3%;
+}
+
+.percentageir-7:after {
+  width: 0.35%;
+}
+
+.percentageir-8:after {
+  width: 0.4%;
+}
+
+.percentageir-9:after {
+  width: 0.45%;
+}
+
+.percentageir-10:after {
+  width: 0.5%;
+}
+
+.percentageir-11:after {
+  width: 0.55%;
+}
+
+.percentageir-12:after {
+  width: 0.6%;
+}
+
+.percentageir-13:after {
+  width: 0.65%;
+}
+
+.percentageir-14:after {
+  width: 0.7%;
+}
+
+.percentageir-15:after {
+  width: 0.75%;
+}
+
+.percentageir-16:after {
+  width: 0.8%;
+}
+
+.percentageir-17:after {
+  width: 0.85%;
+}
+
+.percentageir-18:after {
+  width: 0.9%;
+}
+
+.percentageir-19:after {
+  width: 0.95%;
+}
+
+.percentageir-20:after {
+  width: 1%;
+}
+
+.percentageir-21:after {
+  width: 1.05%;
+}
+
+.percentageir-22:after {
+  width: 1.1%;
+}
+
+.percentageir-23:after {
+  width: 1.15%;
+}
+
+.percentageir-24:after {
+  width: 1.2%;
+}
+
+.percentageir-25:after {
+  width: 1.25%;
+}
+
+.percentageir-26:after {
+  width: 1.3%;
+}
+
+.percentageir-27:after {
+  width: 1.35%;
+}
+
+.percentageir-28:after {
+  width: 1.4%;
+}
+
+.percentageir-29:after {
+  width: 1.45%;
+}
+
+.percentageir-30:after {
+  width: 1.5%;
+}
+
+.percentageir-31:after {
+  width: 1.55%;
+}
+
+.percentageir-32:after {
+  width: 1.6%;
+}
+
+.percentageir-33:after {
+  width: 1.65%;
+}
+
+.percentageir-34:after {
+  width: 1.7%;
+}
+
+.percentageir-35:after {
+  width: 1.75%;
+}
+
+.percentageir-36:after {
+  width: 1.8%;
+}
+
+.percentageir-37:after {
+  width: 1.85%;
+}
+
+.percentageir-38:after {
+  width: 1.9%;
+}
+
+.percentageir-39:after {
+  width: 1.95%;
+}
+
+.percentageir-40:after {
+  width: 2%;
+}
+
+.percentageir-41:after {
+  width: 2.05%;
+}
+
+.percentageir-42:after {
+  width: 2.1%;
+}
+
+.percentageir-43:after {
+  width: 2.15%;
+}
+
+.percentageir-44:after {
+  width: 2.2%;
+}
+
+.percentageir-45:after {
+  width: 2.25%;
+}
+
+.percentageir-46:after {
+  width: 2.3%;
+}
+
+.percentageir-47:after {
+  width: 2.35%;
+}
+
+.percentageir-48:after {
+  width: 2.4%;
+}
+
+.percentageir-49:after {
+  width: 2.45%;
+}
+
+.percentageir-50:after {
+  width: 2.5%;
+}
+
+.percentageir-51:after {
+  width: 2.55%;
+}
+
+.percentageir-52:after {
+  width: 2.6%;
+}
+
+.percentageir-53:after {
+  width: 2.65%;
+}
+
+.percentageir-54:after {
+  width: 2.7%;
+}
+
+.percentageir-55:after {
+  width: 2.75%;
+}
+
+.percentageir-56:after {
+  width: 2.8%;
+}
+
+.percentageir-57:after {
+  width: 2.85%;
+}
+
+.percentageir-58:after {
+  width: 2.9%;
+}
+
+.percentageir-59:after {
+  width: 2.95%;
+}
+
+.percentageir-60:after {
+  width: 3%;
+}
+
+.percentageir-61:after {
+  width: 3.05%;
+}
+
+.percentageir-62:after {
+  width: 3.1%;
+}
+
+.percentageir-63:after {
+  width: 3.15%;
+}
+
+.percentageir-64:after {
+  width: 3.2%;
+}
+
+.percentageir-65:after {
+  width: 3.25%;
+}
+
+.percentageir-66:after {
+  width: 3.3%;
+}
+
+.percentageir-67:after {
+  width: 3.35%;
+}
+
+.percentageir-68:after {
+  width: 3.4%;
+}
+
+.percentageir-69:after {
+  width: 3.45%;
+}
+
+.percentageir-70:after {
+  width: 3.5%;
+}
+
+.percentageir-71:after {
+  width: 3.55%;
+}
+
+.percentageir-72:after {
+  width: 3.6%;
+}
+
+.percentageir-73:after {
+  width: 3.65%;
+}
+
+.percentageir-74:after {
+  width: 3.7%;
+}
+
+.percentageir-75:after {
+  width: 3.75%;
+}
+
+.percentageir-76:after {
+  width: 3.8%;
+}
+
+.percentageir-77:after {
+  width: 3.85%;
+}
+
+.percentageir-78:after {
+  width: 3.9%;
+}
+
+.percentageir-79:after {
+  width: 3.95%;
+}
+
+.percentageir-80:after {
+  width: 4%;
+}
+
+.percentageir-81:after {
+  width: 4.05%;
+}
+
+.percentageir-82:after {
+  width: 4.1%;
+}
+
+.percentageir-83:after {
+  width: 4.15%;
+}
+
+.percentageir-84:after {
+  width: 4.2%;
+}
+
+.percentageir-85:after {
+  width: 4.25%;
+}
+
+.percentageir-86:after {
+  width: 4.3%;
+}
+
+.percentageir-87:after {
+  width: 4.35%;
+}
+
+.percentageir-88:after {
+  width: 4.4%;
+}
+
+.percentageir-89:after {
+  width: 4.45%;
+}
+
+.percentageir-90:after {
+  width: 4.5%;
+}
+
+.percentageir-91:after {
+  width: 4.55%;
+}
+
+.percentageir-92:after {
+  width: 4.6%;
+}
+
+.percentageir-93:after {
+  width: 4.65%;
+}
+
+.percentageir-94:after {
+  width: 4.7%;
+}
+
+.percentageir-95:after {
+  width: 4.75%;
+}
+
+.percentageir-96:after {
+  width: 4.8%;
+}
+
+.percentageir-97:after {
+  width: 4.85%;
+}
+
+.percentageir-98:after {
+  width: 4.9%;
+}
+
+.percentageir-99:after {
+  width: 4.95%;
+}
+
+.percentageir-100:after {
+  width: 5%;
+}
+
+.percentageir-101:after {
+  width: 5.05%;
+}
+
+.percentageir-102:after {
+  width: 5.1%;
+}
+
+.percentageir-103:after {
+  width: 5.15%;
+}
+
+.percentageir-104:after {
+  width: 5.2%;
+}
+
+.percentageir-105:after {
+  width: 5.25%;
+}
+
+.percentageir-106:after {
+  width: 5.3%;
+}
+
+.percentageir-107:after {
+  width: 5.35%;
+}
+
+.percentageir-108:after {
+  width: 5.4%;
+}
+
+.percentageir-109:after {
+  width: 5.45%;
+}
+
+.percentageir-110:after {
+  width: 5.5%;
+}
+
+.percentageir-111:after {
+  width: 5.55%;
+}
+
+.percentageir-112:after {
+  width: 5.6%;
+}
+
+.percentageir-113:after {
+  width: 5.65%;
+}
+
+.percentageir-114:after {
+  width: 5.7%;
+}
+
+.percentageir-115:after {
+  width: 5.75%;
+}
+
+.percentageir-116:after {
+  width: 5.8%;
+}
+
+.percentageir-117:after {
+  width: 5.85%;
+}
+
+.percentageir-118:after {
+  width: 5.9%;
+}
+
+.percentageir-119:after {
+  width: 5.95%;
+}
+
+.percentageir-120:after {
+  width: 6%;
+}
+
+.percentageir-121:after {
+  width: 6.05%;
+}
+
+.percentageir-122:after {
+  width: 6.1%;
+}
+
+.percentageir-123:after {
+  width: 6.15%;
+}
+
+.percentageir-124:after {
+  width: 6.2%;
+}
+
+.percentageir-125:after {
+  width: 6.25%;
+}
+
+.percentageir-126:after {
+  width: 6.3%;
+}
+
+.percentageir-127:after {
+  width: 6.35%;
+}
+
+.percentageir-128:after {
+  width: 6.4%;
+}
+
+.percentageir-129:after {
+  width: 6.45%;
+}
+
+.percentageir-130:after {
+  width: 6.5%;
+}
+
+.percentageir-131:after {
+  width: 6.55%;
+}
+
+.percentageir-132:after {
+  width: 6.6%;
+}
+
+.percentageir-133:after {
+  width: 6.65%;
+}
+
+.percentageir-134:after {
+  width: 6.7%;
+}
+
+.percentageir-135:after {
+  width: 6.75%;
+}
+
+.percentageir-136:after {
+  width: 6.8%;
+}
+
+.percentageir-137:after {
+  width: 6.85%;
+}
+
+.percentageir-138:after {
+  width: 6.9%;
+}
+
+.percentageir-139:after {
+  width: 6.95%;
+}
+
+.percentageir-140:after {
+  width: 7%;
+}
+
+.percentageir-141:after {
+  width: 7.05%;
+}
+
+.percentageir-142:after {
+  width: 7.1%;
+}
+
+.percentageir-143:after {
+  width: 7.15%;
+}
+
+.percentageir-144:after {
+  width: 7.2%;
+}
+
+.percentageir-145:after {
+  width: 7.25%;
+}
+
+.percentageir-146:after {
+  width: 7.3%;
+}
+
+.percentageir-147:after {
+  width: 7.35%;
+}
+
+.percentageir-148:after {
+  width: 7.4%;
+}
+
+.percentageir-149:after {
+  width: 7.45%;
+}
+
+.percentageir-150:after {
+  width: 7.5%;
+}
+
+.percentageir-151:after {
+  width: 7.55%;
+}
+
+.percentageir-152:after {
+  width: 7.6%;
+}
+
+.percentageir-153:after {
+  width: 7.65%;
+}
+
+.percentageir-154:after {
+  width: 7.7%;
+}
+
+.percentageir-155:after {
+  width: 7.75%;
+}
+
+.percentageir-156:after {
+  width: 7.8%;
+}
+
+.percentageir-157:after {
+  width: 7.85%;
+}
+
+.percentageir-158:after {
+  width: 7.9%;
+}
+
+.percentageir-159:after {
+  width: 7.95%;
+}
+
+.percentageir-160:after {
+  width: 8%;
+}
+
+.percentageir-161:after {
+  width: 8.05%;
+}
+
+.percentageir-162:after {
+  width: 8.1%;
+}
+
+.percentageir-163:after {
+  width: 8.15%;
+}
+
+.percentageir-164:after {
+  width: 8.2%;
+}
+
+.percentageir-165:after {
+  width: 8.25%;
+}
+
+.percentageir-166:after {
+  width: 8.3%;
+}
+
+.percentageir-167:after {
+  width: 8.35%;
+}
+
+.percentageir-168:after {
+  width: 8.4%;
+}
+
+.percentageir-169:after {
+  width: 8.45%;
+}
+
+.percentageir-170:after {
+  width: 8.5%;
+}
+
+.percentageir-171:after {
+  width: 8.55%;
+}
+
+.percentageir-172:after {
+  width: 8.6%;
+}
+
+.percentageir-173:after {
+  width: 8.65%;
+}
+
+.percentageir-174:after {
+  width: 8.7%;
+}
+
+.percentageir-175:after {
+  width: 8.75%;
+}
+
+.percentageir-176:after {
+  width: 8.8%;
+}
+
+.percentageir-177:after {
+  width: 8.85%;
+}
+
+.percentageir-178:after {
+  width: 8.9%;
+}
+
+.percentageir-179:after {
+  width: 8.95%;
+}
+
+.percentageir-180:after {
+  width: 9%;
+}
+
+.percentageir-181:after {
+  width: 9.05%;
+}
+
+.percentageir-182:after {
+  width: 9.1%;
+}
+
+.percentageir-183:after {
+  width: 9.15%;
+}
+
+.percentageir-184:after {
+  width: 9.2%;
+}
+
+.percentageir-185:after {
+  width: 9.25%;
+}
+
+.percentageir-186:after {
+  width: 9.3%;
+}
+
+.percentageir-187:after {
+  width: 9.35%;
+}
+
+.percentageir-188:after {
+  width: 9.4%;
+}
+
+.percentageir-189:after {
+  width: 9.45%;
+}
+
+.percentageir-190:after {
+  width: 9.5%;
+}
+
+.percentageir-191:after {
+  width: 9.55%;
+}
+
+.percentageir-192:after {
+  width: 9.6%;
+}
+
+.percentageir-193:after {
+  width: 9.65%;
+}
+
+.percentageir-194:after {
+  width: 9.7%;
+}
+
+.percentageir-195:after {
+  width: 9.75%;
+}
+
+.percentageir-196:after {
+  width: 9.8%;
+}
+
+.percentageir-197:after {
+  width: 9.85%;
+}
+
+.percentageir-198:after {
+  width: 9.9%;
+}
+
+.percentageir-199:after {
+  width: 9.95%;
+}
+
+.percentageir-200:after {
+  width: 10%;
+}
+
+.percentageir-201:after {
+  width: 10.05%;
+}
+
+.percentageir-202:after {
+  width: 10.1%;
+}
+
+.percentageir-203:after {
+  width: 10.15%;
+}
+
+.percentageir-204:after {
+  width: 10.2%;
+}
+
+.percentageir-205:after {
+  width: 10.25%;
+}
+
+.percentageir-206:after {
+  width: 10.3%;
+}
+
+.percentageir-207:after {
+  width: 10.35%;
+}
+
+.percentageir-208:after {
+  width: 10.4%;
+}
+
+.percentageir-209:after {
+  width: 10.45%;
+}
+
+.percentageir-210:after {
+  width: 10.5%;
+}
+
+.percentageir-211:after {
+  width: 10.55%;
+}
+
+.percentageir-212:after {
+  width: 10.6%;
+}
+
+.percentageir-213:after {
+  width: 10.65%;
+}
+
+.percentageir-214:after {
+  width: 10.7%;
+}
+
+.percentageir-215:after {
+  width: 10.75%;
+}
+
+.percentageir-216:after {
+  width: 10.8%;
+}
+
+.percentageir-217:after {
+  width: 10.85%;
+}
+
+.percentageir-218:after {
+  width: 10.9%;
+}
+
+.percentageir-219:after {
+  width: 10.95%;
+}
+
+.percentageir-220:after {
+  width: 11%;
+}
+
+.percentageir-221:after {
+  width: 11.05%;
+}
+
+.percentageir-222:after {
+  width: 11.1%;
+}
+
+.percentageir-223:after {
+  width: 11.15%;
+}
+
+.percentageir-224:after {
+  width: 11.2%;
+}
+
+.percentageir-225:after {
+  width: 11.25%;
+}
+
+.percentageir-226:after {
+  width: 11.3%;
+}
+
+.percentageir-227:after {
+  width: 11.35%;
+}
+
+.percentageir-228:after {
+  width: 11.4%;
+}
+
+.percentageir-229:after {
+  width: 11.45%;
+}
+
+.percentageir-230:after {
+  width: 11.5%;
+}
+
+.percentageir-231:after {
+  width: 11.55%;
+}
+
+.percentageir-232:after {
+  width: 11.6%;
+}
+
+.percentageir-233:after {
+  width: 11.65%;
+}
+
+.percentageir-234:after {
+  width: 11.7%;
+}
+
+.percentageir-235:after {
+  width: 11.75%;
+}
+
+.percentageir-236:after {
+  width: 11.8%;
+}
+
+.percentageir-237:after {
+  width: 11.85%;
+}
+
+.percentageir-238:after {
+  width: 11.9%;
+}
+
+.percentageir-239:after {
+  width: 11.95%;
+}
+
+.percentageir-240:after {
+  width: 12%;
+}
+
+.percentageir-241:after {
+  width: 12.05%;
+}
+
+.percentageir-242:after {
+  width: 12.1%;
+}
+
+.percentageir-243:after {
+  width: 12.15%;
+}
+
+.percentageir-244:after {
+  width: 12.2%;
+}
+
+.percentageir-245:after {
+  width: 12.25%;
+}
+
+.percentageir-246:after {
+  width: 12.3%;
+}
+
+.percentageir-247:after {
+  width: 12.35%;
+}
+
+.percentageir-248:after {
+  width: 12.4%;
+}
+
+.percentageir-249:after {
+  width: 12.45%;
+}
+
+.percentageir-250:after {
+  width: 12.5%;
+}
+
+.percentageir-251:after {
+  width: 12.55%;
+}
+
+.percentageir-252:after {
+  width: 12.6%;
+}
+
+.percentageir-253:after {
+  width: 12.65%;
+}
+
+.percentageir-254:after {
+  width: 12.7%;
+}
+
+.percentageir-255:after {
+  width: 12.75%;
+}
+
+.percentageir-256:after {
+  width: 12.8%;
+}
+
+.percentageir-257:after {
+  width: 12.85%;
+}
+
+.percentageir-258:after {
+  width: 12.9%;
+}
+
+.percentageir-259:after {
+  width: 12.95%;
+}
+
+.percentageir-260:after {
+  width: 13%;
+}
+
+.percentageir-261:after {
+  width: 13.05%;
+}
+
+.percentageir-262:after {
+  width: 13.1%;
+}
+
+.percentageir-263:after {
+  width: 13.15%;
+}
+
+.percentageir-264:after {
+  width: 13.2%;
+}
+
+.percentageir-265:after {
+  width: 13.25%;
+}
+
+.percentageir-266:after {
+  width: 13.3%;
+}
+
+.percentageir-267:after {
+  width: 13.35%;
+}
+
+.percentageir-268:after {
+  width: 13.4%;
+}
+
+.percentageir-269:after {
+  width: 13.45%;
+}
+
+.percentageir-270:after {
+  width: 13.5%;
+}
+
+.percentageir-271:after {
+  width: 13.55%;
+}
+
+.percentageir-272:after {
+  width: 13.6%;
+}
+
+.percentageir-273:after {
+  width: 13.65%;
+}
+
+.percentageir-274:after {
+  width: 13.7%;
+}
+
+.percentageir-275:after {
+  width: 13.75%;
+}
+
+.percentageir-276:after {
+  width: 13.8%;
+}
+
+.percentageir-277:after {
+  width: 13.85%;
+}
+
+.percentageir-278:after {
+  width: 13.9%;
+}
+
+.percentageir-279:after {
+  width: 13.95%;
+}
+
+.percentageir-280:after {
+  width: 14%;
+}
+
+.percentageir-281:after {
+  width: 14.05%;
+}
+
+.percentageir-282:after {
+  width: 14.1%;
+}
+
+.percentageir-283:after {
+  width: 14.15%;
+}
+
+.percentageir-284:after {
+  width: 14.2%;
+}
+
+.percentageir-285:after {
+  width: 14.25%;
+}
+
+.percentageir-286:after {
+  width: 14.3%;
+}
+
+.percentageir-287:after {
+  width: 14.35%;
+}
+
+.percentageir-288:after {
+  width: 14.4%;
+}
+
+.percentageir-289:after {
+  width: 14.45%;
+}
+
+.percentageir-290:after {
+  width: 14.5%;
+}
+
+.percentageir-291:after {
+  width: 14.55%;
+}
+
+.percentageir-292:after {
+  width: 14.6%;
+}
+
+.percentageir-293:after {
+  width: 14.65%;
+}
+
+.percentageir-294:after {
+  width: 14.7%;
+}
+
+.percentageir-295:after {
+  width: 14.75%;
+}
+
+.percentageir-296:after {
+  width: 14.8%;
+}
+
+.percentageir-297:after {
+  width: 14.85%;
+}
+
+.percentageir-298:after {
+  width: 14.9%;
+}
+
+.percentageir-299:after {
+  width: 14.95%;
+}
+
+.percentageir-300:after {
+  width: 15%;
+}
+
+.percentageir-301:after {
+  width: 15.05%;
+}
+
+.percentageir-302:after {
+  width: 15.1%;
+}
+
+.percentageir-303:after {
+  width: 15.15%;
+}
+
+.percentageir-304:after {
+  width: 15.2%;
+}
+
+.percentageir-305:after {
+  width: 15.25%;
+}
+
+.percentageir-306:after {
+  width: 15.3%;
+}
+
+.percentageir-307:after {
+  width: 15.35%;
+}
+
+.percentageir-308:after {
+  width: 15.4%;
+}
+
+.percentageir-309:after {
+  width: 15.45%;
+}
+
+.percentageir-310:after {
+  width: 15.5%;
+}
+
+.percentageir-311:after {
+  width: 15.55%;
+}
+
+.percentageir-312:after {
+  width: 15.6%;
+}
+
+.percentageir-313:after {
+  width: 15.65%;
+}
+
+.percentageir-314:after {
+  width: 15.7%;
+}
+
+.percentageir-315:after {
+  width: 15.75%;
+}
+
+.percentageir-316:after {
+  width: 15.8%;
+}
+
+.percentageir-317:after {
+  width: 15.85%;
+}
+
+.percentageir-318:after {
+  width: 15.9%;
+}
+
+.percentageir-319:after {
+  width: 15.95%;
+}
+
+.percentageir-320:after {
+  width: 16%;
+}
+
+.percentageir-321:after {
+  width: 16.05%;
+}
+
+.percentageir-322:after {
+  width: 16.1%;
+}
+
+.percentageir-323:after {
+  width: 16.15%;
+}
+
+.percentageir-324:after {
+  width: 16.2%;
+}
+
+.percentageir-325:after {
+  width: 16.25%;
+}
+
+.percentageir-326:after {
+  width: 16.3%;
+}
+
+.percentageir-327:after {
+  width: 16.35%;
+}
+
+.percentageir-328:after {
+  width: 16.4%;
+}
+
+.percentageir-329:after {
+  width: 16.45%;
+}
+
+.percentageir-330:after {
+  width: 16.5%;
+}
+
+.percentageir-331:after {
+  width: 16.55%;
+}
+
+.percentageir-332:after {
+  width: 16.6%;
+}
+
+.percentageir-333:after {
+  width: 16.65%;
+}
+
+.percentageir-334:after {
+  width: 16.7%;
+}
+
+.percentageir-335:after {
+  width: 16.75%;
+}
+
+.percentageir-336:after {
+  width: 16.8%;
+}
+
+.percentageir-337:after {
+  width: 16.85%;
+}
+
+.percentageir-338:after {
+  width: 16.9%;
+}
+
+.percentageir-339:after {
+  width: 16.95%;
+}
+
+.percentageir-340:after {
+  width: 17%;
+}
+
+.percentageir-341:after {
+  width: 17.05%;
+}
+
+.percentageir-342:after {
+  width: 17.1%;
+}
+
+.percentageir-343:after {
+  width: 17.15%;
+}
+
+.percentageir-344:after {
+  width: 17.2%;
+}
+
+.percentageir-345:after {
+  width: 17.25%;
+}
+
+.percentageir-346:after {
+  width: 17.3%;
+}
+
+.percentageir-347:after {
+  width: 17.35%;
+}
+
+.percentageir-348:after {
+  width: 17.4%;
+}
+
+.percentageir-349:after {
+  width: 17.45%;
+}
+
+.percentageir-350:after {
+  width: 17.5%;
+}
+
+.percentageir-351:after {
+  width: 17.55%;
+}
+
+.percentageir-352:after {
+  width: 17.6%;
+}
+
+.percentageir-353:after {
+  width: 17.65%;
+}
+
+.percentageir-354:after {
+  width: 17.7%;
+}
+
+.percentageir-355:after {
+  width: 17.75%;
+}
+
+.percentageir-356:after {
+  width: 17.8%;
+}
+
+.percentageir-357:after {
+  width: 17.85%;
+}
+
+.percentageir-358:after {
+  width: 17.9%;
+}
+
+.percentageir-359:after {
+  width: 17.95%;
+}
+
+.percentageir-360:after {
+  width: 18%;
+}
+
+.percentageir-361:after {
+  width: 18.05%;
+}
+
+.percentageir-362:after {
+  width: 18.1%;
+}
+
+.percentageir-363:after {
+  width: 18.15%;
+}
+
+.percentageir-364:after {
+  width: 18.2%;
+}
+
+.percentageir-365:after {
+  width: 18.25%;
+}
+
+.percentageir-366:after {
+  width: 18.3%;
+}
+
+.percentageir-367:after {
+  width: 18.35%;
+}
+
+.percentageir-368:after {
+  width: 18.4%;
+}
+
+.percentageir-369:after {
+  width: 18.45%;
+}
+
+.percentageir-370:after {
+  width: 18.5%;
+}
+
+.percentageir-371:after {
+  width: 18.55%;
+}
+
+.percentageir-372:after {
+  width: 18.6%;
+}
+
+.percentageir-373:after {
+  width: 18.65%;
+}
+
+.percentageir-374:after {
+  width: 18.7%;
+}
+
+.percentageir-375:after {
+  width: 18.75%;
+}
+
+.percentageir-376:after {
+  width: 18.8%;
+}
+
+.percentageir-377:after {
+  width: 18.85%;
+}
+
+.percentageir-378:after {
+  width: 18.9%;
+}
+
+.percentageir-379:after {
+  width: 18.95%;
+}
+
+.percentageir-380:after {
+  width: 19%;
+}
+
+.percentageir-381:after {
+  width: 19.05%;
+}
+
+.percentageir-382:after {
+  width: 19.1%;
+}
+
+.percentageir-383:after {
+  width: 19.15%;
+}
+
+.percentageir-384:after {
+  width: 19.2%;
+}
+
+.percentageir-385:after {
+  width: 19.25%;
+}
+
+.percentageir-386:after {
+  width: 19.3%;
+}
+
+.percentageir-387:after {
+  width: 19.35%;
+}
+
+.percentageir-388:after {
+  width: 19.4%;
+}
+
+.percentageir-389:after {
+  width: 19.45%;
+}
+
+.percentageir-390:after {
+  width: 19.5%;
+}
+
+.percentageir-391:after {
+  width: 19.55%;
+}
+
+.percentageir-392:after {
+  width: 19.6%;
+}
+
+.percentageir-393:after {
+  width: 19.65%;
+}
+
+.percentageir-394:after {
+  width: 19.7%;
+}
+
+.percentageir-395:after {
+  width: 19.75%;
+}
+
+.percentageir-396:after {
+  width: 19.8%;
+}
+
+.percentageir-397:after {
+  width: 19.85%;
+}
+
+.percentageir-398:after {
+  width: 19.9%;
+}
+
+.percentageir-399:after {
+  width: 19.95%;
+}
+
+.percentageir-400:after {
+  width: 20%;
+}
+
+.percentageir-401:after {
+  width: 20.05%;
+}
+
+.percentageir-402:after {
+  width: 20.1%;
+}
+
+.percentageir-403:after {
+  width: 20.15%;
+}
+
+.percentageir-404:after {
+  width: 20.2%;
+}
+
+.percentageir-405:after {
+  width: 20.25%;
+}
+
+.percentageir-406:after {
+  width: 20.3%;
+}
+
+.percentageir-407:after {
+  width: 20.35%;
+}
+
+.percentageir-408:after {
+  width: 20.4%;
+}
+
+.percentageir-409:after {
+  width: 20.45%;
+}
+
+.percentageir-410:after {
+  width: 20.5%;
+}
+
+.percentageir-411:after {
+  width: 20.55%;
+}
+
+.percentageir-412:after {
+  width: 20.6%;
+}
+
+.percentageir-413:after {
+  width: 20.65%;
+}
+
+.percentageir-414:after {
+  width: 20.7%;
+}
+
+.percentageir-415:after {
+  width: 20.75%;
+}
+
+.percentageir-416:after {
+  width: 20.8%;
+}
+
+.percentageir-417:after {
+  width: 20.85%;
+}
+
+.percentageir-418:after {
+  width: 20.9%;
+}
+
+.percentageir-419:after {
+  width: 20.95%;
+}
+
+.percentageir-420:after {
+  width: 21%;
+}
+
+.percentageir-421:after {
+  width: 21.05%;
+}
+
+.percentageir-422:after {
+  width: 21.1%;
+}
+
+.percentageir-423:after {
+  width: 21.15%;
+}
+
+.percentageir-424:after {
+  width: 21.2%;
+}
+
+.percentageir-425:after {
+  width: 21.25%;
+}
+
+.percentageir-426:after {
+  width: 21.3%;
+}
+
+.percentageir-427:after {
+  width: 21.35%;
+}
+
+.percentageir-428:after {
+  width: 21.4%;
+}
+
+.percentageir-429:after {
+  width: 21.45%;
+}
+
+.percentageir-430:after {
+  width: 21.5%;
+}
+
+.percentageir-431:after {
+  width: 21.55%;
+}
+
+.percentageir-432:after {
+  width: 21.6%;
+}
+
+.percentageir-433:after {
+  width: 21.65%;
+}
+
+.percentageir-434:after {
+  width: 21.7%;
+}
+
+.percentageir-435:after {
+  width: 21.75%;
+}
+
+.percentageir-436:after {
+  width: 21.8%;
+}
+
+.percentageir-437:after {
+  width: 21.85%;
+}
+
+.percentageir-438:after {
+  width: 21.9%;
+}
+
+.percentageir-439:after {
+  width: 21.95%;
+}
+
+.percentageir-440:after {
+  width: 22%;
+}
+
+.percentageir-441:after {
+  width: 22.05%;
+}
+
+.percentageir-442:after {
+  width: 22.1%;
+}
+
+.percentageir-443:after {
+  width: 22.15%;
+}
+
+.percentageir-444:after {
+  width: 22.2%;
+}
+
+.percentageir-445:after {
+  width: 22.25%;
+}
+
+.percentageir-446:after {
+  width: 22.3%;
+}
+
+.percentageir-447:after {
+  width: 22.35%;
+}
+
+.percentageir-448:after {
+  width: 22.4%;
+}
+
+.percentageir-449:after {
+  width: 22.45%;
+}
+
+.percentageir-450:after {
+  width: 22.5%;
+}
+
+.percentageir-451:after {
+  width: 22.55%;
+}
+
+.percentageir-452:after {
+  width: 22.6%;
+}
+
+.percentageir-453:after {
+  width: 22.65%;
+}
+
+.percentageir-454:after {
+  width: 22.7%;
+}
+
+.percentageir-455:after {
+  width: 22.75%;
+}
+
+.percentageir-456:after {
+  width: 22.8%;
+}
+
+.percentageir-457:after {
+  width: 22.85%;
+}
+
+.percentageir-458:after {
+  width: 22.9%;
+}
+
+.percentageir-459:after {
+  width: 22.95%;
+}
+
+.percentageir-460:after {
+  width: 23%;
+}
+
+.percentageir-461:after {
+  width: 23.05%;
+}
+
+.percentageir-462:after {
+  width: 23.1%;
+}
+
+.percentageir-463:after {
+  width: 23.15%;
+}
+
+.percentageir-464:after {
+  width: 23.2%;
+}
+
+.percentageir-465:after {
+  width: 23.25%;
+}
+
+.percentageir-466:after {
+  width: 23.3%;
+}
+
+.percentageir-467:after {
+  width: 23.35%;
+}
+
+.percentageir-468:after {
+  width: 23.4%;
+}
+
+.percentageir-469:after {
+  width: 23.45%;
+}
+
+.percentageir-470:after {
+  width: 23.5%;
+}
+
+.percentageir-471:after {
+  width: 23.55%;
+}
+
+.percentageir-472:after {
+  width: 23.6%;
+}
+
+.percentageir-473:after {
+  width: 23.65%;
+}
+
+.percentageir-474:after {
+  width: 23.7%;
+}
+
+.percentageir-475:after {
+  width: 23.75%;
+}
+
+.percentageir-476:after {
+  width: 23.8%;
+}
+
+.percentageir-477:after {
+  width: 23.85%;
+}
+
+.percentageir-478:after {
+  width: 23.9%;
+}
+
+.percentageir-479:after {
+  width: 23.95%;
+}
+
+.percentageir-480:after {
+  width: 24%;
+}
+
+.percentageir-481:after {
+  width: 24.05%;
+}
+
+.percentageir-482:after {
+  width: 24.1%;
+}
+
+.percentageir-483:after {
+  width: 24.15%;
+}
+
+.percentageir-484:after {
+  width: 24.2%;
+}
+
+.percentageir-485:after {
+  width: 24.25%;
+}
+
+.percentageir-486:after {
+  width: 24.3%;
+}
+
+.percentageir-487:after {
+  width: 24.35%;
+}
+
+.percentageir-488:after {
+  width: 24.4%;
+}
+
+.percentageir-489:after {
+  width: 24.45%;
+}
+
+.percentageir-490:after {
+  width: 24.5%;
+}
+
+.percentageir-491:after {
+  width: 24.55%;
+}
+
+.percentageir-492:after {
+  width: 24.6%;
+}
+
+.percentageir-493:after {
+  width: 24.65%;
+}
+
+.percentageir-494:after {
+  width: 24.7%;
+}
+
+.percentageir-495:after {
+  width: 24.75%;
+}
+
+.percentageir-496:after {
+  width: 24.8%;
+}
+
+.percentageir-497:after {
+  width: 24.85%;
+}
+
+.percentageir-498:after {
+  width: 24.9%;
+}
+
+.percentageir-499:after {
+  width: 24.95%;
+}
+
+.percentageir-500:after {
+  width: 25%;
+}
+
+.percentageir-501:after {
+  width: 25.05%;
+}
+
+.percentageir-502:after {
+  width: 25.1%;
+}
+
+.percentageir-503:after {
+  width: 25.15%;
+}
+
+.percentageir-504:after {
+  width: 25.2%;
+}
+
+.percentageir-505:after {
+  width: 25.25%;
+}
+
+.percentageir-506:after {
+  width: 25.3%;
+}
+
+.percentageir-507:after {
+  width: 25.35%;
+}
+
+.percentageir-508:after {
+  width: 25.4%;
+}
+
+.percentageir-509:after {
+  width: 25.45%;
+}
+
+.percentageir-510:after {
+  width: 25.5%;
+}
+
+.percentageir-511:after {
+  width: 25.55%;
+}
+
+.percentageir-512:after {
+  width: 25.6%;
+}
+
+.percentageir-513:after {
+  width: 25.65%;
+}
+
+.percentageir-514:after {
+  width: 25.7%;
+}
+
+.percentageir-515:after {
+  width: 25.75%;
+}
+
+.percentageir-516:after {
+  width: 25.8%;
+}
+
+.percentageir-517:after {
+  width: 25.85%;
+}
+
+.percentageir-518:after {
+  width: 25.9%;
+}
+
+.percentageir-519:after {
+  width: 25.95%;
+}
+
+.percentageir-520:after {
+  width: 26%;
+}
+
+.percentageir-521:after {
+  width: 26.05%;
+}
+
+.percentageir-522:after {
+  width: 26.1%;
+}
+
+.percentageir-523:after {
+  width: 26.15%;
+}
+
+.percentageir-524:after {
+  width: 26.2%;
+}
+
+.percentageir-525:after {
+  width: 26.25%;
+}
+
+.percentageir-526:after {
+  width: 26.3%;
+}
+
+.percentageir-527:after {
+  width: 26.35%;
+}
+
+.percentageir-528:after {
+  width: 26.4%;
+}
+
+.percentageir-529:after {
+  width: 26.45%;
+}
+
+.percentageir-530:after {
+  width: 26.5%;
+}
+
+.percentageir-531:after {
+  width: 26.55%;
+}
+
+.percentageir-532:after {
+  width: 26.6%;
+}
+
+.percentageir-533:after {
+  width: 26.65%;
+}
+
+.percentageir-534:after {
+  width: 26.7%;
+}
+
+.percentageir-535:after {
+  width: 26.75%;
+}
+
+.percentageir-536:after {
+  width: 26.8%;
+}
+
+.percentageir-537:after {
+  width: 26.85%;
+}
+
+.percentageir-538:after {
+  width: 26.9%;
+}
+
+.percentageir-539:after {
+  width: 26.95%;
+}
+
+.percentageir-540:after {
+  width: 27%;
+}
+
+.percentageir-541:after {
+  width: 27.05%;
+}
+
+.percentageir-542:after {
+  width: 27.1%;
+}
+
+.percentageir-543:after {
+  width: 27.15%;
+}
+
+.percentageir-544:after {
+  width: 27.2%;
+}
+
+.percentageir-545:after {
+  width: 27.25%;
+}
+
+.percentageir-546:after {
+  width: 27.3%;
+}
+
+.percentageir-547:after {
+  width: 27.35%;
+}
+
+.percentageir-548:after {
+  width: 27.4%;
+}
+
+.percentageir-549:after {
+  width: 27.45%;
+}
+
+.percentageir-550:after {
+  width: 27.5%;
+}
+
+.percentageir-551:after {
+  width: 27.55%;
+}
+
+.percentageir-552:after {
+  width: 27.6%;
+}
+
+.percentageir-553:after {
+  width: 27.65%;
+}
+
+.percentageir-554:after {
+  width: 27.7%;
+}
+
+.percentageir-555:after {
+  width: 27.75%;
+}
+
+.percentageir-556:after {
+  width: 27.8%;
+}
+
+.percentageir-557:after {
+  width: 27.85%;
+}
+
+.percentageir-558:after {
+  width: 27.9%;
+}
+
+.percentageir-559:after {
+  width: 27.95%;
+}
+
+.percentageir-560:after {
+  width: 28%;
+}
+
+.percentageir-561:after {
+  width: 28.05%;
+}
+
+.percentageir-562:after {
+  width: 28.1%;
+}
+
+.percentageir-563:after {
+  width: 28.15%;
+}
+
+.percentageir-564:after {
+  width: 28.2%;
+}
+
+.percentageir-565:after {
+  width: 28.25%;
+}
+
+.percentageir-566:after {
+  width: 28.3%;
+}
+
+.percentageir-567:after {
+  width: 28.35%;
+}
+
+.percentageir-568:after {
+  width: 28.4%;
+}
+
+.percentageir-569:after {
+  width: 28.45%;
+}
+
+.percentageir-570:after {
+  width: 28.5%;
+}
+
+.percentageir-571:after {
+  width: 28.55%;
+}
+
+.percentageir-572:after {
+  width: 28.6%;
+}
+
+.percentageir-573:after {
+  width: 28.65%;
+}
+
+.percentageir-574:after {
+  width: 28.7%;
+}
+
+.percentageir-575:after {
+  width: 28.75%;
+}
+
+.percentageir-576:after {
+  width: 28.8%;
+}
+
+.percentageir-577:after {
+  width: 28.85%;
+}
+
+.percentageir-578:after {
+  width: 28.9%;
+}
+
+.percentageir-579:after {
+  width: 28.95%;
+}
+
+.percentageir-580:after {
+  width: 29%;
+}
+
+.percentageir-581:after {
+  width: 29.05%;
+}
+
+.percentageir-582:after {
+  width: 29.1%;
+}
+
+.percentageir-583:after {
+  width: 29.15%;
+}
+
+.percentageir-584:after {
+  width: 29.2%;
+}
+
+.percentageir-585:after {
+  width: 29.25%;
+}
+
+.percentageir-586:after {
+  width: 29.3%;
+}
+
+.percentageir-587:after {
+  width: 29.35%;
+}
+
+.percentageir-588:after {
+  width: 29.4%;
+}
+
+.percentageir-589:after {
+  width: 29.45%;
+}
+
+.percentageir-590:after {
+  width: 29.5%;
+}
+
+.percentageir-591:after {
+  width: 29.55%;
+}
+
+.percentageir-592:after {
+  width: 29.6%;
+}
+
+.percentageir-593:after {
+  width: 29.65%;
+}
+
+.percentageir-594:after {
+  width: 29.7%;
+}
+
+.percentageir-595:after {
+  width: 29.75%;
+}
+
+.percentageir-596:after {
+  width: 29.8%;
+}
+
+.percentageir-597:after {
+  width: 29.85%;
+}
+
+.percentageir-598:after {
+  width: 29.9%;
+}
+
+.percentageir-599:after {
+  width: 29.95%;
+}
+
+.percentageir-600:after {
+  width: 30%;
+}
+
+.percentageir-601:after {
+  width: 30.05%;
+}
+
+.percentageir-602:after {
+  width: 30.1%;
+}
+
+.percentageir-603:after {
+  width: 30.15%;
+}
+
+.percentageir-604:after {
+  width: 30.2%;
+}
+
+.percentageir-605:after {
+  width: 30.25%;
+}
+
+.percentageir-606:after {
+  width: 30.3%;
+}
+
+.percentageir-607:after {
+  width: 30.35%;
+}
+
+.percentageir-608:after {
+  width: 30.4%;
+}
+
+.percentageir-609:after {
+  width: 30.45%;
+}
+
+.percentageir-610:after {
+  width: 30.5%;
+}
+
+.percentageir-611:after {
+  width: 30.55%;
+}
+
+.percentageir-612:after {
+  width: 30.6%;
+}
+
+.percentageir-613:after {
+  width: 30.65%;
+}
+
+.percentageir-614:after {
+  width: 30.7%;
+}
+
+.percentageir-615:after {
+  width: 30.75%;
+}
+
+.percentageir-616:after {
+  width: 30.8%;
+}
+
+.percentageir-617:after {
+  width: 30.85%;
+}
+
+.percentageir-618:after {
+  width: 30.9%;
+}
+
+.percentageir-619:after {
+  width: 30.95%;
+}
+
+.percentageir-620:after {
+  width: 31%;
+}
+
+.percentageir-621:after {
+  width: 31.05%;
+}
+
+.percentageir-622:after {
+  width: 31.1%;
+}
+
+.percentageir-623:after {
+  width: 31.15%;
+}
+
+.percentageir-624:after {
+  width: 31.2%;
+}
+
+.percentageir-625:after {
+  width: 31.25%;
+}
+
+.percentageir-626:after {
+  width: 31.3%;
+}
+
+.percentageir-627:after {
+  width: 31.35%;
+}
+
+.percentageir-628:after {
+  width: 31.4%;
+}
+
+.percentageir-629:after {
+  width: 31.45%;
+}
+
+.percentageir-630:after {
+  width: 31.5%;
+}
+
+.percentageir-631:after {
+  width: 31.55%;
+}
+
+.percentageir-632:after {
+  width: 31.6%;
+}
+
+.percentageir-633:after {
+  width: 31.65%;
+}
+
+.percentageir-634:after {
+  width: 31.7%;
+}
+
+.percentageir-635:after {
+  width: 31.75%;
+}
+
+.percentageir-636:after {
+  width: 31.8%;
+}
+
+.percentageir-637:after {
+  width: 31.85%;
+}
+
+.percentageir-638:after {
+  width: 31.9%;
+}
+
+.percentageir-639:after {
+  width: 31.95%;
+}
+
+.percentageir-640:after {
+  width: 32%;
+}
+
+.percentageir-641:after {
+  width: 32.05%;
+}
+
+.percentageir-642:after {
+  width: 32.1%;
+}
+
+.percentageir-643:after {
+  width: 32.15%;
+}
+
+.percentageir-644:after {
+  width: 32.2%;
+}
+
+.percentageir-645:after {
+  width: 32.25%;
+}
+
+.percentageir-646:after {
+  width: 32.3%;
+}
+
+.percentageir-647:after {
+  width: 32.35%;
+}
+
+.percentageir-648:after {
+  width: 32.4%;
+}
+
+.percentageir-649:after {
+  width: 32.45%;
+}
+
+.percentageir-650:after {
+  width: 32.5%;
+}
+
+.percentageir-651:after {
+  width: 32.55%;
+}
+
+.percentageir-652:after {
+  width: 32.6%;
+}
+
+.percentageir-653:after {
+  width: 32.65%;
+}
+
+.percentageir-654:after {
+  width: 32.7%;
+}
+
+.percentageir-655:after {
+  width: 32.75%;
+}
+
+.percentageir-656:after {
+  width: 32.8%;
+}
+
+.percentageir-657:after {
+  width: 32.85%;
+}
+
+.percentageir-658:after {
+  width: 32.9%;
+}
+
+.percentageir-659:after {
+  width: 32.95%;
+}
+
+.percentageir-660:after {
+  width: 33%;
+}
+
+.percentageir-661:after {
+  width: 33.05%;
+}
+
+.percentageir-662:after {
+  width: 33.1%;
+}
+
+.percentageir-663:after {
+  width: 33.15%;
+}
+
+.percentageir-664:after {
+  width: 33.2%;
+}
+
+.percentageir-665:after {
+  width: 33.25%;
+}
+
+.percentageir-666:after {
+  width: 33.3%;
+}
+
+.percentageir-667:after {
+  width: 33.35%;
+}
+
+.percentageir-668:after {
+  width: 33.4%;
+}
+
+.percentageir-669:after {
+  width: 33.45%;
+}
+
+.percentageir-670:after {
+  width: 33.5%;
+}
+
+.percentageir-671:after {
+  width: 33.55%;
+}
+
+.percentageir-672:after {
+  width: 33.6%;
+}
+
+.percentageir-673:after {
+  width: 33.65%;
+}
+
+.percentageir-674:after {
+  width: 33.7%;
+}
+
+.percentageir-675:after {
+  width: 33.75%;
+}
+
+.percentageir-676:after {
+  width: 33.8%;
+}
+
+.percentageir-677:after {
+  width: 33.85%;
+}
+
+.percentageir-678:after {
+  width: 33.9%;
+}
+
+.percentageir-679:after {
+  width: 33.95%;
+}
+
+.percentageir-680:after {
+  width: 34%;
+}
+
+.percentageir-681:after {
+  width: 34.05%;
+}
+
+.percentageir-682:after {
+  width: 34.1%;
+}
+
+.percentageir-683:after {
+  width: 34.15%;
+}
+
+.percentageir-684:after {
+  width: 34.2%;
+}
+
+.percentageir-685:after {
+  width: 34.25%;
+}
+
+.percentageir-686:after {
+  width: 34.3%;
+}
+
+.percentageir-687:after {
+  width: 34.35%;
+}
+
+.percentageir-688:after {
+  width: 34.4%;
+}
+
+.percentageir-689:after {
+  width: 34.45%;
+}
+
+.percentageir-690:after {
+  width: 34.5%;
+}
+
+.percentageir-691:after {
+  width: 34.55%;
+}
+
+.percentageir-692:after {
+  width: 34.6%;
+}
+
+.percentageir-693:after {
+  width: 34.65%;
+}
+
+.percentageir-694:after {
+  width: 34.7%;
+}
+
+.percentageir-695:after {
+  width: 34.75%;
+}
+
+.percentageir-696:after {
+  width: 34.8%;
+}
+
+.percentageir-697:after {
+  width: 34.85%;
+}
+
+.percentageir-698:after {
+  width: 34.9%;
+}
+
+.percentageir-699:after {
+  width: 34.95%;
+}
+
+.percentageir-700:after {
+  width: 35%;
+}
+
+.percentageir-701:after {
+  width: 35.05%;
+}
+
+.percentageir-702:after {
+  width: 35.1%;
+}
+
+.percentageir-703:after {
+  width: 35.15%;
+}
+
+.percentageir-704:after {
+  width: 35.2%;
+}
+
+.percentageir-705:after {
+  width: 35.25%;
+}
+
+.percentageir-706:after {
+  width: 35.3%;
+}
+
+.percentageir-707:after {
+  width: 35.35%;
+}
+
+.percentageir-708:after {
+  width: 35.4%;
+}
+
+.percentageir-709:after {
+  width: 35.45%;
+}
+
+.percentageir-710:after {
+  width: 35.5%;
+}
+
+.percentageir-711:after {
+  width: 35.55%;
+}
+
+.percentageir-712:after {
+  width: 35.6%;
+}
+
+.percentageir-713:after {
+  width: 35.65%;
+}
+
+.percentageir-714:after {
+  width: 35.7%;
+}
+
+.percentageir-715:after {
+  width: 35.75%;
+}
+
+.percentageir-716:after {
+  width: 35.8%;
+}
+
+.percentageir-717:after {
+  width: 35.85%;
+}
+
+.percentageir-718:after {
+  width: 35.9%;
+}
+
+.percentageir-719:after {
+  width: 35.95%;
+}
+
+.percentageir-720:after {
+  width: 36%;
+}
+
+.percentageir-721:after {
+  width: 36.05%;
+}
+
+.percentageir-722:after {
+  width: 36.1%;
+}
+
+.percentageir-723:after {
+  width: 36.15%;
+}
+
+.percentageir-724:after {
+  width: 36.2%;
+}
+
+.percentageir-725:after {
+  width: 36.25%;
+}
+
+.percentageir-726:after {
+  width: 36.3%;
+}
+
+.percentageir-727:after {
+  width: 36.35%;
+}
+
+.percentageir-728:after {
+  width: 36.4%;
+}
+
+.percentageir-729:after {
+  width: 36.45%;
+}
+
+.percentageir-730:after {
+  width: 36.5%;
+}
+
+.percentageir-731:after {
+  width: 36.55%;
+}
+
+.percentageir-732:after {
+  width: 36.6%;
+}
+
+.percentageir-733:after {
+  width: 36.65%;
+}
+
+.percentageir-734:after {
+  width: 36.7%;
+}
+
+.percentageir-735:after {
+  width: 36.75%;
+}
+
+.percentageir-736:after {
+  width: 36.8%;
+}
+
+.percentageir-737:after {
+  width: 36.85%;
+}
+
+.percentageir-738:after {
+  width: 36.9%;
+}
+
+.percentageir-739:after {
+  width: 36.95%;
+}
+
+.percentageir-740:after {
+  width: 37%;
+}
+
+.percentageir-741:after {
+  width: 37.05%;
+}
+
+.percentageir-742:after {
+  width: 37.1%;
+}
+
+.percentageir-743:after {
+  width: 37.15%;
+}
+
+.percentageir-744:after {
+  width: 37.2%;
+}
+
+.percentageir-745:after {
+  width: 37.25%;
+}
+
+.percentageir-746:after {
+  width: 37.3%;
+}
+
+.percentageir-747:after {
+  width: 37.35%;
+}
+
+.percentageir-748:after {
+  width: 37.4%;
+}
+
+.percentageir-749:after {
+  width: 37.45%;
+}
+
+.percentageir-750:after {
+  width: 37.5%;
+}
+
+.percentageir-751:after {
+  width: 37.55%;
+}
+
+.percentageir-752:after {
+  width: 37.6%;
+}
+
+.percentageir-753:after {
+  width: 37.65%;
+}
+
+.percentageir-754:after {
+  width: 37.7%;
+}
+
+.percentageir-755:after {
+  width: 37.75%;
+}
+
+.percentageir-756:after {
+  width: 37.8%;
+}
+
+.percentageir-757:after {
+  width: 37.85%;
+}
+
+.percentageir-758:after {
+  width: 37.9%;
+}
+
+.percentageir-759:after {
+  width: 37.95%;
+}
+
+.percentageir-760:after {
+  width: 38%;
+}
+
+.percentageir-761:after {
+  width: 38.05%;
+}
+
+.percentageir-762:after {
+  width: 38.1%;
+}
+
+.percentageir-763:after {
+  width: 38.15%;
+}
+
+.percentageir-764:after {
+  width: 38.2%;
+}
+
+.percentageir-765:after {
+  width: 38.25%;
+}
+
+.percentageir-766:after {
+  width: 38.3%;
+}
+
+.percentageir-767:after {
+  width: 38.35%;
+}
+
+.percentageir-768:after {
+  width: 38.4%;
+}
+
+.percentageir-769:after {
+  width: 38.45%;
+}
+
+.percentageir-770:after {
+  width: 38.5%;
+}
+
+.percentageir-771:after {
+  width: 38.55%;
+}
+
+.percentageir-772:after {
+  width: 38.6%;
+}
+
+.percentageir-773:after {
+  width: 38.65%;
+}
+
+.percentageir-774:after {
+  width: 38.7%;
+}
+
+.percentageir-775:after {
+  width: 38.75%;
+}
+
+.percentageir-776:after {
+  width: 38.8%;
+}
+
+.percentageir-777:after {
+  width: 38.85%;
+}
+
+.percentageir-778:after {
+  width: 38.9%;
+}
+
+.percentageir-779:after {
+  width: 38.95%;
+}
+
+.percentageir-780:after {
+  width: 39%;
+}
+
+.percentageir-781:after {
+  width: 39.05%;
+}
+
+.percentageir-782:after {
+  width: 39.1%;
+}
+
+.percentageir-783:after {
+  width: 39.15%;
+}
+
+.percentageir-784:after {
+  width: 39.2%;
+}
+
+.percentageir-785:after {
+  width: 39.25%;
+}
+
+.percentageir-786:after {
+  width: 39.3%;
+}
+
+.percentageir-787:after {
+  width: 39.35%;
+}
+
+.percentageir-788:after {
+  width: 39.4%;
+}
+
+.percentageir-789:after {
+  width: 39.45%;
+}
+
+.percentageir-790:after {
+  width: 39.5%;
+}
+
+.percentageir-791:after {
+  width: 39.55%;
+}
+
+.percentageir-792:after {
+  width: 39.6%;
+}
+
+.percentageir-793:after {
+  width: 39.65%;
+}
+
+.percentageir-794:after {
+  width: 39.7%;
+}
+
+.percentageir-795:after {
+  width: 39.75%;
+}
+
+.percentageir-796:after {
+  width: 39.8%;
+}
+
+.percentageir-797:after {
+  width: 39.85%;
+}
+
+.percentageir-798:after {
+  width: 39.9%;
+}
+
+.percentageir-799:after {
+  width: 39.95%;
+}
+
+.percentageir-800:after {
+  width: 40%;
+}
+
+.percentageir-801:after {
+  width: 40.05%;
+}
+
+.percentageir-802:after {
+  width: 40.1%;
+}
+
+.percentageir-803:after {
+  width: 40.15%;
+}
+
+.percentageir-804:after {
+  width: 40.2%;
+}
+
+.percentageir-805:after {
+  width: 40.25%;
+}
+
+.percentageir-806:after {
+  width: 40.3%;
+}
+
+.percentageir-807:after {
+  width: 40.35%;
+}
+
+.percentageir-808:after {
+  width: 40.4%;
+}
+
+.percentageir-809:after {
+  width: 40.45%;
+}
+
+.percentageir-810:after {
+  width: 40.5%;
+}
+
+.percentageir-811:after {
+  width: 40.55%;
+}
+
+.percentageir-812:after {
+  width: 40.6%;
+}
+
+.percentageir-813:after {
+  width: 40.65%;
+}
+
+.percentageir-814:after {
+  width: 40.7%;
+}
+
+.percentageir-815:after {
+  width: 40.75%;
+}
+
+.percentageir-816:after {
+  width: 40.8%;
+}
+
+.percentageir-817:after {
+  width: 40.85%;
+}
+
+.percentageir-818:after {
+  width: 40.9%;
+}
+
+.percentageir-819:after {
+  width: 40.95%;
+}
+
+.percentageir-820:after {
+  width: 41%;
+}
+
+.percentageir-821:after {
+  width: 41.05%;
+}
+
+.percentageir-822:after {
+  width: 41.1%;
+}
+
+.percentageir-823:after {
+  width: 41.15%;
+}
+
+.percentageir-824:after {
+  width: 41.2%;
+}
+
+.percentageir-825:after {
+  width: 41.25%;
+}
+
+.percentageir-826:after {
+  width: 41.3%;
+}
+
+.percentageir-827:after {
+  width: 41.35%;
+}
+
+.percentageir-828:after {
+  width: 41.4%;
+}
+
+.percentageir-829:after {
+  width: 41.45%;
+}
+
+.percentageir-830:after {
+  width: 41.5%;
+}
+
+.percentageir-831:after {
+  width: 41.55%;
+}
+
+.percentageir-832:after {
+  width: 41.6%;
+}
+
+.percentageir-833:after {
+  width: 41.65%;
+}
+
+.percentageir-834:after {
+  width: 41.7%;
+}
+
+.percentageir-835:after {
+  width: 41.75%;
+}
+
+.percentageir-836:after {
+  width: 41.8%;
+}
+
+.percentageir-837:after {
+  width: 41.85%;
+}
+
+.percentageir-838:after {
+  width: 41.9%;
+}
+
+.percentageir-839:after {
+  width: 41.95%;
+}
+
+.percentageir-840:after {
+  width: 42%;
+}
+
+.percentageir-841:after {
+  width: 42.05%;
+}
+
+.percentageir-842:after {
+  width: 42.1%;
+}
+
+.percentageir-843:after {
+  width: 42.15%;
+}
+
+.percentageir-844:after {
+  width: 42.2%;
+}
+
+.percentageir-845:after {
+  width: 42.25%;
+}
+
+.percentageir-846:after {
+  width: 42.3%;
+}
+
+.percentageir-847:after {
+  width: 42.35%;
+}
+
+.percentageir-848:after {
+  width: 42.4%;
+}
+
+.percentageir-849:after {
+  width: 42.45%;
+}
+
+.percentageir-850:after {
+  width: 42.5%;
+}
+
+.percentageir-851:after {
+  width: 42.55%;
+}
+
+.percentageir-852:after {
+  width: 42.6%;
+}
+
+.percentageir-853:after {
+  width: 42.65%;
+}
+
+.percentageir-854:after {
+  width: 42.7%;
+}
+
+.percentageir-855:after {
+  width: 42.75%;
+}
+
+.percentageir-856:after {
+  width: 42.8%;
+}
+
+.percentageir-857:after {
+  width: 42.85%;
+}
+
+.percentageir-858:after {
+  width: 42.9%;
+}
+
+.percentageir-859:after {
+  width: 42.95%;
+}
+
+.percentageir-860:after {
+  width: 43%;
+}
+
+.percentageir-861:after {
+  width: 43.05%;
+}
+
+.percentageir-862:after {
+  width: 43.1%;
+}
+
+.percentageir-863:after {
+  width: 43.15%;
+}
+
+.percentageir-864:after {
+  width: 43.2%;
+}
+
+.percentageir-865:after {
+  width: 43.25%;
+}
+
+.percentageir-866:after {
+  width: 43.3%;
+}
+
+.percentageir-867:after {
+  width: 43.35%;
+}
+
+.percentageir-868:after {
+  width: 43.4%;
+}
+
+.percentageir-869:after {
+  width: 43.45%;
+}
+
+.percentageir-870:after {
+  width: 43.5%;
+}
+
+.percentageir-871:after {
+  width: 43.55%;
+}
+
+.percentageir-872:after {
+  width: 43.6%;
+}
+
+.percentageir-873:after {
+  width: 43.65%;
+}
+
+.percentageir-874:after {
+  width: 43.7%;
+}
+
+.percentageir-875:after {
+  width: 43.75%;
+}
+
+.percentageir-876:after {
+  width: 43.8%;
+}
+
+.percentageir-877:after {
+  width: 43.85%;
+}
+
+.percentageir-878:after {
+  width: 43.9%;
+}
+
+.percentageir-879:after {
+  width: 43.95%;
+}
+
+.percentageir-880:after {
+  width: 44%;
+}
+
+.percentageir-881:after {
+  width: 44.05%;
+}
+
+.percentageir-882:after {
+  width: 44.1%;
+}
+
+.percentageir-883:after {
+  width: 44.15%;
+}
+
+.percentageir-884:after {
+  width: 44.2%;
+}
+
+.percentageir-885:after {
+  width: 44.25%;
+}
+
+.percentageir-886:after {
+  width: 44.3%;
+}
+
+.percentageir-887:after {
+  width: 44.35%;
+}
+
+.percentageir-888:after {
+  width: 44.4%;
+}
+
+.percentageir-889:after {
+  width: 44.45%;
+}
+
+.percentageir-890:after {
+  width: 44.5%;
+}
+
+.percentageir-891:after {
+  width: 44.55%;
+}
+
+.percentageir-892:after {
+  width: 44.6%;
+}
+
+.percentageir-893:after {
+  width: 44.65%;
+}
+
+.percentageir-894:after {
+  width: 44.7%;
+}
+
+.percentageir-895:after {
+  width: 44.75%;
+}
+
+.percentageir-896:after {
+  width: 44.8%;
+}
+
+.percentageir-897:after {
+  width: 44.85%;
+}
+
+.percentageir-898:after {
+  width: 44.9%;
+}
+
+.percentageir-899:after {
+  width: 44.95%;
+}
+
+.percentageir-900:after {
+  width: 45%;
+}
+
+.percentageir-901:after {
+  width: 45.05%;
+}
+
+.percentageir-902:after {
+  width: 45.1%;
+}
+
+.percentageir-903:after {
+  width: 45.15%;
+}
+
+.percentageir-904:after {
+  width: 45.2%;
+}
+
+.percentageir-905:after {
+  width: 45.25%;
+}
+
+.percentageir-906:after {
+  width: 45.3%;
+}
+
+.percentageir-907:after {
+  width: 45.35%;
+}
+
+.percentageir-908:after {
+  width: 45.4%;
+}
+
+.percentageir-909:after {
+  width: 45.45%;
+}
+
+.percentageir-910:after {
+  width: 45.5%;
+}
+
+.percentageir-911:after {
+  width: 45.55%;
+}
+
+.percentageir-912:after {
+  width: 45.6%;
+}
+
+.percentageir-913:after {
+  width: 45.65%;
+}
+
+.percentageir-914:after {
+  width: 45.7%;
+}
+
+.percentageir-915:after {
+  width: 45.75%;
+}
+
+.percentageir-916:after {
+  width: 45.8%;
+}
+
+.percentageir-917:after {
+  width: 45.85%;
+}
+
+.percentageir-918:after {
+  width: 45.9%;
+}
+
+.percentageir-919:after {
+  width: 45.95%;
+}
+
+.percentageir-920:after {
+  width: 46%;
+}
+
+.percentageir-921:after {
+  width: 46.05%;
+}
+
+.percentageir-922:after {
+  width: 46.1%;
+}
+
+.percentageir-923:after {
+  width: 46.15%;
+}
+
+.percentageir-924:after {
+  width: 46.2%;
+}
+
+.percentageir-925:after {
+  width: 46.25%;
+}
+
+.percentageir-926:after {
+  width: 46.3%;
+}
+
+.percentageir-927:after {
+  width: 46.35%;
+}
+
+.percentageir-928:after {
+  width: 46.4%;
+}
+
+.percentageir-929:after {
+  width: 46.45%;
+}
+
+.percentageir-930:after {
+  width: 46.5%;
+}
+
+.percentageir-931:after {
+  width: 46.55%;
+}
+
+.percentageir-932:after {
+  width: 46.6%;
+}
+
+.percentageir-933:after {
+  width: 46.65%;
+}
+
+.percentageir-934:after {
+  width: 46.7%;
+}
+
+.percentageir-935:after {
+  width: 46.75%;
+}
+
+.percentageir-936:after {
+  width: 46.8%;
+}
+
+.percentageir-937:after {
+  width: 46.85%;
+}
+
+.percentageir-938:after {
+  width: 46.9%;
+}
+
+.percentageir-939:after {
+  width: 46.95%;
+}
+
+.percentageir-940:after {
+  width: 47%;
+}
+
+.percentageir-941:after {
+  width: 47.05%;
+}
+
+.percentageir-942:after {
+  width: 47.1%;
+}
+
+.percentageir-943:after {
+  width: 47.15%;
+}
+
+.percentageir-944:after {
+  width: 47.2%;
+}
+
+.percentageir-945:after {
+  width: 47.25%;
+}
+
+.percentageir-946:after {
+  width: 47.3%;
+}
+
+.percentageir-947:after {
+  width: 47.35%;
+}
+
+.percentageir-948:after {
+  width: 47.4%;
+}
+
+.percentageir-949:after {
+  width: 47.45%;
+}
+
+.percentageir-950:after {
+  width: 47.5%;
+}
+
+.percentageir-951:after {
+  width: 47.55%;
+}
+
+.percentageir-952:after {
+  width: 47.6%;
+}
+
+.percentageir-953:after {
+  width: 47.65%;
+}
+
+.percentageir-954:after {
+  width: 47.7%;
+}
+
+.percentageir-955:after {
+  width: 47.75%;
+}
+
+.percentageir-956:after {
+  width: 47.8%;
+}
+
+.percentageir-957:after {
+  width: 47.85%;
+}
+
+.percentageir-958:after {
+  width: 47.9%;
+}
+
+.percentageir-959:after {
+  width: 47.95%;
+}
+
+.percentageir-960:after {
+  width: 48%;
+}
+
+.percentageir-961:after {
+  width: 48.05%;
+}
+
+.percentageir-962:after {
+  width: 48.1%;
+}
+
+.percentageir-963:after {
+  width: 48.15%;
+}
+
+.percentageir-964:after {
+  width: 48.2%;
+}
+
+.percentageir-965:after {
+  width: 48.25%;
+}
+
+.percentageir-966:after {
+  width: 48.3%;
+}
+
+.percentageir-967:after {
+  width: 48.35%;
+}
+
+.percentageir-968:after {
+  width: 48.4%;
+}
+
+.percentageir-969:after {
+  width: 48.45%;
+}
+
+.percentageir-970:after {
+  width: 48.5%;
+}
+
+.percentageir-971:after {
+  width: 48.55%;
+}
+
+.percentageir-972:after {
+  width: 48.6%;
+}
+
+.percentageir-973:after {
+  width: 48.65%;
+}
+
+.percentageir-974:after {
+  width: 48.7%;
+}
+
+.percentageir-975:after {
+  width: 48.75%;
+}
+
+.percentageir-976:after {
+  width: 48.8%;
+}
+
+.percentageir-977:after {
+  width: 48.85%;
+}
+
+.percentageir-978:after {
+  width: 48.9%;
+}
+
+.percentageir-979:after {
+  width: 48.95%;
+}
+
+.percentageir-980:after {
+  width: 49%;
+}
+
+.percentageir-981:after {
+  width: 49.05%;
+}
+
+.percentageir-982:after {
+  width: 49.1%;
+}
+
+.percentageir-983:after {
+  width: 49.15%;
+}
+
+.percentageir-984:after {
+  width: 49.2%;
+}
+
+.percentageir-985:after {
+  width: 49.25%;
+}
+
+.percentageir-986:after {
+  width: 49.3%;
+}
+
+.percentageir-987:after {
+  width: 49.35%;
+}
+
+.percentageir-988:after {
+  width: 49.4%;
+}
+
+.percentageir-989:after {
+  width: 49.45%;
+}
+
+.percentageir-990:after {
+  width: 49.5%;
+}
+
+.percentageir-991:after {
+  width: 49.55%;
+}
+
+.percentageir-992:after {
+  width: 49.6%;
+}
+
+.percentageir-993:after {
+  width: 49.65%;
+}
+
+.percentageir-994:after {
+  width: 49.7%;
+}
+
+.percentageir-995:after {
+  width: 49.75%;
+}
+
+.percentageir-996:after {
+  width: 49.8%;
+}
+
+.percentageir-997:after {
+  width: 49.85%;
+}
+
+.percentageir-998:after {
+  width: 49.9%;
+}
+
+.percentageir-999:after {
+  width: 49.95%;
+}
+
+.percentageir-1000:after {
+  width: 50%;
+}
+
+.percentageir-1001:after {
+  width: 50.05%;
+}
+
+.percentageir-1002:after {
+  width: 50.1%;
+}
+
+.percentageir-1003:after {
+  width: 50.15%;
+}
+
+.percentageir-1004:after {
+  width: 50.2%;
+}
+
+.percentageir-1005:after {
+  width: 50.25%;
+}
+
+.percentageir-1006:after {
+  width: 50.3%;
+}
+
+.percentageir-1007:after {
+  width: 50.35%;
+}
+
+.percentageir-1008:after {
+  width: 50.4%;
+}
+
+.percentageir-1009:after {
+  width: 50.45%;
+}
+
+.percentageir-1010:after {
+  width: 50.5%;
+}
+
+.percentageir-1011:after {
+  width: 50.55%;
+}
+
+.percentageir-1012:after {
+  width: 50.6%;
+}
+
+.percentageir-1013:after {
+  width: 50.65%;
+}
+
+.percentageir-1014:after {
+  width: 50.7%;
+}
+
+.percentageir-1015:after {
+  width: 50.75%;
+}
+
+.percentageir-1016:after {
+  width: 50.8%;
+}
+
+.percentageir-1017:after {
+  width: 50.85%;
+}
+
+.percentageir-1018:after {
+  width: 50.9%;
+}
+
+.percentageir-1019:after {
+  width: 50.95%;
+}
+
+.percentageir-1020:after {
+  width: 51%;
+}
+
+.percentageir-1021:after {
+  width: 51.05%;
+}
+
+.percentageir-1022:after {
+  width: 51.1%;
+}
+
+.percentageir-1023:after {
+  width: 51.15%;
+}
+
+.percentageir-1024:after {
+  width: 51.2%;
+}
+
+.percentageir-1025:after {
+  width: 51.25%;
+}
+
+.percentageir-1026:after {
+  width: 51.3%;
+}
+
+.percentageir-1027:after {
+  width: 51.35%;
+}
+
+.percentageir-1028:after {
+  width: 51.4%;
+}
+
+.percentageir-1029:after {
+  width: 51.45%;
+}
+
+.percentageir-1030:after {
+  width: 51.5%;
+}
+
+.percentageir-1031:after {
+  width: 51.55%;
+}
+
+.percentageir-1032:after {
+  width: 51.6%;
+}
+
+.percentageir-1033:after {
+  width: 51.65%;
+}
+
+.percentageir-1034:after {
+  width: 51.7%;
+}
+
+.percentageir-1035:after {
+  width: 51.75%;
+}
+
+.percentageir-1036:after {
+  width: 51.8%;
+}
+
+.percentageir-1037:after {
+  width: 51.85%;
+}
+
+.percentageir-1038:after {
+  width: 51.9%;
+}
+
+.percentageir-1039:after {
+  width: 51.95%;
+}
+
+.percentageir-1040:after {
+  width: 52%;
+}
+
+.percentageir-1041:after {
+  width: 52.05%;
+}
+
+.percentageir-1042:after {
+  width: 52.1%;
+}
+
+.percentageir-1043:after {
+  width: 52.15%;
+}
+
+.percentageir-1044:after {
+  width: 52.2%;
+}
+
+.percentageir-1045:after {
+  width: 52.25%;
+}
+
+.percentageir-1046:after {
+  width: 52.3%;
+}
+
+.percentageir-1047:after {
+  width: 52.35%;
+}
+
+.percentageir-1048:after {
+  width: 52.4%;
+}
+
+.percentageir-1049:after {
+  width: 52.45%;
+}
+
+.percentageir-1050:after {
+  width: 52.5%;
+}
+
+.percentageir-1051:after {
+  width: 52.55%;
+}
+
+.percentageir-1052:after {
+  width: 52.6%;
+}
+
+.percentageir-1053:after {
+  width: 52.65%;
+}
+
+.percentageir-1054:after {
+  width: 52.7%;
+}
+
+.percentageir-1055:after {
+  width: 52.75%;
+}
+
+.percentageir-1056:after {
+  width: 52.8%;
+}
+
+.percentageir-1057:after {
+  width: 52.85%;
+}
+
+.percentageir-1058:after {
+  width: 52.9%;
+}
+
+.percentageir-1059:after {
+  width: 52.95%;
+}
+
+.percentageir-1060:after {
+  width: 53%;
+}
+
+.percentageir-1061:after {
+  width: 53.05%;
+}
+
+.percentageir-1062:after {
+  width: 53.1%;
+}
+
+.percentageir-1063:after {
+  width: 53.15%;
+}
+
+.percentageir-1064:after {
+  width: 53.2%;
+}
+
+.percentageir-1065:after {
+  width: 53.25%;
+}
+
+.percentageir-1066:after {
+  width: 53.3%;
+}
+
+.percentageir-1067:after {
+  width: 53.35%;
+}
+
+.percentageir-1068:after {
+  width: 53.4%;
+}
+
+.percentageir-1069:after {
+  width: 53.45%;
+}
+
+.percentageir-1070:after {
+  width: 53.5%;
+}
+
+.percentageir-1071:after {
+  width: 53.55%;
+}
+
+.percentageir-1072:after {
+  width: 53.6%;
+}
+
+.percentageir-1073:after {
+  width: 53.65%;
+}
+
+.percentageir-1074:after {
+  width: 53.7%;
+}
+
+.percentageir-1075:after {
+  width: 53.75%;
+}
+
+.percentageir-1076:after {
+  width: 53.8%;
+}
+
+.percentageir-1077:after {
+  width: 53.85%;
+}
+
+.percentageir-1078:after {
+  width: 53.9%;
+}
+
+.percentageir-1079:after {
+  width: 53.95%;
+}
+
+.percentageir-1080:after {
+  width: 54%;
+}
+
+.percentageir-1081:after {
+  width: 54.05%;
+}
+
+.percentageir-1082:after {
+  width: 54.1%;
+}
+
+.percentageir-1083:after {
+  width: 54.15%;
+}
+
+.percentageir-1084:after {
+  width: 54.2%;
+}
+
+.percentageir-1085:after {
+  width: 54.25%;
+}
+
+.percentageir-1086:after {
+  width: 54.3%;
+}
+
+.percentageir-1087:after {
+  width: 54.35%;
+}
+
+.percentageir-1088:after {
+  width: 54.4%;
+}
+
+.percentageir-1089:after {
+  width: 54.45%;
+}
+
+.percentageir-1090:after {
+  width: 54.5%;
+}
+
+.percentageir-1091:after {
+  width: 54.55%;
+}
+
+.percentageir-1092:after {
+  width: 54.6%;
+}
+
+.percentageir-1093:after {
+  width: 54.65%;
+}
+
+.percentageir-1094:after {
+  width: 54.7%;
+}
+
+.percentageir-1095:after {
+  width: 54.75%;
+}
+
+.percentageir-1096:after {
+  width: 54.8%;
+}
+
+.percentageir-1097:after {
+  width: 54.85%;
+}
+
+.percentageir-1098:after {
+  width: 54.9%;
+}
+
+.percentageir-1099:after {
+  width: 54.95%;
+}
+
+.percentageir-1100:after {
+  width: 55%;
+}
+
+.percentageir-1101:after {
+  width: 55.05%;
+}
+
+.percentageir-1102:after {
+  width: 55.1%;
+}
+
+.percentageir-1103:after {
+  width: 55.15%;
+}
+
+.percentageir-1104:after {
+  width: 55.2%;
+}
+
+.percentageir-1105:after {
+  width: 55.25%;
+}
+
+.percentageir-1106:after {
+  width: 55.3%;
+}
+
+.percentageir-1107:after {
+  width: 55.35%;
+}
+
+.percentageir-1108:after {
+  width: 55.4%;
+}
+
+.percentageir-1109:after {
+  width: 55.45%;
+}
+
+.percentageir-1110:after {
+  width: 55.5%;
+}
+
+.percentageir-1111:after {
+  width: 55.55%;
+}
+
+.percentageir-1112:after {
+  width: 55.6%;
+}
+
+.percentageir-1113:after {
+  width: 55.65%;
+}
+
+.percentageir-1114:after {
+  width: 55.7%;
+}
+
+.percentageir-1115:after {
+  width: 55.75%;
+}
+
+.percentageir-1116:after {
+  width: 55.8%;
+}
+
+.percentageir-1117:after {
+  width: 55.85%;
+}
+
+.percentageir-1118:after {
+  width: 55.9%;
+}
+
+.percentageir-1119:after {
+  width: 55.95%;
+}
+
+.percentageir-1120:after {
+  width: 56%;
+}
+
+.percentageir-1121:after {
+  width: 56.05%;
+}
+
+.percentageir-1122:after {
+  width: 56.1%;
+}
+
+.percentageir-1123:after {
+  width: 56.15%;
+}
+
+.percentageir-1124:after {
+  width: 56.2%;
+}
+
+.percentageir-1125:after {
+  width: 56.25%;
+}
+
+.percentageir-1126:after {
+  width: 56.3%;
+}
+
+.percentageir-1127:after {
+  width: 56.35%;
+}
+
+.percentageir-1128:after {
+  width: 56.4%;
+}
+
+.percentageir-1129:after {
+  width: 56.45%;
+}
+
+.percentageir-1130:after {
+  width: 56.5%;
+}
+
+.percentageir-1131:after {
+  width: 56.55%;
+}
+
+.percentageir-1132:after {
+  width: 56.6%;
+}
+
+.percentageir-1133:after {
+  width: 56.65%;
+}
+
+.percentageir-1134:after {
+  width: 56.7%;
+}
+
+.percentageir-1135:after {
+  width: 56.75%;
+}
+
+.percentageir-1136:after {
+  width: 56.8%;
+}
+
+.percentageir-1137:after {
+  width: 56.85%;
+}
+
+.percentageir-1138:after {
+  width: 56.9%;
+}
+
+.percentageir-1139:after {
+  width: 56.95%;
+}
+
+.percentageir-1140:after {
+  width: 57%;
+}
+
+.percentageir-1141:after {
+  width: 57.05%;
+}
+
+.percentageir-1142:after {
+  width: 57.1%;
+}
+
+.percentageir-1143:after {
+  width: 57.15%;
+}
+
+.percentageir-1144:after {
+  width: 57.2%;
+}
+
+.percentageir-1145:after {
+  width: 57.25%;
+}
+
+.percentageir-1146:after {
+  width: 57.3%;
+}
+
+.percentageir-1147:after {
+  width: 57.35%;
+}
+
+.percentageir-1148:after {
+  width: 57.4%;
+}
+
+.percentageir-1149:after {
+  width: 57.45%;
+}
+
+.percentageir-1150:after {
+  width: 57.5%;
+}
+
+.percentageir-1151:after {
+  width: 57.55%;
+}
+
+.percentageir-1152:after {
+  width: 57.6%;
+}
+
+.percentageir-1153:after {
+  width: 57.65%;
+}
+
+.percentageir-1154:after {
+  width: 57.7%;
+}
+
+.percentageir-1155:after {
+  width: 57.75%;
+}
+
+.percentageir-1156:after {
+  width: 57.8%;
+}
+
+.percentageir-1157:after {
+  width: 57.85%;
+}
+
+.percentageir-1158:after {
+  width: 57.9%;
+}
+
+.percentageir-1159:after {
+  width: 57.95%;
+}
+
+.percentageir-1160:after {
+  width: 58%;
+}
+
+.percentageir-1161:after {
+  width: 58.05%;
+}
+
+.percentageir-1162:after {
+  width: 58.1%;
+}
+
+.percentageir-1163:after {
+  width: 58.15%;
+}
+
+.percentageir-1164:after {
+  width: 58.2%;
+}
+
+.percentageir-1165:after {
+  width: 58.25%;
+}
+
+.percentageir-1166:after {
+  width: 58.3%;
+}
+
+.percentageir-1167:after {
+  width: 58.35%;
+}
+
+.percentageir-1168:after {
+  width: 58.4%;
+}
+
+.percentageir-1169:after {
+  width: 58.45%;
+}
+
+.percentageir-1170:after {
+  width: 58.5%;
+}
+
+.percentageir-1171:after {
+  width: 58.55%;
+}
+
+.percentageir-1172:after {
+  width: 58.6%;
+}
+
+.percentageir-1173:after {
+  width: 58.65%;
+}
+
+.percentageir-1174:after {
+  width: 58.7%;
+}
+
+.percentageir-1175:after {
+  width: 58.75%;
+}
+
+.percentageir-1176:after {
+  width: 58.8%;
+}
+
+.percentageir-1177:after {
+  width: 58.85%;
+}
+
+.percentageir-1178:after {
+  width: 58.9%;
+}
+
+.percentageir-1179:after {
+  width: 58.95%;
+}
+
+.percentageir-1180:after {
+  width: 59%;
+}
+
+.percentageir-1181:after {
+  width: 59.05%;
+}
+
+.percentageir-1182:after {
+  width: 59.1%;
+}
+
+.percentageir-1183:after {
+  width: 59.15%;
+}
+
+.percentageir-1184:after {
+  width: 59.2%;
+}
+
+.percentageir-1185:after {
+  width: 59.25%;
+}
+
+.percentageir-1186:after {
+  width: 59.3%;
+}
+
+.percentageir-1187:after {
+  width: 59.35%;
+}
+
+.percentageir-1188:after {
+  width: 59.4%;
+}
+
+.percentageir-1189:after {
+  width: 59.45%;
+}
+
+.percentageir-1190:after {
+  width: 59.5%;
+}
+
+.percentageir-1191:after {
+  width: 59.55%;
+}
+
+.percentageir-1192:after {
+  width: 59.6%;
+}
+
+.percentageir-1193:after {
+  width: 59.65%;
+}
+
+.percentageir-1194:after {
+  width: 59.7%;
+}
+
+.percentageir-1195:after {
+  width: 59.75%;
+}
+
+.percentageir-1196:after {
+  width: 59.8%;
+}
+
+.percentageir-1197:after {
+  width: 59.85%;
+}
+
+.percentageir-1198:after {
+  width: 59.9%;
+}
+
+.percentageir-1199:after {
+  width: 59.95%;
+}
+
+.percentageir-1200:after {
+  width: 60%;
+}
+
+.percentageir-1201:after {
+  width: 60.05%;
+}
+
+.percentageir-1202:after {
+  width: 60.1%;
+}
+
+.percentageir-1203:after {
+  width: 60.15%;
+}
+
+.percentageir-1204:after {
+  width: 60.2%;
+}
+
+.percentageir-1205:after {
+  width: 60.25%;
+}
+
+.percentageir-1206:after {
+  width: 60.3%;
+}
+
+.percentageir-1207:after {
+  width: 60.35%;
+}
+
+.percentageir-1208:after {
+  width: 60.4%;
+}
+
+.percentageir-1209:after {
+  width: 60.45%;
+}
+
+.percentageir-1210:after {
+  width: 60.5%;
+}
+
+.percentageir-1211:after {
+  width: 60.55%;
+}
+
+.percentageir-1212:after {
+  width: 60.6%;
+}
+
+.percentageir-1213:after {
+  width: 60.65%;
+}
+
+.percentageir-1214:after {
+  width: 60.7%;
+}
+
+.percentageir-1215:after {
+  width: 60.75%;
+}
+
+.percentageir-1216:after {
+  width: 60.8%;
+}
+
+.percentageir-1217:after {
+  width: 60.85%;
+}
+
+.percentageir-1218:after {
+  width: 60.9%;
+}
+
+.percentageir-1219:after {
+  width: 60.95%;
+}
+
+.percentageir-1220:after {
+  width: 61%;
+}
+
+.percentageir-1221:after {
+  width: 61.05%;
+}
+
+.percentageir-1222:after {
+  width: 61.1%;
+}
+
+.percentageir-1223:after {
+  width: 61.15%;
+}
+
+.percentageir-1224:after {
+  width: 61.2%;
+}
+
+.percentageir-1225:after {
+  width: 61.25%;
+}
+
+.percentageir-1226:after {
+  width: 61.3%;
+}
+
+.percentageir-1227:after {
+  width: 61.35%;
+}
+
+.percentageir-1228:after {
+  width: 61.4%;
+}
+
+.percentageir-1229:after {
+  width: 61.45%;
+}
+
+.percentageir-1230:after {
+  width: 61.5%;
+}
+
+.percentageir-1231:after {
+  width: 61.55%;
+}
+
+.percentageir-1232:after {
+  width: 61.6%;
+}
+
+.percentageir-1233:after {
+  width: 61.65%;
+}
+
+.percentageir-1234:after {
+  width: 61.7%;
+}
+
+.percentageir-1235:after {
+  width: 61.75%;
+}
+
+.percentageir-1236:after {
+  width: 61.8%;
+}
+
+.percentageir-1237:after {
+  width: 61.85%;
+}
+
+.percentageir-1238:after {
+  width: 61.9%;
+}
+
+.percentageir-1239:after {
+  width: 61.95%;
+}
+
+.percentageir-1240:after {
+  width: 62%;
+}
+
+.percentageir-1241:after {
+  width: 62.05%;
+}
+
+.percentageir-1242:after {
+  width: 62.1%;
+}
+
+.percentageir-1243:after {
+  width: 62.15%;
+}
+
+.percentageir-1244:after {
+  width: 62.2%;
+}
+
+.percentageir-1245:after {
+  width: 62.25%;
+}
+
+.percentageir-1246:after {
+  width: 62.3%;
+}
+
+.percentageir-1247:after {
+  width: 62.35%;
+}
+
+.percentageir-1248:after {
+  width: 62.4%;
+}
+
+.percentageir-1249:after {
+  width: 62.45%;
+}
+
+.percentageir-1250:after {
+  width: 62.5%;
+}
+
+.percentageir-1251:after {
+  width: 62.55%;
+}
+
+.percentageir-1252:after {
+  width: 62.6%;
+}
+
+.percentageir-1253:after {
+  width: 62.65%;
+}
+
+.percentageir-1254:after {
+  width: 62.7%;
+}
+
+.percentageir-1255:after {
+  width: 62.75%;
+}
+
+.percentageir-1256:after {
+  width: 62.8%;
+}
+
+.percentageir-1257:after {
+  width: 62.85%;
+}
+
+.percentageir-1258:after {
+  width: 62.9%;
+}
+
+.percentageir-1259:after {
+  width: 62.95%;
+}
+
+.percentageir-1260:after {
+  width: 63%;
+}
+
+.percentageir-1261:after {
+  width: 63.05%;
+}
+
+.percentageir-1262:after {
+  width: 63.1%;
+}
+
+.percentageir-1263:after {
+  width: 63.15%;
+}
+
+.percentageir-1264:after {
+  width: 63.2%;
+}
+
+.percentageir-1265:after {
+  width: 63.25%;
+}
+
+.percentageir-1266:after {
+  width: 63.3%;
+}
+
+.percentageir-1267:after {
+  width: 63.35%;
+}
+
+.percentageir-1268:after {
+  width: 63.4%;
+}
+
+.percentageir-1269:after {
+  width: 63.45%;
+}
+
+.percentageir-1270:after {
+  width: 63.5%;
+}
+
+.percentageir-1271:after {
+  width: 63.55%;
+}
+
+.percentageir-1272:after {
+  width: 63.6%;
+}
+
+.percentageir-1273:after {
+  width: 63.65%;
+}
+
+.percentageir-1274:after {
+  width: 63.7%;
+}
+
+.percentageir-1275:after {
+  width: 63.75%;
+}
+
+.percentageir-1276:after {
+  width: 63.8%;
+}
+
+.percentageir-1277:after {
+  width: 63.85%;
+}
+
+.percentageir-1278:after {
+  width: 63.9%;
+}
+
+.percentageir-1279:after {
+  width: 63.95%;
+}
+
+.percentageir-1280:after {
+  width: 64%;
+}
+
+.percentageir-1281:after {
+  width: 64.05%;
+}
+
+.percentageir-1282:after {
+  width: 64.1%;
+}
+
+.percentageir-1283:after {
+  width: 64.15%;
+}
+
+.percentageir-1284:after {
+  width: 64.2%;
+}
+
+.percentageir-1285:after {
+  width: 64.25%;
+}
+
+.percentageir-1286:after {
+  width: 64.3%;
+}
+
+.percentageir-1287:after {
+  width: 64.35%;
+}
+
+.percentageir-1288:after {
+  width: 64.4%;
+}
+
+.percentageir-1289:after {
+  width: 64.45%;
+}
+
+.percentageir-1290:after {
+  width: 64.5%;
+}
+
+.percentageir-1291:after {
+  width: 64.55%;
+}
+
+.percentageir-1292:after {
+  width: 64.6%;
+}
+
+.percentageir-1293:after {
+  width: 64.65%;
+}
+
+.percentageir-1294:after {
+  width: 64.7%;
+}
+
+.percentageir-1295:after {
+  width: 64.75%;
+}
+
+.percentageir-1296:after {
+  width: 64.8%;
+}
+
+.percentageir-1297:after {
+  width: 64.85%;
+}
+
+.percentageir-1298:after {
+  width: 64.9%;
+}
+
+.percentageir-1299:after {
+  width: 64.95%;
+}
+
+.percentageir-1300:after {
+  width: 65%;
+}
+
+.percentageir-1301:after {
+  width: 65.05%;
+}
+
+.percentageir-1302:after {
+  width: 65.1%;
+}
+
+.percentageir-1303:after {
+  width: 65.15%;
+}
+
+.percentageir-1304:after {
+  width: 65.2%;
+}
+
+.percentageir-1305:after {
+  width: 65.25%;
+}
+
+.percentageir-1306:after {
+  width: 65.3%;
+}
+
+.percentageir-1307:after {
+  width: 65.35%;
+}
+
+.percentageir-1308:after {
+  width: 65.4%;
+}
+
+.percentageir-1309:after {
+  width: 65.45%;
+}
+
+.percentageir-1310:after {
+  width: 65.5%;
+}
+
+.percentageir-1311:after {
+  width: 65.55%;
+}
+
+.percentageir-1312:after {
+  width: 65.6%;
+}
+
+.percentageir-1313:after {
+  width: 65.65%;
+}
+
+.percentageir-1314:after {
+  width: 65.7%;
+}
+
+.percentageir-1315:after {
+  width: 65.75%;
+}
+
+.percentageir-1316:after {
+  width: 65.8%;
+}
+
+.percentageir-1317:after {
+  width: 65.85%;
+}
+
+.percentageir-1318:after {
+  width: 65.9%;
+}
+
+.percentageir-1319:after {
+  width: 65.95%;
+}
+
+.percentageir-1320:after {
+  width: 66%;
+}
+
+.percentageir-1321:after {
+  width: 66.05%;
+}
+
+.percentageir-1322:after {
+  width: 66.1%;
+}
+
+.percentageir-1323:after {
+  width: 66.15%;
+}
+
+.percentageir-1324:after {
+  width: 66.2%;
+}
+
+.percentageir-1325:after {
+  width: 66.25%;
+}
+
+.percentageir-1326:after {
+  width: 66.3%;
+}
+
+.percentageir-1327:after {
+  width: 66.35%;
+}
+
+.percentageir-1328:after {
+  width: 66.4%;
+}
+
+.percentageir-1329:after {
+  width: 66.45%;
+}
+
+.percentageir-1330:after {
+  width: 66.5%;
+}
+
+.percentageir-1331:after {
+  width: 66.55%;
+}
+
+.percentageir-1332:after {
+  width: 66.6%;
+}
+
+.percentageir-1333:after {
+  width: 66.65%;
+}
+
+.percentageir-1334:after {
+  width: 66.7%;
+}
+
+.percentageir-1335:after {
+  width: 66.75%;
+}
+
+.percentageir-1336:after {
+  width: 66.8%;
+}
+
+.percentageir-1337:after {
+  width: 66.85%;
+}
+
+.percentageir-1338:after {
+  width: 66.9%;
+}
+
+.percentageir-1339:after {
+  width: 66.95%;
+}
+
+.percentageir-1340:after {
+  width: 67%;
+}
+
+.percentageir-1341:after {
+  width: 67.05%;
+}
+
+.percentageir-1342:after {
+  width: 67.1%;
+}
+
+.percentageir-1343:after {
+  width: 67.15%;
+}
+
+.percentageir-1344:after {
+  width: 67.2%;
+}
+
+.percentageir-1345:after {
+  width: 67.25%;
+}
+
+.percentageir-1346:after {
+  width: 67.3%;
+}
+
+.percentageir-1347:after {
+  width: 67.35%;
+}
+
+.percentageir-1348:after {
+  width: 67.4%;
+}
+
+.percentageir-1349:after {
+  width: 67.45%;
+}
+
+.percentageir-1350:after {
+  width: 67.5%;
+}
+
+.percentageir-1351:after {
+  width: 67.55%;
+}
+
+.percentageir-1352:after {
+  width: 67.6%;
+}
+
+.percentageir-1353:after {
+  width: 67.65%;
+}
+
+.percentageir-1354:after {
+  width: 67.7%;
+}
+
+.percentageir-1355:after {
+  width: 67.75%;
+}
+
+.percentageir-1356:after {
+  width: 67.8%;
+}
+
+.percentageir-1357:after {
+  width: 67.85%;
+}
+
+.percentageir-1358:after {
+  width: 67.9%;
+}
+
+.percentageir-1359:after {
+  width: 67.95%;
+}
+
+.percentageir-1360:after {
+  width: 68%;
+}
+
+.percentageir-1361:after {
+  width: 68.05%;
+}
+
+.percentageir-1362:after {
+  width: 68.1%;
+}
+
+.percentageir-1363:after {
+  width: 68.15%;
+}
+
+.percentageir-1364:after {
+  width: 68.2%;
+}
+
+.percentageir-1365:after {
+  width: 68.25%;
+}
+
+.percentageir-1366:after {
+  width: 68.3%;
+}
+
+.percentageir-1367:after {
+  width: 68.35%;
+}
+
+.percentageir-1368:after {
+  width: 68.4%;
+}
+
+.percentageir-1369:after {
+  width: 68.45%;
+}
+
+.percentageir-1370:after {
+  width: 68.5%;
+}
+
+.percentageir-1371:after {
+  width: 68.55%;
+}
+
+.percentageir-1372:after {
+  width: 68.6%;
+}
+
+.percentageir-1373:after {
+  width: 68.65%;
+}
+
+.percentageir-1374:after {
+  width: 68.7%;
+}
+
+.percentageir-1375:after {
+  width: 68.75%;
+}
+
+.percentageir-1376:after {
+  width: 68.8%;
+}
+
+.percentageir-1377:after {
+  width: 68.85%;
+}
+
+.percentageir-1378:after {
+  width: 68.9%;
+}
+
+.percentageir-1379:after {
+  width: 68.95%;
+}
+
+.percentageir-1380:after {
+  width: 69%;
+}
+
+.percentageir-1381:after {
+  width: 69.05%;
+}
+
+.percentageir-1382:after {
+  width: 69.1%;
+}
+
+.percentageir-1383:after {
+  width: 69.15%;
+}
+
+.percentageir-1384:after {
+  width: 69.2%;
+}
+
+.percentageir-1385:after {
+  width: 69.25%;
+}
+
+.percentageir-1386:after {
+  width: 69.3%;
+}
+
+.percentageir-1387:after {
+  width: 69.35%;
+}
+
+.percentageir-1388:after {
+  width: 69.4%;
+}
+
+.percentageir-1389:after {
+  width: 69.45%;
+}
+
+.percentageir-1390:after {
+  width: 69.5%;
+}
+
+.percentageir-1391:after {
+  width: 69.55%;
+}
+
+.percentageir-1392:after {
+  width: 69.6%;
+}
+
+.percentageir-1393:after {
+  width: 69.65%;
+}
+
+.percentageir-1394:after {
+  width: 69.7%;
+}
+
+.percentageir-1395:after {
+  width: 69.75%;
+}
+
+.percentageir-1396:after {
+  width: 69.8%;
+}
+
+.percentageir-1397:after {
+  width: 69.85%;
+}
+
+.percentageir-1398:after {
+  width: 69.9%;
+}
+
+.percentageir-1399:after {
+  width: 69.95%;
+}
+
+.percentageir-1400:after {
+  width: 70%;
+}
+
+.percentageir-1401:after {
+  width: 70.05%;
+}
+
+.percentageir-1402:after {
+  width: 70.1%;
+}
+
+.percentageir-1403:after {
+  width: 70.15%;
+}
+
+.percentageir-1404:after {
+  width: 70.2%;
+}
+
+.percentageir-1405:after {
+  width: 70.25%;
+}
+
+.percentageir-1406:after {
+  width: 70.3%;
+}
+
+.percentageir-1407:after {
+  width: 70.35%;
+}
+
+.percentageir-1408:after {
+  width: 70.4%;
+}
+
+.percentageir-1409:after {
+  width: 70.45%;
+}
+
+.percentageir-1410:after {
+  width: 70.5%;
+}
+
+.percentageir-1411:after {
+  width: 70.55%;
+}
+
+.percentageir-1412:after {
+  width: 70.6%;
+}
+
+.percentageir-1413:after {
+  width: 70.65%;
+}
+
+.percentageir-1414:after {
+  width: 70.7%;
+}
+
+.percentageir-1415:after {
+  width: 70.75%;
+}
+
+.percentageir-1416:after {
+  width: 70.8%;
+}
+
+.percentageir-1417:after {
+  width: 70.85%;
+}
+
+.percentageir-1418:after {
+  width: 70.9%;
+}
+
+.percentageir-1419:after {
+  width: 70.95%;
+}
+
+.percentageir-1420:after {
+  width: 71%;
+}
+
+.percentageir-1421:after {
+  width: 71.05%;
+}
+
+.percentageir-1422:after {
+  width: 71.1%;
+}
+
+.percentageir-1423:after {
+  width: 71.15%;
+}
+
+.percentageir-1424:after {
+  width: 71.2%;
+}
+
+.percentageir-1425:after {
+  width: 71.25%;
+}
+
+.percentageir-1426:after {
+  width: 71.3%;
+}
+
+.percentageir-1427:after {
+  width: 71.35%;
+}
+
+.percentageir-1428:after {
+  width: 71.4%;
+}
+
+.percentageir-1429:after {
+  width: 71.45%;
+}
+
+.percentageir-1430:after {
+  width: 71.5%;
+}
+
+.percentageir-1431:after {
+  width: 71.55%;
+}
+
+.percentageir-1432:after {
+  width: 71.6%;
+}
+
+.percentageir-1433:after {
+  width: 71.65%;
+}
+
+.percentageir-1434:after {
+  width: 71.7%;
+}
+
+.percentageir-1435:after {
+  width: 71.75%;
+}
+
+.percentageir-1436:after {
+  width: 71.8%;
+}
+
+.percentageir-1437:after {
+  width: 71.85%;
+}
+
+.percentageir-1438:after {
+  width: 71.9%;
+}
+
+.percentageir-1439:after {
+  width: 71.95%;
+}
+
+.percentageir-1440:after {
+  width: 72%;
+}
+
+.percentageir-1441:after {
+  width: 72.05%;
+}
+
+.percentageir-1442:after {
+  width: 72.1%;
+}
+
+.percentageir-1443:after {
+  width: 72.15%;
+}
+
+.percentageir-1444:after {
+  width: 72.2%;
+}
+
+.percentageir-1445:after {
+  width: 72.25%;
+}
+
+.percentageir-1446:after {
+  width: 72.3%;
+}
+
+.percentageir-1447:after {
+  width: 72.35%;
+}
+
+.percentageir-1448:after {
+  width: 72.4%;
+}
+
+.percentageir-1449:after {
+  width: 72.45%;
+}
+
+.percentageir-1450:after {
+  width: 72.5%;
+}
+
+.percentageir-1451:after {
+  width: 72.55%;
+}
+
+.percentageir-1452:after {
+  width: 72.6%;
+}
+
+.percentageir-1453:after {
+  width: 72.65%;
+}
+
+.percentageir-1454:after {
+  width: 72.7%;
+}
+
+.percentageir-1455:after {
+  width: 72.75%;
+}
+
+.percentageir-1456:after {
+  width: 72.8%;
+}
+
+.percentageir-1457:after {
+  width: 72.85%;
+}
+
+.percentageir-1458:after {
+  width: 72.9%;
+}
+
+.percentageir-1459:after {
+  width: 72.95%;
+}
+
+.percentageir-1460:after {
+  width: 73%;
+}
+
+.percentageir-1461:after {
+  width: 73.05%;
+}
+
+.percentageir-1462:after {
+  width: 73.1%;
+}
+
+.percentageir-1463:after {
+  width: 73.15%;
+}
+
+.percentageir-1464:after {
+  width: 73.2%;
+}
+
+.percentageir-1465:after {
+  width: 73.25%;
+}
+
+.percentageir-1466:after {
+  width: 73.3%;
+}
+
+.percentageir-1467:after {
+  width: 73.35%;
+}
+
+.percentageir-1468:after {
+  width: 73.4%;
+}
+
+.percentageir-1469:after {
+  width: 73.45%;
+}
+
+.percentageir-1470:after {
+  width: 73.5%;
+}
+
+.percentageir-1471:after {
+  width: 73.55%;
+}
+
+.percentageir-1472:after {
+  width: 73.6%;
+}
+
+.percentageir-1473:after {
+  width: 73.65%;
+}
+
+.percentageir-1474:after {
+  width: 73.7%;
+}
+
+.percentageir-1475:after {
+  width: 73.75%;
+}
+
+.percentageir-1476:after {
+  width: 73.8%;
+}
+
+.percentageir-1477:after {
+  width: 73.85%;
+}
+
+.percentageir-1478:after {
+  width: 73.9%;
+}
+
+.percentageir-1479:after {
+  width: 73.95%;
+}
+
+.percentageir-1480:after {
+  width: 74%;
+}
+
+.percentageir-1481:after {
+  width: 74.05%;
+}
+
+.percentageir-1482:after {
+  width: 74.1%;
+}
+
+.percentageir-1483:after {
+  width: 74.15%;
+}
+
+.percentageir-1484:after {
+  width: 74.2%;
+}
+
+.percentageir-1485:after {
+  width: 74.25%;
+}
+
+.percentageir-1486:after {
+  width: 74.3%;
+}
+
+.percentageir-1487:after {
+  width: 74.35%;
+}
+
+.percentageir-1488:after {
+  width: 74.4%;
+}
+
+.percentageir-1489:after {
+  width: 74.45%;
+}
+
+.percentageir-1490:after {
+  width: 74.5%;
+}
+
+.percentageir-1491:after {
+  width: 74.55%;
+}
+
+.percentageir-1492:after {
+  width: 74.6%;
+}
+
+.percentageir-1493:after {
+  width: 74.65%;
+}
+
+.percentageir-1494:after {
+  width: 74.7%;
+}
+
+.percentageir-1495:after {
+  width: 74.75%;
+}
+
+.percentageir-1496:after {
+  width: 74.8%;
+}
+
+.percentageir-1497:after {
+  width: 74.85%;
+}
+
+.percentageir-1498:after {
+  width: 74.9%;
+}
+
+.percentageir-1499:after {
+  width: 74.95%;
+}
+
+.percentageir-1500:after {
+  width: 75%;
+}
+
+.percentageir-1501:after {
+  width: 75.05%;
+}
+
+.percentageir-1502:after {
+  width: 75.1%;
+}
+
+.percentageir-1503:after {
+  width: 75.15%;
+}
+
+.percentageir-1504:after {
+  width: 75.2%;
+}
+
+.percentageir-1505:after {
+  width: 75.25%;
+}
+
+.percentageir-1506:after {
+  width: 75.3%;
+}
+
+.percentageir-1507:after {
+  width: 75.35%;
+}
+
+.percentageir-1508:after {
+  width: 75.4%;
+}
+
+.percentageir-1509:after {
+  width: 75.45%;
+}
+
+.percentageir-1510:after {
+  width: 75.5%;
+}
+
+.percentageir-1511:after {
+  width: 75.55%;
+}
+
+.percentageir-1512:after {
+  width: 75.6%;
+}
+
+.percentageir-1513:after {
+  width: 75.65%;
+}
+
+.percentageir-1514:after {
+  width: 75.7%;
+}
+
+.percentageir-1515:after {
+  width: 75.75%;
+}
+
+.percentageir-1516:after {
+  width: 75.8%;
+}
+
+.percentageir-1517:after {
+  width: 75.85%;
+}
+
+.percentageir-1518:after {
+  width: 75.9%;
+}
+
+.percentageir-1519:after {
+  width: 75.95%;
+}
+
+.percentageir-1520:after {
+  width: 76%;
+}
+
+.percentageir-1521:after {
+  width: 76.05%;
+}
+
+.percentageir-1522:after {
+  width: 76.1%;
+}
+
+.percentageir-1523:after {
+  width: 76.15%;
+}
+
+.percentageir-1524:after {
+  width: 76.2%;
+}
+
+.percentageir-1525:after {
+  width: 76.25%;
+}
+
+.percentageir-1526:after {
+  width: 76.3%;
+}
+
+.percentageir-1527:after {
+  width: 76.35%;
+}
+
+.percentageir-1528:after {
+  width: 76.4%;
+}
+
+.percentageir-1529:after {
+  width: 76.45%;
+}
+
+.percentageir-1530:after {
+  width: 76.5%;
+}
+
+.percentageir-1531:after {
+  width: 76.55%;
+}
+
+.percentageir-1532:after {
+  width: 76.6%;
+}
+
+.percentageir-1533:after {
+  width: 76.65%;
+}
+
+.percentageir-1534:after {
+  width: 76.7%;
+}
+
+.percentageir-1535:after {
+  width: 76.75%;
+}
+
+.percentageir-1536:after {
+  width: 76.8%;
+}
+
+.percentageir-1537:after {
+  width: 76.85%;
+}
+
+.percentageir-1538:after {
+  width: 76.9%;
+}
+
+.percentageir-1539:after {
+  width: 76.95%;
+}
+
+.percentageir-1540:after {
+  width: 77%;
+}
+
+.percentageir-1541:after {
+  width: 77.05%;
+}
+
+.percentageir-1542:after {
+  width: 77.1%;
+}
+
+.percentageir-1543:after {
+  width: 77.15%;
+}
+
+.percentageir-1544:after {
+  width: 77.2%;
+}
+
+.percentageir-1545:after {
+  width: 77.25%;
+}
+
+.percentageir-1546:after {
+  width: 77.3%;
+}
+
+.percentageir-1547:after {
+  width: 77.35%;
+}
+
+.percentageir-1548:after {
+  width: 77.4%;
+}
+
+.percentageir-1549:after {
+  width: 77.45%;
+}
+
+.percentageir-1550:after {
+  width: 77.5%;
+}
+
+.percentageir-1551:after {
+  width: 77.55%;
+}
+
+.percentageir-1552:after {
+  width: 77.6%;
+}
+
+.percentageir-1553:after {
+  width: 77.65%;
+}
+
+.percentageir-1554:after {
+  width: 77.7%;
+}
+
+.percentageir-1555:after {
+  width: 77.75%;
+}
+
+.percentageir-1556:after {
+  width: 77.8%;
+}
+
+.percentageir-1557:after {
+  width: 77.85%;
+}
+
+.percentageir-1558:after {
+  width: 77.9%;
+}
+
+.percentageir-1559:after {
+  width: 77.95%;
+}
+
+.percentageir-1560:after {
+  width: 78%;
+}
+
+.percentageir-1561:after {
+  width: 78.05%;
+}
+
+.percentageir-1562:after {
+  width: 78.1%;
+}
+
+.percentageir-1563:after {
+  width: 78.15%;
+}
+
+.percentageir-1564:after {
+  width: 78.2%;
+}
+
+.percentageir-1565:after {
+  width: 78.25%;
+}
+
+.percentageir-1566:after {
+  width: 78.3%;
+}
+
+.percentageir-1567:after {
+  width: 78.35%;
+}
+
+.percentageir-1568:after {
+  width: 78.4%;
+}
+
+.percentageir-1569:after {
+  width: 78.45%;
+}
+
+.percentageir-1570:after {
+  width: 78.5%;
+}
+
+.percentageir-1571:after {
+  width: 78.55%;
+}
+
+.percentageir-1572:after {
+  width: 78.6%;
+}
+
+.percentageir-1573:after {
+  width: 78.65%;
+}
+
+.percentageir-1574:after {
+  width: 78.7%;
+}
+
+.percentageir-1575:after {
+  width: 78.75%;
+}
+
+.percentageir-1576:after {
+  width: 78.8%;
+}
+
+.percentageir-1577:after {
+  width: 78.85%;
+}
+
+.percentageir-1578:after {
+  width: 78.9%;
+}
+
+.percentageir-1579:after {
+  width: 78.95%;
+}
+
+.percentageir-1580:after {
+  width: 79%;
+}
+
+.percentageir-1581:after {
+  width: 79.05%;
+}
+
+.percentageir-1582:after {
+  width: 79.1%;
+}
+
+.percentageir-1583:after {
+  width: 79.15%;
+}
+
+.percentageir-1584:after {
+  width: 79.2%;
+}
+
+.percentageir-1585:after {
+  width: 79.25%;
+}
+
+.percentageir-1586:after {
+  width: 79.3%;
+}
+
+.percentageir-1587:after {
+  width: 79.35%;
+}
+
+.percentageir-1588:after {
+  width: 79.4%;
+}
+
+.percentageir-1589:after {
+  width: 79.45%;
+}
+
+.percentageir-1590:after {
+  width: 79.5%;
+}
+
+.percentageir-1591:after {
+  width: 79.55%;
+}
+
+.percentageir-1592:after {
+  width: 79.6%;
+}
+
+.percentageir-1593:after {
+  width: 79.65%;
+}
+
+.percentageir-1594:after {
+  width: 79.7%;
+}
+
+.percentageir-1595:after {
+  width: 79.75%;
+}
+
+.percentageir-1596:after {
+  width: 79.8%;
+}
+
+.percentageir-1597:after {
+  width: 79.85%;
+}
+
+.percentageir-1598:after {
+  width: 79.9%;
+}
+
+.percentageir-1599:after {
+  width: 79.95%;
+}
+
+.percentageir-1600:after {
+  width: 80%;
+}
+
+.percentageir-1601:after {
+  width: 80.05%;
+}
+
+.percentageir-1602:after {
+  width: 80.1%;
+}
+
+.percentageir-1603:after {
+  width: 80.15%;
+}
+
+.percentageir-1604:after {
+  width: 80.2%;
+}
+
+.percentageir-1605:after {
+  width: 80.25%;
+}
+
+.percentageir-1606:after {
+  width: 80.3%;
+}
+
+.percentageir-1607:after {
+  width: 80.35%;
+}
+
+.percentageir-1608:after {
+  width: 80.4%;
+}
+
+.percentageir-1609:after {
+  width: 80.45%;
+}
+
+.percentageir-1610:after {
+  width: 80.5%;
+}
+
+.percentageir-1611:after {
+  width: 80.55%;
+}
+
+.percentageir-1612:after {
+  width: 80.6%;
+}
+
+.percentageir-1613:after {
+  width: 80.65%;
+}
+
+.percentageir-1614:after {
+  width: 80.7%;
+}
+
+.percentageir-1615:after {
+  width: 80.75%;
+}
+
+.percentageir-1616:after {
+  width: 80.8%;
+}
+
+.percentageir-1617:after {
+  width: 80.85%;
+}
+
+.percentageir-1618:after {
+  width: 80.9%;
+}
+
+.percentageir-1619:after {
+  width: 80.95%;
+}
+
+.percentageir-1620:after {
+  width: 81%;
+}
+
+.percentageir-1621:after {
+  width: 81.05%;
+}
+
+.percentageir-1622:after {
+  width: 81.1%;
+}
+
+.percentageir-1623:after {
+  width: 81.15%;
+}
+
+.percentageir-1624:after {
+  width: 81.2%;
+}
+
+.percentageir-1625:after {
+  width: 81.25%;
+}
+
+.percentageir-1626:after {
+  width: 81.3%;
+}
+
+.percentageir-1627:after {
+  width: 81.35%;
+}
+
+.percentageir-1628:after {
+  width: 81.4%;
+}
+
+.percentageir-1629:after {
+  width: 81.45%;
+}
+
+.percentageir-1630:after {
+  width: 81.5%;
+}
+
+.percentageir-1631:after {
+  width: 81.55%;
+}
+
+.percentageir-1632:after {
+  width: 81.6%;
+}
+
+.percentageir-1633:after {
+  width: 81.65%;
+}
+
+.percentageir-1634:after {
+  width: 81.7%;
+}
+
+.percentageir-1635:after {
+  width: 81.75%;
+}
+
+.percentageir-1636:after {
+  width: 81.8%;
+}
+
+.percentageir-1637:after {
+  width: 81.85%;
+}
+
+.percentageir-1638:after {
+  width: 81.9%;
+}
+
+.percentageir-1639:after {
+  width: 81.95%;
+}
+
+.percentageir-1640:after {
+  width: 82%;
+}
+
+.percentageir-1641:after {
+  width: 82.05%;
+}
+
+.percentageir-1642:after {
+  width: 82.1%;
+}
+
+.percentageir-1643:after {
+  width: 82.15%;
+}
+
+.percentageir-1644:after {
+  width: 82.2%;
+}
+
+.percentageir-1645:after {
+  width: 82.25%;
+}
+
+.percentageir-1646:after {
+  width: 82.3%;
+}
+
+.percentageir-1647:after {
+  width: 82.35%;
+}
+
+.percentageir-1648:after {
+  width: 82.4%;
+}
+
+.percentageir-1649:after {
+  width: 82.45%;
+}
+
+.percentageir-1650:after {
+  width: 82.5%;
+}
+
+.percentageir-1651:after {
+  width: 82.55%;
+}
+
+.percentageir-1652:after {
+  width: 82.6%;
+}
+
+.percentageir-1653:after {
+  width: 82.65%;
+}
+
+.percentageir-1654:after {
+  width: 82.7%;
+}
+
+.percentageir-1655:after {
+  width: 82.75%;
+}
+
+.percentageir-1656:after {
+  width: 82.8%;
+}
+
+.percentageir-1657:after {
+  width: 82.85%;
+}
+
+.percentageir-1658:after {
+  width: 82.9%;
+}
+
+.percentageir-1659:after {
+  width: 82.95%;
+}
+
+.percentageir-1660:after {
+  width: 83%;
+}
+
+.percentageir-1661:after {
+  width: 83.05%;
+}
+
+.percentageir-1662:after {
+  width: 83.1%;
+}
+
+.percentageir-1663:after {
+  width: 83.15%;
+}
+
+.percentageir-1664:after {
+  width: 83.2%;
+}
+
+.percentageir-1665:after {
+  width: 83.25%;
+}
+
+.percentageir-1666:after {
+  width: 83.3%;
+}
+
+.percentageir-1667:after {
+  width: 83.35%;
+}
+
+.percentageir-1668:after {
+  width: 83.4%;
+}
+
+.percentageir-1669:after {
+  width: 83.45%;
+}
+
+.percentageir-1670:after {
+  width: 83.5%;
+}
+
+.percentageir-1671:after {
+  width: 83.55%;
+}
+
+.percentageir-1672:after {
+  width: 83.6%;
+}
+
+.percentageir-1673:after {
+  width: 83.65%;
+}
+
+.percentageir-1674:after {
+  width: 83.7%;
+}
+
+.percentageir-1675:after {
+  width: 83.75%;
+}
+
+.percentageir-1676:after {
+  width: 83.8%;
+}
+
+.percentageir-1677:after {
+  width: 83.85%;
+}
+
+.percentageir-1678:after {
+  width: 83.9%;
+}
+
+.percentageir-1679:after {
+  width: 83.95%;
+}
+
+.percentageir-1680:after {
+  width: 84%;
+}
+
+.percentageir-1681:after {
+  width: 84.05%;
+}
+
+.percentageir-1682:after {
+  width: 84.1%;
+}
+
+.percentageir-1683:after {
+  width: 84.15%;
+}
+
+.percentageir-1684:after {
+  width: 84.2%;
+}
+
+.percentageir-1685:after {
+  width: 84.25%;
+}
+
+.percentageir-1686:after {
+  width: 84.3%;
+}
+
+.percentageir-1687:after {
+  width: 84.35%;
+}
+
+.percentageir-1688:after {
+  width: 84.4%;
+}
+
+.percentageir-1689:after {
+  width: 84.45%;
+}
+
+.percentageir-1690:after {
+  width: 84.5%;
+}
+
+.percentageir-1691:after {
+  width: 84.55%;
+}
+
+.percentageir-1692:after {
+  width: 84.6%;
+}
+
+.percentageir-1693:after {
+  width: 84.65%;
+}
+
+.percentageir-1694:after {
+  width: 84.7%;
+}
+
+.percentageir-1695:after {
+  width: 84.75%;
+}
+
+.percentageir-1696:after {
+  width: 84.8%;
+}
+
+.percentageir-1697:after {
+  width: 84.85%;
+}
+
+.percentageir-1698:after {
+  width: 84.9%;
+}
+
+.percentageir-1699:after {
+  width: 84.95%;
+}
+
+.percentageir-1700:after {
+  width: 85%;
+}
+
+.percentageir-1701:after {
+  width: 85.05%;
+}
+
+.percentageir-1702:after {
+  width: 85.1%;
+}
+
+.percentageir-1703:after {
+  width: 85.15%;
+}
+
+.percentageir-1704:after {
+  width: 85.2%;
+}
+
+.percentageir-1705:after {
+  width: 85.25%;
+}
+
+.percentageir-1706:after {
+  width: 85.3%;
+}
+
+.percentageir-1707:after {
+  width: 85.35%;
+}
+
+.percentageir-1708:after {
+  width: 85.4%;
+}
+
+.percentageir-1709:after {
+  width: 85.45%;
+}
+
+.percentageir-1710:after {
+  width: 85.5%;
+}
+
+.percentageir-1711:after {
+  width: 85.55%;
+}
+
+.percentageir-1712:after {
+  width: 85.6%;
+}
+
+.percentageir-1713:after {
+  width: 85.65%;
+}
+
+.percentageir-1714:after {
+  width: 85.7%;
+}
+
+.percentageir-1715:after {
+  width: 85.75%;
+}
+
+.percentageir-1716:after {
+  width: 85.8%;
+}
+
+.percentageir-1717:after {
+  width: 85.85%;
+}
+
+.percentageir-1718:after {
+  width: 85.9%;
+}
+
+.percentageir-1719:after {
+  width: 85.95%;
+}
+
+.percentageir-1720:after {
+  width: 86%;
+}
+
+.percentageir-1721:after {
+  width: 86.05%;
+}
+
+.percentageir-1722:after {
+  width: 86.1%;
+}
+
+.percentageir-1723:after {
+  width: 86.15%;
+}
+
+.percentageir-1724:after {
+  width: 86.2%;
+}
+
+.percentageir-1725:after {
+  width: 86.25%;
+}
+
+.percentageir-1726:after {
+  width: 86.3%;
+}
+
+.percentageir-1727:after {
+  width: 86.35%;
+}
+
+.percentageir-1728:after {
+  width: 86.4%;
+}
+
+.percentageir-1729:after {
+  width: 86.45%;
+}
+
+.percentageir-1730:after {
+  width: 86.5%;
+}
+
+.percentageir-1731:after {
+  width: 86.55%;
+}
+
+.percentageir-1732:after {
+  width: 86.6%;
+}
+
+.percentageir-1733:after {
+  width: 86.65%;
+}
+
+.percentageir-1734:after {
+  width: 86.7%;
+}
+
+.percentageir-1735:after {
+  width: 86.75%;
+}
+
+.percentageir-1736:after {
+  width: 86.8%;
+}
+
+.percentageir-1737:after {
+  width: 86.85%;
+}
+
+.percentageir-1738:after {
+  width: 86.9%;
+}
+
+.percentageir-1739:after {
+  width: 86.95%;
+}
+
+.percentageir-1740:after {
+  width: 87%;
+}
+
+.percentageir-1741:after {
+  width: 87.05%;
+}
+
+.percentageir-1742:after {
+  width: 87.1%;
+}
+
+.percentageir-1743:after {
+  width: 87.15%;
+}
+
+.percentageir-1744:after {
+  width: 87.2%;
+}
+
+.percentageir-1745:after {
+  width: 87.25%;
+}
+
+.percentageir-1746:after {
+  width: 87.3%;
+}
+
+.percentageir-1747:after {
+  width: 87.35%;
+}
+
+.percentageir-1748:after {
+  width: 87.4%;
+}
+
+.percentageir-1749:after {
+  width: 87.45%;
+}
+
+.percentageir-1750:after {
+  width: 87.5%;
+}
+
+.percentageir-1751:after {
+  width: 87.55%;
+}
+
+.percentageir-1752:after {
+  width: 87.6%;
+}
+
+.percentageir-1753:after {
+  width: 87.65%;
+}
+
+.percentageir-1754:after {
+  width: 87.7%;
+}
+
+.percentageir-1755:after {
+  width: 87.75%;
+}
+
+.percentageir-1756:after {
+  width: 87.8%;
+}
+
+.percentageir-1757:after {
+  width: 87.85%;
+}
+
+.percentageir-1758:after {
+  width: 87.9%;
+}
+
+.percentageir-1759:after {
+  width: 87.95%;
+}
+
+.percentageir-1760:after {
+  width: 88%;
+}
+
+.percentageir-1761:after {
+  width: 88.05%;
+}
+
+.percentageir-1762:after {
+  width: 88.1%;
+}
+
+.percentageir-1763:after {
+  width: 88.15%;
+}
+
+.percentageir-1764:after {
+  width: 88.2%;
+}
+
+.percentageir-1765:after {
+  width: 88.25%;
+}
+
+.percentageir-1766:after {
+  width: 88.3%;
+}
+
+.percentageir-1767:after {
+  width: 88.35%;
+}
+
+.percentageir-1768:after {
+  width: 88.4%;
+}
+
+.percentageir-1769:after {
+  width: 88.45%;
+}
+
+.percentageir-1770:after {
+  width: 88.5%;
+}
+
+.percentageir-1771:after {
+  width: 88.55%;
+}
+
+.percentageir-1772:after {
+  width: 88.6%;
+}
+
+.percentageir-1773:after {
+  width: 88.65%;
+}
+
+.percentageir-1774:after {
+  width: 88.7%;
+}
+
+.percentageir-1775:after {
+  width: 88.75%;
+}
+
+.percentageir-1776:after {
+  width: 88.8%;
+}
+
+.percentageir-1777:after {
+  width: 88.85%;
+}
+
+.percentageir-1778:after {
+  width: 88.9%;
+}
+
+.percentageir-1779:after {
+  width: 88.95%;
+}
+
+.percentageir-1780:after {
+  width: 89%;
+}
+
+.percentageir-1781:after {
+  width: 89.05%;
+}
+
+.percentageir-1782:after {
+  width: 89.1%;
+}
+
+.percentageir-1783:after {
+  width: 89.15%;
+}
+
+.percentageir-1784:after {
+  width: 89.2%;
+}
+
+.percentageir-1785:after {
+  width: 89.25%;
+}
+
+.percentageir-1786:after {
+  width: 89.3%;
+}
+
+.percentageir-1787:after {
+  width: 89.35%;
+}
+
+.percentageir-1788:after {
+  width: 89.4%;
+}
+
+.percentageir-1789:after {
+  width: 89.45%;
+}
+
+.percentageir-1790:after {
+  width: 89.5%;
+}
+
+.percentageir-1791:after {
+  width: 89.55%;
+}
+
+.percentageir-1792:after {
+  width: 89.6%;
+}
+
+.percentageir-1793:after {
+  width: 89.65%;
+}
+
+.percentageir-1794:after {
+  width: 89.7%;
+}
+
+.percentageir-1795:after {
+  width: 89.75%;
+}
+
+.percentageir-1796:after {
+  width: 89.8%;
+}
+
+.percentageir-1797:after {
+  width: 89.85%;
+}
+
+.percentageir-1798:after {
+  width: 89.9%;
+}
+
+.percentageir-1799:after {
+  width: 89.95%;
+}
+
+.percentageir-1800:after {
+  width: 90%;
+}
+
+.percentageir-1801:after {
+  width: 90.05%;
+}
+
+.percentageir-1802:after {
+  width: 90.1%;
+}
+
+.percentageir-1803:after {
+  width: 90.15%;
+}
+
+.percentageir-1804:after {
+  width: 90.2%;
+}
+
+.percentageir-1805:after {
+  width: 90.25%;
+}
+
+.percentageir-1806:after {
+  width: 90.3%;
+}
+
+.percentageir-1807:after {
+  width: 90.35%;
+}
+
+.percentageir-1808:after {
+  width: 90.4%;
+}
+
+.percentageir-1809:after {
+  width: 90.45%;
+}
+
+.percentageir-1810:after {
+  width: 90.5%;
+}
+
+.percentageir-1811:after {
+  width: 90.55%;
+}
+
+.percentageir-1812:after {
+  width: 90.6%;
+}
+
+.percentageir-1813:after {
+  width: 90.65%;
+}
+
+.percentageir-1814:after {
+  width: 90.7%;
+}
+
+.percentageir-1815:after {
+  width: 90.75%;
+}
+
+.percentageir-1816:after {
+  width: 90.8%;
+}
+
+.percentageir-1817:after {
+  width: 90.85%;
+}
+
+.percentageir-1818:after {
+  width: 90.9%;
+}
+
+.percentageir-1819:after {
+  width: 90.95%;
+}
+
+.percentageir-1820:after {
+  width: 91%;
+}
+
+.percentageir-1821:after {
+  width: 91.05%;
+}
+
+.percentageir-1822:after {
+  width: 91.1%;
+}
+
+.percentageir-1823:after {
+  width: 91.15%;
+}
+
+.percentageir-1824:after {
+  width: 91.2%;
+}
+
+.percentageir-1825:after {
+  width: 91.25%;
+}
+
+.percentageir-1826:after {
+  width: 91.3%;
+}
+
+.percentageir-1827:after {
+  width: 91.35%;
+}
+
+.percentageir-1828:after {
+  width: 91.4%;
+}
+
+.percentageir-1829:after {
+  width: 91.45%;
+}
+
+.percentageir-1830:after {
+  width: 91.5%;
+}
+
+.percentageir-1831:after {
+  width: 91.55%;
+}
+
+.percentageir-1832:after {
+  width: 91.6%;
+}
+
+.percentageir-1833:after {
+  width: 91.65%;
+}
+
+.percentageir-1834:after {
+  width: 91.7%;
+}
+
+.percentageir-1835:after {
+  width: 91.75%;
+}
+
+.percentageir-1836:after {
+  width: 91.8%;
+}
+
+.percentageir-1837:after {
+  width: 91.85%;
+}
+
+.percentageir-1838:after {
+  width: 91.9%;
+}
+
+.percentageir-1839:after {
+  width: 91.95%;
+}
+
+.percentageir-1840:after {
+  width: 92%;
+}
+
+.percentageir-1841:after {
+  width: 92.05%;
+}
+
+.percentageir-1842:after {
+  width: 92.1%;
+}
+
+.percentageir-1843:after {
+  width: 92.15%;
+}
+
+.percentageir-1844:after {
+  width: 92.2%;
+}
+
+.percentageir-1845:after {
+  width: 92.25%;
+}
+
+.percentageir-1846:after {
+  width: 92.3%;
+}
+
+.percentageir-1847:after {
+  width: 92.35%;
+}
+
+.percentageir-1848:after {
+  width: 92.4%;
+}
+
+.percentageir-1849:after {
+  width: 92.45%;
+}
+
+.percentageir-1850:after {
+  width: 92.5%;
+}
+
+.percentageir-1851:after {
+  width: 92.55%;
+}
+
+.percentageir-1852:after {
+  width: 92.6%;
+}
+
+.percentageir-1853:after {
+  width: 92.65%;
+}
+
+.percentageir-1854:after {
+  width: 92.7%;
+}
+
+.percentageir-1855:after {
+  width: 92.75%;
+}
+
+.percentageir-1856:after {
+  width: 92.8%;
+}
+
+.percentageir-1857:after {
+  width: 92.85%;
+}
+
+.percentageir-1858:after {
+  width: 92.9%;
+}
+
+.percentageir-1859:after {
+  width: 92.95%;
+}
+
+.percentageir-1860:after {
+  width: 93%;
+}
+
+.percentageir-1861:after {
+  width: 93.05%;
+}
+
+.percentageir-1862:after {
+  width: 93.1%;
+}
+
+.percentageir-1863:after {
+  width: 93.15%;
+}
+
+.percentageir-1864:after {
+  width: 93.2%;
+}
+
+.percentageir-1865:after {
+  width: 93.25%;
+}
+
+.percentageir-1866:after {
+  width: 93.3%;
+}
+
+.percentageir-1867:after {
+  width: 93.35%;
+}
+
+.percentageir-1868:after {
+  width: 93.4%;
+}
+
+.percentageir-1869:after {
+  width: 93.45%;
+}
+
+.percentageir-1870:after {
+  width: 93.5%;
+}
+
+.percentageir-1871:after {
+  width: 93.55%;
+}
+
+.percentageir-1872:after {
+  width: 93.6%;
+}
+
+.percentageir-1873:after {
+  width: 93.65%;
+}
+
+.percentageir-1874:after {
+  width: 93.7%;
+}
+
+.percentageir-1875:after {
+  width: 93.75%;
+}
+
+.percentageir-1876:after {
+  width: 93.8%;
+}
+
+.percentageir-1877:after {
+  width: 93.85%;
+}
+
+.percentageir-1878:after {
+  width: 93.9%;
+}
+
+.percentageir-1879:after {
+  width: 93.95%;
+}
+
+.percentageir-1880:after {
+  width: 94%;
+}
+
+.percentageir-1881:after {
+  width: 94.05%;
+}
+
+.percentageir-1882:after {
+  width: 94.1%;
+}
+
+.percentageir-1883:after {
+  width: 94.15%;
+}
+
+.percentageir-1884:after {
+  width: 94.2%;
+}
+
+.percentageir-1885:after {
+  width: 94.25%;
+}
+
+.percentageir-1886:after {
+  width: 94.3%;
+}
+
+.percentageir-1887:after {
+  width: 94.35%;
+}
+
+.percentageir-1888:after {
+  width: 94.4%;
+}
+
+.percentageir-1889:after {
+  width: 94.45%;
+}
+
+.percentageir-1890:after {
+  width: 94.5%;
+}
+
+.percentageir-1891:after {
+  width: 94.55%;
+}
+
+.percentageir-1892:after {
+  width: 94.6%;
+}
+
+.percentageir-1893:after {
+  width: 94.65%;
+}
+
+.percentageir-1894:after {
+  width: 94.7%;
+}
+
+.percentageir-1895:after {
+  width: 94.75%;
+}
+
+.percentageir-1896:after {
+  width: 94.8%;
+}
+
+.percentageir-1897:after {
+  width: 94.85%;
+}
+
+.percentageir-1898:after {
+  width: 94.9%;
+}
+
+.percentageir-1899:after {
+  width: 94.95%;
+}
+
+.percentageir-1900:after {
+  width: 95%;
+}
+
+.percentageir-1901:after {
+  width: 95.05%;
+}
+
+.percentageir-1902:after {
+  width: 95.1%;
+}
+
+.percentageir-1903:after {
+  width: 95.15%;
+}
+
+.percentageir-1904:after {
+  width: 95.2%;
+}
+
+.percentageir-1905:after {
+  width: 95.25%;
+}
+
+.percentageir-1906:after {
+  width: 95.3%;
+}
+
+.percentageir-1907:after {
+  width: 95.35%;
+}
+
+.percentageir-1908:after {
+  width: 95.4%;
+}
+
+.percentageir-1909:after {
+  width: 95.45%;
+}
+
+.percentageir-1910:after {
+  width: 95.5%;
+}
+
+.percentageir-1911:after {
+  width: 95.55%;
+}
+
+.percentageir-1912:after {
+  width: 95.6%;
+}
+
+.percentageir-1913:after {
+  width: 95.65%;
+}
+
+.percentageir-1914:after {
+  width: 95.7%;
+}
+
+.percentageir-1915:after {
+  width: 95.75%;
+}
+
+.percentageir-1916:after {
+  width: 95.8%;
+}
+
+.percentageir-1917:after {
+  width: 95.85%;
+}
+
+.percentageir-1918:after {
+  width: 95.9%;
+}
+
+.percentageir-1919:after {
+  width: 95.95%;
+}
+
+.percentageir-1920:after {
+  width: 96%;
+}
+
+.percentageir-1921:after {
+  width: 96.05%;
+}
+
+.percentageir-1922:after {
+  width: 96.1%;
+}
+
+.percentageir-1923:after {
+  width: 96.15%;
+}
+
+.percentageir-1924:after {
+  width: 96.2%;
+}
+
+.percentageir-1925:after {
+  width: 96.25%;
+}
+
+.percentageir-1926:after {
+  width: 96.3%;
+}
+
+.percentageir-1927:after {
+  width: 96.35%;
+}
+
+.percentageir-1928:after {
+  width: 96.4%;
+}
+
+.percentageir-1929:after {
+  width: 96.45%;
+}
+
+.percentageir-1930:after {
+  width: 96.5%;
+}
+
+.percentageir-1931:after {
+  width: 96.55%;
+}
+
+.percentageir-1932:after {
+  width: 96.6%;
+}
+
+.percentageir-1933:after {
+  width: 96.65%;
+}
+
+.percentageir-1934:after {
+  width: 96.7%;
+}
+
+.percentageir-1935:after {
+  width: 96.75%;
+}
+
+.percentageir-1936:after {
+  width: 96.8%;
+}
+
+.percentageir-1937:after {
+  width: 96.85%;
+}
+
+.percentageir-1938:after {
+  width: 96.9%;
+}
+
+.percentageir-1939:after {
+  width: 96.95%;
+}
+
+.percentageir-1940:after {
+  width: 97%;
+}
+
+.percentageir-1941:after {
+  width: 97.05%;
+}
+
+.percentageir-1942:after {
+  width: 97.1%;
+}
+
+.percentageir-1943:after {
+  width: 97.15%;
+}
+
+.percentageir-1944:after {
+  width: 97.2%;
+}
+
+.percentageir-1945:after {
+  width: 97.25%;
+}
+
+.percentageir-1946:after {
+  width: 97.3%;
+}
+
+.percentageir-1947:after {
+  width: 97.35%;
+}
+
+.percentageir-1948:after {
+  width: 97.4%;
+}
+
+.percentageir-1949:after {
+  width: 97.45%;
+}
+
+.percentageir-1950:after {
+  width: 97.5%;
+}
+
+.percentageir-1951:after {
+  width: 97.55%;
+}
+
+.percentageir-1952:after {
+  width: 97.6%;
+}
+
+.percentageir-1953:after {
+  width: 97.65%;
+}
+
+.percentageir-1954:after {
+  width: 97.7%;
+}
+
+.percentageir-1955:after {
+  width: 97.75%;
+}
+
+.percentageir-1956:after {
+  width: 97.8%;
+}
+
+.percentageir-1957:after {
+  width: 97.85%;
+}
+
+.percentageir-1958:after {
+  width: 97.9%;
+}
+
+.percentageir-1959:after {
+  width: 97.95%;
+}
+
+.percentageir-1960:after {
+  width: 98%;
+}
+
+.percentageir-1961:after {
+  width: 98.05%;
+}
+
+.percentageir-1962:after {
+  width: 98.1%;
+}
+
+.percentageir-1963:after {
+  width: 98.15%;
+}
+
+.percentageir-1964:after {
+  width: 98.2%;
+}
+
+.percentageir-1965:after {
+  width: 98.25%;
+}
+
+.percentageir-1966:after {
+  width: 98.3%;
+}
+
+.percentageir-1967:after {
+  width: 98.35%;
+}
+
+.percentageir-1968:after {
+  width: 98.4%;
+}
+
+.percentageir-1969:after {
+  width: 98.45%;
+}
+
+.percentageir-1970:after {
+  width: 98.5%;
+}
+
+.percentageir-1971:after {
+  width: 98.55%;
+}
+
+.percentageir-1972:after {
+  width: 98.6%;
+}
+
+.percentageir-1973:after {
+  width: 98.65%;
+}
+
+.percentageir-1974:after {
+  width: 98.7%;
+}
+
+.percentageir-1975:after {
+  width: 98.75%;
+}
+
+.percentageir-1976:after {
+  width: 98.8%;
+}
+
+.percentageir-1977:after {
+  width: 98.85%;
+}
+
+.percentageir-1978:after {
+  width: 98.9%;
+}
+
+.percentageir-1979:after {
+  width: 98.95%;
+}
+
+.percentageir-1980:after {
+  width: 99%;
+}
+
+.percentageir-1981:after {
+  width: 99.05%;
+}
+
+.percentageir-1982:after {
+  width: 99.1%;
+}
+
+.percentageir-1983:after {
+  width: 99.15%;
+}
+
+.percentageir-1984:after {
+  width: 99.2%;
+}
+
+.percentageir-1985:after {
+  width: 99.25%;
+}
+
+.percentageir-1986:after {
+  width: 99.3%;
+}
+
+.percentageir-1987:after {
+  width: 99.35%;
+}
+
+.percentageir-1988:after {
+  width: 99.4%;
+}
+
+.percentageir-1989:after {
+  width: 99.45%;
+}
+
+.percentageir-1990:after {
+  width: 99.5%;
+}
+
+.percentageir-1991:after {
+  width: 99.55%;
+}
+
+.percentageir-1992:after {
+  width: 99.6%;
+}
+
+.percentageir-1993:after {
+  width: 99.65%;
+}
+
+.percentageir-1994:after {
+  width: 99.7%;
+}
+
+.percentageir-1995:after {
+  width: 99.75%;
+}
+
+.percentageir-1996:after {
+  width: 99.8%;
+}
+
+.percentageir-1997:after {
+  width: 99.85%;
+}
+
+.percentageir-1998:after {
+  width: 99.9%;
+}
+
+.percentageir-1999:after {
+  width: 99.95%;
+}
+
+.percentageir-2000:after {
+  width: 100%;
+}
+
+html, body {
+  height: 500px;
+  font-family: "fira-sans-2", sans-serif;
+  color: #333;
+}
+
+@media screen and (min-width: 830px) {
+  .graph-container {
+    margin-left: 30% !important;
+  }
+}/*# sourceMappingURL=IRatingGraphMobile.css.map */
