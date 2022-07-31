@@ -1,156 +1,18 @@
-*{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif !important;
-  }
-  
-  .categoryContainer {
-    background-color: rgb(245, 245, 245);
-    color: rgb(70, 70, 70);
-  }
-  
-  .categoryName {
-    width: 20px;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    justify-content: center;
-    line-height: 100% !important;
-  }
-  
-  .categoryName_container {
-    text-align: center;
-    line-height: 15rem;
-  }
-  
-  .t5Container {
-    background-color: white;
-    color: rgb(70, 70, 70);
-    padding: 8%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    min-height: 10rem;
-    border: 1px solid rgb(248, 248, 248);
-    box-shadow: 2px 2px rgb(239, 239, 239); 
-    border-radius: 6px;
-  }
-  
-  .t5Perc {
-    font-size: 1rem;
-    justify-content: center;
-    width: flex;
-  }
-  
-  .t5Perc1 {
-    font-size: 1.5rem;
-    justify-content: center;
-    font-weight: lighter;
-    margin-bottom: 1rem;
-  }
-  
-  .t5Avg {
-    font-size: 1rem;
-    justify-content: center;
-  }
-  
-  .t5Avg1 {
-    font-size: 1.5rem;
-    justify-content: center;
-    font-weight: lighter;
-  }
-  
-  .t5Col {
-    margin-right: 2.5rem;
-    margin-left: 1rem;
-    padding: 0rem;
-  }
-  
-  .winContainer {
-    background-color: white;
-    color: rgb(70, 70, 70);
-    padding: 8%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    min-height: 10rem;
-    border: 1px solid rgb(248, 248, 248);
-    box-shadow: 2px 2px rgb(240, 240, 240);  
-    border-radius: 6px;
-  }
-  
-  .winPerc {
-    font-size: 1rem;
-    justify-content: center;
-    
-  }
-  
-  .winPerc1 {
-    font-size: 1.5rem;
-    justify-content: center;
-    font-weight: lighter;
-    margin-bottom: 1rem;
-  }
-  
-  .winAvg{
-    font-size: 1rem;
-    justify-content: center;
-  }
-  
-  .winAvg1{
-    font-size: 1.5rem;
-    justify-content: center;
-    font-weight: lighter;
-  }
-  
-  .winCol {
-    margin-right: 0rem;
-    margin-left: 0rem;
-  }
-  
-  .user_name_row {
-    padding-left: 20px;
-    font-size: 1.5rem;
-    font-weight: normal;
-    background-color: rgb(245, 245, 245);
-    color: rgb(70, 70, 70);
-    justify-content: center;
-    font-weight: lighter;
-  }
-  
-  .stats_type_row {
-    padding-left: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: rgb(245, 245, 245);
-    
-  }
-  
-  .stats_type_col {
-    text-align: right;
-    margin-right: 20px;
-  }
-  
-  .btn-flat {
-    background-color: rgb(230, 230, 230) !important;
-    color: rgb(96, 96, 96) !important;
-  }
-  
-  .loading_text {
-    font-size: 1rem;
-    font-weight: lighter;
-    text-align: center;
-    margin-top: 30%;
-  }
-  
-  
-  
-  @media (max-width: 768px) {
-    .t5Container {
-      padding: 3rem;
-    }
-    .winContainer {
-      padding: 3rem;
-    }
-    .categoryName_container {
-      line-height: 8rem;
-    }
-  }
+@import "../variables/Variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Padauk");
+* {
+  font-family: "Padauk" !important;
+}
+
+.memberNameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 2rem;
+    font-size: 3rem;
+    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, $brandColor 91.1% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

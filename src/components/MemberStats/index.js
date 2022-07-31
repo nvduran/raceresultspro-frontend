@@ -20,7 +20,38 @@ let yearly_array_url =
 export default function MemberStats(custId, setCustId) {
   var currentUrl = window.location.href;
   const lastSegment = currentUrl.split("/").pop();
-  console.log(lastSegment);
+  const [MemberData, setMemberData] = useState([]);
+  const [AllMemberData, setAllMemberData] = useState([]);
+  const [IsLoaded, setIsLoaded] = useState(false);
 
-  return lastSegment;
+  useEffect(() => {
+    console.log("123123123");
+    startGetData();
+  }, []);
+
+  const startGetData = async () => {
+    // fetch from member_url and save it to MemberData
+    const response = await fetch(member_url + lastSegment);
+    const data = await response.json();
+    console.log(data);
+    setMemberData(data[0]);
+    setIsLoaded(true);
+  };
+
+  console.log(MemberData);
+
+  if (IsLoaded) {
+    return (
+      <div>
+        <Container>
+          <Row className="memberNameRow">
+            {MemberData.member[0].display_name}
+          </Row>
+          <Row></Row>
+        </Container>
+      </div>
+    );
+  } else {
+    return <div>Loading...</div>;
+  }
 }
