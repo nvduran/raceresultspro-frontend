@@ -98,4 +98,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mem_stats_value_row {
+  font-size: 1.4rem;
+}
+
+.mem_stats_value_name_row {
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.mem_stats_subCol {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }/*# sourceMappingURL=MemberStats.css.map */

@@ -168,6 +168,32 @@ export default function MemberStats(custId, setCustId) {
     return percentile.toFixed(2);
   };
 
+  const calculateIratingPercentile = (rating) => {
+    //calculate percentile of rating from AlliRatings
+    //sort AlliRatings
+    let sortedData = AlliRatings.sort((a, b) => {
+      return a - b;
+    });
+
+    //remove 1350s from sortedData
+    for (let i = 0; i < sortedData.length; i++) {
+      if (sortedData[i] === 1350) {
+        sortedData.splice(i, 1);
+      }
+    }
+
+    let percentile = 0;
+    let index = 0;
+    for (let i = 0; i < sortedData.length; i++) {
+      if (sortedData[i] > rating) {
+        index = i;
+        break;
+      }
+    }
+    percentile = (index / sortedData.length) * 100;
+    return percentile.toFixed(2);
+  };
+
   //   console.log(MemberData);
   //   console.log(CareerData);
 
@@ -187,33 +213,65 @@ export default function MemberStats(custId, setCustId) {
           <Row className="statsValueRow">
             <Col className="valueColItem">
               {/* irating */}
-              <Row>
+              <Row className="mem_stats_value_row">
                 {
                   MemberData.iRating_data[MemberData.iRating_data.length - 1]
                     .value
                 }
               </Row>
-              <Row>{RatingAvg}</Row>
+              <Row>
+                <Col className="mem_stats_subCol">
+                  <Row className="mem_stats_value_name_row">User Avg.</Row>
+                  <Row>{RatingAvg}</Row>
+                </Col>
+                <Col className="mem_stats_subCol">
+                  <Row className="mem_stats_value_name_row">Percentile</Row>
+                  <Row>
+                    {calculateIratingPercentile(
+                      MemberData.iRating_data[
+                        MemberData.iRating_data.length - 1
+                      ].value
+                    )}
+                  </Row>
+                </Col>
+              </Row>
             </Col>
             <Col className="valueColItem">
               {/* starts */}
-              <Row>{CareerData.stats[1].starts}</Row>
-              <Row>User Avg.</Row>
-              <Row>{AvgRoadStarts.toFixed(0)}</Row>
-              <Row>Percentile</Row>
-              <Row>{calculateStartsPercentile(CareerData.stats[1].starts)}</Row>
-            </Col>
-            <Col>
-              {/* incidents */}
-
-              <Row>{CareerData.stats[1].avg_incidents.toFixed(2)}</Row>
-              <Row>User Avg.</Row>
-              <Row>{AvgRoadIncidents.toFixed(2)}</Row>
-              <Row>Percentile</Row>
+              <Row className="mem_stats_value_row">
+                {CareerData.stats[1].starts}
+              </Row>
               <Row>
-                {calculateIncidentsPercentile(
-                  CareerData.stats[1].avg_incidents
-                )}
+                <Col className="mem_stats_subCol">
+                  <Row className="mem_stats_value_name_row">User Avg.</Row>
+                  <Row>{AvgRoadStarts.toFixed(0)}</Row>
+                </Col>
+                <Col className="mem_stats_subCol">
+                  <Row className="mem_stats_value_name_row">Percentile</Row>
+                  <Row>
+                    {calculateStartsPercentile(CareerData.stats[1].starts)}
+                  </Row>
+                </Col>
+              </Row>
+            </Col>
+            <Col className="valueColItem">
+              {/* incidents */}
+              <Row className="mem_stats_value_row">
+                {CareerData.stats[1].avg_incidents.toFixed(2)}
+              </Row>
+              <Row>
+                <Col className="mem_stats_subCol">
+                  <Row className="mem_stats_value_name_row">User Avg.</Row>
+                  <Row>{AvgRoadIncidents.toFixed(2)}</Row>
+                </Col>
+                <Col className="mem_stats_subCol">
+                  <Row className="mem_stats_value_name_row">Percentile</Row>
+                  <Row>
+                    {calculateIncidentsPercentile(
+                      CareerData.stats[1].avg_incidents
+                    )}
+                  </Row>
+                </Col>
               </Row>
             </Col>
           </Row>
