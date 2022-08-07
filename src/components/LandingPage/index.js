@@ -23,16 +23,23 @@ export default function LandingPage() {
         <Row className="iracing-stats-row">
           <Col className="iracing-stats-left">
             <FontAwesomeIcon icon={faClipboard} size="2x" />
-            iRating Stats
+            <p>iRating Stats</p>
           </Col>
           <Col className="iracing-stats-col"></Col>
         </Row>
         <Row className="incident-stats-row">
           <Col className="incident-stats-left">
             <FontAwesomeIcon icon={faCarBurst} size="2x" />
-            Incident Stats
+            <p>Incident Stats</p>
           </Col>
           <Col className="incident-stats-col"></Col>
+        </Row>
+        <Row className="member-stats-row">
+          <Col className="member-stats-left">
+            <FontAwesomeIcon icon={faClipboard} size="2x" />
+            <p>Member Stats</p>
+          </Col>
+          <Col className="member-stats-col"></Col>
         </Row>
       </Container>
     </div>
