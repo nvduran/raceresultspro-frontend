@@ -16,6 +16,8 @@ let member_url = "https://irsite4-backend.herokuapp.com/memberstats/info/";
 let yearly_url = "https://irsite4-backend.herokuapp.com/memberstats/yearly/";
 let yearly_array_url =
   "https://irsite4-backend.herokuapp.com/memberstats/api/yearlyarray";
+let ir_arr_url =
+  "https://irsite4-backend.herokuapp.com/memberstats/api/roadirating";
 
 export default function MemberStats(custId, setCustId) {
   var currentUrl = window.location.href;
@@ -26,6 +28,11 @@ export default function MemberStats(custId, setCustId) {
   const [IsLoaded, setIsLoaded] = useState(false);
   const [CategoryData, setCategoryData] = useState("iRating_data");
   const [AvgRoadStarts, setAvgRoadStarts] = useState(0);
+  const [BigStartsArray, setBigStartsArray] = useState([]);
+  const [AvgRoadIncidents, setAvgRoadIncidents] = useState(0);
+  const [BigIncidentsArray, setBigIncidentsArray] = useState([]);
+  const [AlliRatings, setAlliRatings] = useState([]);
+  const [RatingAvg, setRatingAvg] = useState(0);
 
   useEffect(() => {
     startGetData();
@@ -42,6 +49,7 @@ export default function MemberStats(custId, setCustId) {
       }, 1000);
     } else {
       getCareerStats();
+      getAllRatings();
     }
   };
 
@@ -56,6 +64,14 @@ export default function MemberStats(custId, setCustId) {
 
     setCareerData(data[0]);
     getAllMemberData();
+  };
+
+  const getAllRatings = async () => {
+    // fetch from ir_arr_url and save it to AlliRatings
+    const response = await fetch(ir_arr_url);
+    const data = await response.json();
+    setAlliRatings(data);
+    calculateIratingAverages(data);
   };
 
   const getAllMemberData = async () => {
@@ -74,18 +90,82 @@ export default function MemberStats(custId, setCustId) {
   };
 
   const calculateAverages = (data) => {
+    console.log(data);
     //map through data and calculate averages for data.stats[1].starts
     let bigArrOfRoadStarts = [];
+    let bigArrOfRoadIncidents = [];
     let avgRoadStarts;
+    let avgRoadIncidents;
     for (let i = 0; i < data.length; i++) {
       bigArrOfRoadStarts.push(data[i].stats[1].starts);
+    }
+
+    for (let i = 0; i < data.length; i++) {
+      bigArrOfRoadIncidents.push(data[i].stats[1].avg_incidents);
     }
 
     avgRoadStarts =
       bigArrOfRoadStarts.reduce((a, b) => a + b, 0) / bigArrOfRoadStarts.length;
 
+    avgRoadIncidents =
+      bigArrOfRoadIncidents.reduce((a, b) => a + b, 0) /
+      bigArrOfRoadIncidents.length;
+
+    setBigStartsArray(bigArrOfRoadStarts);
     setAvgRoadStarts(avgRoadStarts);
+    setBigIncidentsArray(bigArrOfRoadIncidents);
+    setAvgRoadIncidents(avgRoadIncidents);
     setIsLoaded(true);
+  };
+
+  const calculateIratingAverages = (data) => {
+    // get avg of AlliRatings and return
+    console.log(data);
+    let avg = 0;
+    for (let i = 0; i < data.length; i++) {
+      avg += data[i];
+    }
+    avg = avg / data.length;
+    console.log(avg);
+    setRatingAvg(avg.toFixed(0));
+  };
+
+  const calculateStartsPercentile = (starts) => {
+    //calculate percentile of starts from BigStartsArray
+
+    //sort BigStartsArray
+    let sortedData = BigStartsArray.sort((a, b) => {
+      return a - b;
+    });
+    let percentile = 0;
+    let index = 0;
+    for (let i = 0; i < sortedData.length; i++) {
+      if (sortedData[i] > starts) {
+        index = i;
+        break;
+      }
+    }
+    percentile = (index / sortedData.length) * 100;
+    return percentile.toFixed(2);
+  };
+
+  const calculateIncidentsPercentile = (incidents) => {
+    //calculate percentile of incidents from BigIncidentsArray
+    console.log(incidents);
+    //sort BigIncidentsArray
+    let sortedData = BigIncidentsArray.sort((a, b) => {
+      return a - b;
+    });
+    let percentile = 0;
+    let index = 0;
+    for (let i = 0; i < sortedData.length; i++) {
+      if (sortedData[i] > incidents) {
+        index = i;
+        break;
+      }
+    }
+    percentile = (index / sortedData.length) * 100;
+    return percentile.toFixed(2);
   };
 
   //   console.log(MemberData);
@@ -106,19 +186,36 @@ export default function MemberStats(custId, setCustId) {
           </Row>
           <Row className="statsValueRow">
             <Col className="valueColItem">
-              {
-                MemberData.iRating_data[MemberData.iRating_data.length - 1]
-                  .value
-              }
+              {/* irating */}
+              <Row>
+                {
+                  MemberData.iRating_data[MemberData.iRating_data.length - 1]
+                    .value
+                }
+              </Row>
+              <Row>{RatingAvg}</Row>
             </Col>
             <Col className="valueColItem">
-              <Row>{MemberData.member[0].display_name}</Row>
+              {/* starts */}
               <Row>{CareerData.stats[1].starts}</Row>
-
               <Row>User Avg.</Row>
               <Row>{AvgRoadStarts.toFixed(0)}</Row>
+              <Row>Percentile</Row>
+              <Row>{calculateStartsPercentile(CareerData.stats[1].starts)}</Row>
             </Col>
-            <Col>{CareerData.stats[1].avg_incidents.toFixed(2)}</Col>
+            <Col>
+              {/* incidents */}
+
+              <Row>{CareerData.stats[1].avg_incidents.toFixed(2)}</Row>
+              <Row>User Avg.</Row>
+              <Row>{AvgRoadIncidents.toFixed(2)}</Row>
+              <Row>Percentile</Row>
+              <Row>
+                {calculateIncidentsPercentile(
+                  CareerData.stats[1].avg_incidents
+                )}
+              </Row>
+            </Col>
           </Row>
           <Row className="avgsNameRow">
             <Col>iRating / Starts</Col>
@@ -126,12 +223,14 @@ export default function MemberStats(custId, setCustId) {
           </Row>
           <Row className="avgsValueRow">
             <Col className="valueColItem">
+              {/* iRating / Starts */}
               {(
                 MemberData.iRating_data[MemberData.iRating_data.length - 1]
                   .value / CareerData.stats[1].starts
               ).toFixed(2)}
             </Col>
             <Col>
+              {/* iRating / Avg. Incidents */}
               {(
                 MemberData.iRating_data[MemberData.iRating_data.length - 1]
                   .value / CareerData.stats[1].avg_incidents
