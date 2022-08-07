@@ -169,4 +169,18 @@
   font-weight: lighter;
   padding-top: 30px;
   font-family: monospace !important;
+}
+
+@media (max-width: 600px) {
+  .member-stats-left, .iracing-stats-left, .incident-stats-left {
+    max-width: 80% !important;
+    max-height: 4rem;
+  }
+  .fa-2x {
+    display: none;
+  }
+  .incident-stats-row .iracing-stats-row .member-stats-row {
+    margin-left: 1rem !important;
+    padding-right: 10px !important;
+  }
 }/*# sourceMappingURL=LandingPage.css.map */
