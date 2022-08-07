@@ -14,6 +14,7 @@ import "../../styles/LandingPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import { faCarBurst } from "@fortawesome/free-solid-svg-icons";
+import { faUsersLine } from "@fortawesome/free-solid-svg-icons";
 
 export default function LandingPage() {
   return (
@@ -36,7 +37,7 @@ export default function LandingPage() {
         </Row>
         <Row className="member-stats-row">
           <Col className="member-stats-left">
-            <FontAwesomeIcon icon={faClipboard} size="2x" />
+            <FontAwesomeIcon icon={faUsersLine} size="2x" />
             <p>Member Stats</p>
           </Col>
           <Col className="member-stats-col"></Col>
