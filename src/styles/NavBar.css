@@ -22,4 +22,13 @@
   content: ".pro";
   font-size: 1rem;
   color: rgb(6, 214, 160);
+}
+
+@media (max-width: 800px) {
+  a {
+    white-space: nowrap;
+  }
+  .nav-name a {
+    padding-left: 5px;
+  }
 }/*# sourceMappingURL=NavBar.css.map */
