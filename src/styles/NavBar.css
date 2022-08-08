@@ -28,6 +28,9 @@
   a {
     white-space: nowrap;
   }
+  .nav-link {
+    padding-left: 2px !important;
+  }
   .nav-name a {
     padding-left: 5px;
   }

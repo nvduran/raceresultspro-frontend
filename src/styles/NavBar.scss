@@ -19,6 +19,7 @@
 .nav-name a{
     font-size: large;
     padding-left: 2rem;
+    
 }
 
 .nav-name::after {
@@ -30,6 +31,10 @@
 @media (max-width: 800px) {
     a {
         white-space: nowrap;
+    }
+
+    .nav-link {
+        padding-left: 2px !important;
     }
 
     .nav-name a{
