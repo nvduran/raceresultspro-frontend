@@ -312,7 +312,7 @@ export default function MemberStats(custId, setCustId) {
   };
 
   //   console.log(MemberData);
-  console.log(CareerData);
+  // console.log(CareerData);
 
   if (IsLoaded) {
     return (
@@ -324,6 +324,8 @@ export default function MemberStats(custId, setCustId) {
           {/* *******ROAD CONTAINER******* */}
           <Container>
             <Row className="categoryNameRow">Road</Row>
+          </Container>
+          <Container className="road_container">
             <Row className="statsNameRow">
               <Col>iRating</Col>
               <Col>Starts</Col>
@@ -418,6 +420,8 @@ export default function MemberStats(custId, setCustId) {
           {/* *******OVAL CONTAINER******* */}
           <Container>
             <Row className="categoryNameRow">Oval</Row>
+          </Container>
+          <Container className="oval_container">
             <Row className="statsNameRow">
               <Col>iRating</Col>
               <Col>Starts</Col>

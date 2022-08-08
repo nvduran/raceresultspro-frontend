@@ -57,6 +57,8 @@ export default function SeriesIncGraph() {
       "Throwback Cup",
       "iRacing.com Indy 500",
       "24 Heures du Fun",
+      "PickUp Cup",
+      "Carburetor Cup",
     ];
     // filter out the excluded series
     let filtered = data[0].sorted_avgs.filter(

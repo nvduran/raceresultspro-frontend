@@ -8,8 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   background: -webkit-linear-gradient(45deg, rgb(37, 82, 71), rgb(6, 214, 160));
   -webkit-background-clip: text;
@@ -22,12 +21,10 @@
   justify-content: left;
   padding-left: 1rem;
   align-items: center;
-  margin-bottom: 0px;
-  margin-top: 2rem;
   font-size: 2rem;
-  background-image: linear-gradient(109.6deg, rgb(240, 240, 240) 11.2%, rgb(255, 255, 255) 91.1%);
-  border-radius: 5px;
-  color: rgb(34, 39, 37);
+  background-color: rgba(241, 241, 241, 0.911);
+  border-top-left-radius: 2px;
+  color: rgb(37, 82, 71);
   -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
   width: 12rem;
@@ -54,7 +51,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   margin-top: 2rem;
   height: 6rem;
   font-size: 1rem;
@@ -70,7 +67,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0px;
-  margin-top: 2rem;
+  margin-top: 0rem;
   font-size: 1rem;
   color: rgb(82, 82, 82);
   background-image: linear-gradient(45deg, rgb(225, 225, 225), rgb(235, 235, 235));
@@ -83,9 +80,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 4rem !important;
   margin-top: 2rem;
-  height: 6rem;
+  height: 3rem;
   font-size: 1rem;
   color: gray;
   background-color: rgb(250, 250, 250);
@@ -117,4 +114,19 @@
   align-items: center;
   padding-left: 2rem !important;
   padding-right: 2rem !important;
+}
+
+.road_container,
+.oval_container {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 1px rgba(240, 240, 240, 0.593);
+}
+
+@media (max-width: 800px) {
+  .mem_stats_value_row {
+    padding-top: 0.6rem;
+  }
+  .statsValueRow {
+    height: auto;
+  }
 }/*# sourceMappingURL=MemberStats.css.map */
