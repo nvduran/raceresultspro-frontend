@@ -50,7 +50,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  min-height: 10rem;
+  min-height: 5rem;
   max-height: 15rem;
   max-width: 1100px;
   padding: 0;
@@ -174,7 +174,7 @@
   font-family: monospace !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .member-stats-left, .iracing-stats-left, .incident-stats-left {
     max-width: 80% !important;
     max-height: 4rem;
@@ -182,7 +182,7 @@
   .fa-2x {
     display: none
   }
-  .incident-stats-row .iracing-stats-row .member-stats-row {
+  .incident-stats-row, .iracing-stats-row, .member-stats-row {
     margin-left:1rem !important;
     padding-right: 10px !important;
   }
