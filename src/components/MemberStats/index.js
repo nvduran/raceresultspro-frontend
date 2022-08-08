@@ -28,6 +28,7 @@ export default function MemberStats(custId, setCustId) {
   const [AllMemberData, setAllMemberData] = useState([]);
   const [CareerData, setCareerData] = useState([]);
   const [IsLoaded, setIsLoaded] = useState(false);
+  const [IsLoaded2, setIsLoaded2] = useState(false);
   const [CategoryData, setCategoryData] = useState("iRating_data");
   const [AvgRoadStarts, setAvgRoadStarts] = useState(0);
   const [AvgOvalStarts, setAvgOvalStarts] = useState(0);
@@ -51,12 +52,11 @@ export default function MemberStats(custId, setCustId) {
     const response = await fetch(member_url + lastSegment);
     const data = await response.json();
     console.log(data[0]);
-    setMemberData(data[0]);
     if (data[0] === undefined) {
-      setTimeout(() => {
-        startGetData();
-      }, 1000);
+      console.log("No data found");
+      startGetData();
     } else {
+      setMemberData(data[0]);
       getCareerStats();
       getAllRatings();
     }
@@ -80,6 +80,7 @@ export default function MemberStats(custId, setCustId) {
     // fetch from ir_arr_url and save it to AlliRatings
     const response = await fetch(ir_arr_url);
     const data = await response.json();
+    console.log(data.length);
     setAlliRatings(data);
     calculateIratingAverages(data);
   };
@@ -156,7 +157,6 @@ export default function MemberStats(custId, setCustId) {
     setBigOvalIncidentsArray(bigArrOfOvalIncidents);
     setAvgRoadIncidents(avgRoadIncidents);
     setAvgOvalIncidents(avgOvalIncidents);
-    setIsLoaded(true);
   };
 
   const calculateIratingAverages = (data) => {
@@ -181,6 +181,7 @@ export default function MemberStats(custId, setCustId) {
     avg = avg / data.length;
     console.log(avg);
     setOvalRatingAvg(avg.toFixed(0));
+    setIsLoaded(true);
   };
 
   const calculateStartsPercentile = (starts) => {
@@ -265,6 +266,7 @@ export default function MemberStats(custId, setCustId) {
     let sortedData = AlliRatings.sort((a, b) => {
       return a - b;
     });
+    console.log(sortedData.length);
 
     //remove 1350s from sortedData
     for (let i = 0; i < sortedData.length; i++) {
@@ -314,214 +316,230 @@ export default function MemberStats(custId, setCustId) {
   //   console.log(MemberData);
   // console.log(CareerData);
 
-  if (IsLoaded) {
-    return (
-      <div>
-        <Container>
-          <Row className="memberNameRow">
-            {MemberData.member[0].display_name}
-          </Row>
-          {/* *******ROAD CONTAINER******* */}
+  if (IsLoaded || IsLoaded2) {
+    try {
+      return (
+        <div>
           <Container>
-            <Row className="categoryNameRow">Road</Row>
-          </Container>
-          <Container className="road_container">
-            <Row className="statsNameRow">
-              <Col>iRating</Col>
-              <Col>Starts</Col>
-              <Col>Avg. Incidents</Col>
+            <Row className="memberNameRow">
+              {MemberData.member[0].display_name}
             </Row>
-            <Row className="statsValueRow">
-              <Col className="valueColItem">
-                {/* irating */}
-                <Row className="mem_stats_value_row">
-                  {
+            {/* *******ROAD CONTAINER******* */}
+            <Container>
+              <Row className="categoryNameRow">Road</Row>
+            </Container>
+            <Container className="road_container">
+              <Row className="statsNameRow">
+                <Col>iRating</Col>
+                <Col>Starts</Col>
+                <Col>Avg. Incidents</Col>
+              </Row>
+              <Row className="statsValueRow">
+                <Col className="valueColItem">
+                  {/* irating */}
+                  <Row className="mem_stats_value_row">
+                    {
+                      MemberData.iRating_data[
+                        MemberData.iRating_data.length - 1
+                      ].value
+                    }
+                  </Row>
+                  <Row>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">User Avg.</Row>
+                      <Row>{RatingAvg}</Row>
+                    </Col>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">Percentile</Row>
+                      <Row>
+                        {calculateIratingPercentile(
+                          MemberData.iRating_data[
+                            MemberData.iRating_data.length - 1
+                          ].value
+                        )}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col className="valueColItem">
+                  {/* starts */}
+                  <Row className="mem_stats_value_row">
+                    {CareerData.stats[1].starts}
+                  </Row>
+                  <Row>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">User Avg.</Row>
+                      <Row>{AvgRoadStarts.toFixed(0)}</Row>
+                    </Col>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">Percentile</Row>
+                      <Row>
+                        {calculateStartsPercentile(CareerData.stats[1].starts)}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col className="valueColItem">
+                  {/* incidents */}
+                  <Row className="mem_stats_value_row">
+                    {CareerData.stats[1].avg_incidents.toFixed(2)}
+                  </Row>
+                  <Row>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">User Avg.</Row>
+                      <Row>{AvgRoadIncidents.toFixed(2)}</Row>
+                    </Col>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">Percentile</Row>
+                      <Row>
+                        {calculateIncidentsPercentile(
+                          CareerData.stats[1].avg_incidents
+                        )}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <Row className="avgsNameRow">
+                <Col>iRating / Starts</Col>
+                <Col>iRating / Avg. Incidents</Col>
+              </Row>
+              <Row className="avgsValueRow">
+                <Col className="valueColItem">
+                  {/* iRating / Starts */}
+                  {(
                     MemberData.iRating_data[MemberData.iRating_data.length - 1]
-                      .value
-                  }
-                </Row>
-                <Row>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">User Avg.</Row>
-                    <Row>{RatingAvg}</Row>
-                  </Col>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">Percentile</Row>
-                    <Row>
-                      {calculateIratingPercentile(
-                        MemberData.iRating_data[
-                          MemberData.iRating_data.length - 1
-                        ].value
-                      )}
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-              <Col className="valueColItem">
-                {/* starts */}
-                <Row className="mem_stats_value_row">
-                  {CareerData.stats[1].starts}
-                </Row>
-                <Row>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">User Avg.</Row>
-                    <Row>{AvgRoadStarts.toFixed(0)}</Row>
-                  </Col>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">Percentile</Row>
-                    <Row>
-                      {calculateStartsPercentile(CareerData.stats[1].starts)}
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-              <Col className="valueColItem">
-                {/* incidents */}
-                <Row className="mem_stats_value_row">
-                  {CareerData.stats[1].avg_incidents.toFixed(2)}
-                </Row>
-                <Row>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">User Avg.</Row>
-                    <Row>{AvgRoadIncidents.toFixed(2)}</Row>
-                  </Col>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">Percentile</Row>
-                    <Row>
-                      {calculateIncidentsPercentile(
-                        CareerData.stats[1].avg_incidents
-                      )}
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-            <Row className="avgsNameRow">
-              <Col>iRating / Starts</Col>
-              <Col>iRating / Avg. Incidents</Col>
-            </Row>
-            <Row className="avgsValueRow">
-              <Col className="valueColItem">
-                {/* iRating / Starts */}
-                {(
-                  MemberData.iRating_data[MemberData.iRating_data.length - 1]
-                    .value / CareerData.stats[1].starts
-                ).toFixed(2)}
-              </Col>
-              <Col>
-                {/* iRating / Avg. Incidents */}
-                {(
-                  MemberData.iRating_data[MemberData.iRating_data.length - 1]
-                    .value / CareerData.stats[1].avg_incidents
-                ).toFixed(2)}
-              </Col>
-            </Row>
-          </Container>
-          {/* *******OVAL CONTAINER******* */}
-          <Container>
-            <Row className="categoryNameRow">Oval</Row>
-          </Container>
-          <Container className="oval_container">
-            <Row className="statsNameRow">
-              <Col>iRating</Col>
-              <Col>Starts</Col>
-              <Col>Avg. Incidents</Col>
-            </Row>
-            <Row className="statsValueRow">
-              <Col className="valueColItem">
-                {/* irating */}
-                <Row className="mem_stats_value_row">
-                  {
+                      .value / CareerData.stats[1].starts
+                  ).toFixed(2)}
+                </Col>
+                <Col>
+                  {/* iRating / Avg. Incidents */}
+                  {(
+                    MemberData.iRating_data[MemberData.iRating_data.length - 1]
+                      .value / CareerData.stats[1].avg_incidents
+                  ).toFixed(2)}
+                </Col>
+              </Row>
+            </Container>
+            {/* *******OVAL CONTAINER******* */}
+            <Container>
+              <Row className="categoryNameRow">Oval</Row>
+            </Container>
+            <Container className="oval_container">
+              <Row className="statsNameRow">
+                <Col>iRating</Col>
+                <Col>Starts</Col>
+                <Col>Avg. Incidents</Col>
+              </Row>
+              <Row className="statsValueRow">
+                <Col className="valueColItem">
+                  {/* irating */}
+                  <Row className="mem_stats_value_row">
+                    {
+                      MemberData.iRating_data_oval[
+                        MemberData.iRating_data_oval.length - 1
+                      ].value
+                    }
+                  </Row>
+                  <Row>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">User Avg.</Row>
+                      <Row>{OvalRatingAvg}</Row>
+                    </Col>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">Percentile</Row>
+                      <Row>
+                        {calculateOvaliRatingPercentile(
+                          MemberData.iRating_data_oval[
+                            MemberData.iRating_data_oval.length - 1
+                          ].value
+                        )}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col className="valueColItem">
+                  {/* starts */}
+                  <Row className="mem_stats_value_row">
+                    {CareerData.stats[0].starts}
+                  </Row>
+                  <Row>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">User Avg.</Row>
+                      <Row>{AvgOvalStarts.toFixed(0)}</Row>
+                    </Col>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">Percentile</Row>
+                      <Row>
+                        {calculateOvalStartsPercentile(
+                          CareerData.stats[0].starts
+                        )}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col className="valueColItem">
+                  {/* incidents */}
+                  <Row className="mem_stats_value_row">
+                    {CareerData.stats[0].avg_incidents.toFixed(2)}
+                  </Row>
+                  <Row>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">User Avg.</Row>
+                      <Row>{AvgOvalIncidents.toFixed(2)}</Row>
+                    </Col>
+                    <Col className="mem_stats_subCol">
+                      <Row className="mem_stats_value_name_row">Percentile</Row>
+                      <Row>
+                        {calculateOvalIncidentsPercentile(
+                          CareerData.stats[0].avg_incidents
+                        )}
+                      </Row>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <Row className="avgsNameRow">
+                <Col>iRating / Starts</Col>
+                <Col>iRating / Avg. Incidents</Col>
+              </Row>
+              <Row className="avgsValueRow">
+                <Col className="valueColItem">
+                  {/* iRating / Starts */}
+                  {(
                     MemberData.iRating_data_oval[
                       MemberData.iRating_data_oval.length - 1
-                    ].value
-                  }
-                </Row>
-                <Row>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">User Avg.</Row>
-                    <Row>{OvalRatingAvg}</Row>
-                  </Col>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">Percentile</Row>
-                    <Row>
-                      {calculateOvaliRatingPercentile(
-                        MemberData.iRating_data_oval[
-                          MemberData.iRating_data_oval.length - 1
-                        ].value
-                      )}
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-              <Col className="valueColItem">
-                {/* starts */}
-                <Row className="mem_stats_value_row">
-                  {CareerData.stats[0].starts}
-                </Row>
-                <Row>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">User Avg.</Row>
-                    <Row>{AvgOvalStarts.toFixed(0)}</Row>
-                  </Col>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">Percentile</Row>
-                    <Row>
-                      {calculateOvalStartsPercentile(
-                        CareerData.stats[0].starts
-                      )}
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-              <Col className="valueColItem">
-                {/* incidents */}
-                <Row className="mem_stats_value_row">
-                  {CareerData.stats[0].avg_incidents.toFixed(2)}
-                </Row>
-                <Row>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">User Avg.</Row>
-                    <Row>{AvgOvalIncidents.toFixed(2)}</Row>
-                  </Col>
-                  <Col className="mem_stats_subCol">
-                    <Row className="mem_stats_value_name_row">Percentile</Row>
-                    <Row>
-                      {calculateOvalIncidentsPercentile(
-                        CareerData.stats[0].avg_incidents
-                      )}
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-            <Row className="avgsNameRow">
-              <Col>iRating / Starts</Col>
-              <Col>iRating / Avg. Incidents</Col>
-            </Row>
-            <Row className="avgsValueRow">
-              <Col className="valueColItem">
-                {/* iRating / Starts */}
-                {(
-                  MemberData.iRating_data_oval[
-                    MemberData.iRating_data_oval.length - 1
-                  ].value / CareerData.stats[0].starts
-                ).toFixed(2)}
-              </Col>
-              <Col>
-                {/* iRating / Avg. Incidents */}
-                {(
-                  MemberData.iRating_data_oval[
-                    MemberData.iRating_data_oval.length - 1
-                  ].value / CareerData.stats[0].avg_incidents
-                ).toFixed(2)}
-              </Col>
-            </Row>
+                    ].value / CareerData.stats[0].starts
+                  ).toFixed(2)}
+                </Col>
+                <Col>
+                  {/* iRating / Avg. Incidents */}
+                  {(
+                    MemberData.iRating_data_oval[
+                      MemberData.iRating_data_oval.length - 1
+                    ].value / CareerData.stats[0].avg_incidents
+                  ).toFixed(2)}
+                </Col>
+              </Row>
+            </Container>
           </Container>
-        </Container>
-      </div>
-    );
+        </div>
+      );
+    } catch (error) {
+      return (
+        setTimeout(() => {
+          // reload the page
+          window.location.href = window.location.href;
+        }, 3000),
+        (<div>Pulling Stats... </div>)
+      );
+    }
   } else {
+    if (!IsLoaded) {
+      setTimeout(() => {
+        setIsLoaded2(true);
+      }, 1000);
+    }
     return <div>Loading...</div>;
   }
 }
