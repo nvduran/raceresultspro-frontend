@@ -51,9 +51,7 @@ export default function MemberStats(custId, setCustId) {
     // fetch from member_url and save it to MemberData
     const response = await fetch(member_url + lastSegment);
     const data = await response.json();
-    console.log(data[0]);
     if (data[0] === undefined) {
-      console.log("No data found");
       startGetData();
     } else {
       setMemberData(data[0]);
@@ -80,7 +78,6 @@ export default function MemberStats(custId, setCustId) {
     // fetch from ir_arr_url and save it to AlliRatings
     const response = await fetch(ir_arr_url);
     const data = await response.json();
-    console.log(data.length);
     setAlliRatings(data);
     calculateIratingAverages(data);
   };
@@ -109,7 +106,6 @@ export default function MemberStats(custId, setCustId) {
   };
 
   const calculateAverages = (data) => {
-    console.log(data);
     //map through data and calculate averages for data.stats[1].starts
     let bigArrOfRoadStarts = [];
     let bigArrOfRoadIncidents = [];
@@ -161,25 +157,21 @@ export default function MemberStats(custId, setCustId) {
 
   const calculateIratingAverages = (data) => {
     // get avg of AlliRatings and return
-    console.log(data);
     let avg = 0;
     for (let i = 0; i < data.length; i++) {
       avg += data[i];
     }
     avg = avg / data.length;
-    console.log(avg);
     setRatingAvg(avg.toFixed(0));
   };
 
   const calculateOvaliRatingAverages = (data) => {
     // get avg of AllOvaliRatings and return
-    console.log(data);
     let avg = 0;
     for (let i = 0; i < data.length; i++) {
       avg += data[i];
     }
     avg = avg / data.length;
-    console.log(avg);
     setOvalRatingAvg(avg.toFixed(0));
     setIsLoaded(true);
   };
@@ -224,7 +216,6 @@ export default function MemberStats(custId, setCustId) {
 
   const calculateIncidentsPercentile = (incidents) => {
     //calculate percentile of incidents from BigIncidentsArray
-    console.log(incidents);
     //sort BigIncidentsArray
     let sortedData = BigIncidentsArray.sort((a, b) => {
       return a - b;
@@ -266,7 +257,6 @@ export default function MemberStats(custId, setCustId) {
     let sortedData = AlliRatings.sort((a, b) => {
       return a - b;
     });
-    console.log(sortedData.length);
 
     //remove 1350s from sortedData
     for (let i = 0; i < sortedData.length; i++) {
@@ -313,7 +303,7 @@ export default function MemberStats(custId, setCustId) {
     return percentile.toFixed(2);
   };
 
-  //   console.log(MemberData);
+  // console.log(MemberData);
   // console.log(CareerData);
 
   if (IsLoaded || IsLoaded2) {
