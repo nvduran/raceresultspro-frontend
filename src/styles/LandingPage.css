@@ -127,6 +127,7 @@
   border-top-left-radius: 6px 6px;
   border-bottom-left-radius: 6px 6px;
   max-width: 42rem;
+  cursor: pointer;
 }
 
 .iracing-stats-row {
@@ -138,6 +139,7 @@
   border-top-left-radius: 6px 6px;
   border-bottom-left-radius: 6px 6px;
   max-width: 42rem;
+  cursor: pointer;
 }
 
 .incident-stats-row {
@@ -148,6 +150,7 @@
   border-top-left-radius: 6px 6px;
   border-bottom-left-radius: 6px 6px;
   max-width: 42rem;
+  cursor: pointer;
 }
 
 .landing-container {
