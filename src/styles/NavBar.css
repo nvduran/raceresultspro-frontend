@@ -34,7 +34,7 @@
   }
   .nav-name a {
     padding-left: 5px;
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .nav-name::after {
@@ -43,7 +43,7 @@
     color: rgb(6, 214, 160);
   }
 
-  .navbar a {
+  .navbar a :not(.nav-name) {
   color: rgb(102, 102, 102);
   line-height: 3rem;
   font-size: 0.7rem;
