@@ -129,7 +129,6 @@
   border-top-left-radius: 6px 6px;
   border-bottom-left-radius: 6px 6px;
   max-width: 42rem;
-  margin-left: 5rem !important;
 }
 
 .iracing-stats-row {
@@ -141,7 +140,6 @@
   border-top-left-radius: 6px 6px;
   border-bottom-left-radius: 6px 6px;
   max-width: 42rem;
-  margin-left: 5rem !important;
 }
 
 .incident-stats-row {
@@ -152,7 +150,6 @@
   border-top-left-radius: 6px 6px;
   border-bottom-left-radius: 6px 6px;
   max-width: 42rem;
-  margin-left: 5rem !important;
 }
 
 .landing-container {
@@ -174,16 +171,20 @@
   font-family: monospace !important;
 }
 
-@media (max-width: 300px) {
+@media (min-width: 800px) {
+  .incident-stats-row, .iracing-stats-row, .member-stats-row {
+    margin-left: 5rem !important;
+  }
+}
+
+@media (max-width: 800px) {
   .member-stats-left, .iracing-stats-left, .incident-stats-left {
-    max-width: 80% !important;
-    max-height: 4rem;
+    margin-left: 1rem !important;
   }
   .fa-2x {
     display: none
   }
   .incident-stats-row, .iracing-stats-row, .member-stats-row {
-    margin-left:1rem !important;
     padding-right: 10px !important;
   }
 }
