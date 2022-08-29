@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from "react-adsense";
 import { useState } from "react";
 import { useEffect } from "react";
 import {
@@ -22,6 +23,20 @@ export default function LandingPage() {
   };
   return (
     <div className="landing-background-div">
+      {/* <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2805561356098125"
+        crossorigin="anonymous"
+      ></script>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2805561356098125"
+        data-ad-slot="8831389431"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
       <Container className="landing-container">
         <Row className="hero-text-row">iRacing Stats, all in one place.</Row>
         <Row

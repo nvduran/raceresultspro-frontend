@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from "react-adsense";
 import { useState } from "react";
 import { useEffect } from "react";
 import {
@@ -29,12 +30,26 @@ export default function IRatingStats() {
   if (!isDesktop) {
     return (
       <div>
+        <AdSense.Google
+          client="ca-pub-2805561356098125"
+          slot="8831389431"
+          style={{ display: "block" }}
+          format="auto"
+          responsive="true"
+        />
         <IRatingGraphMobile />
       </div>
     );
   } else {
     return (
       <div className="page-background">
+        <AdSense.Google
+          client="ca-pub-2805561356098125"
+          slot="8831389431"
+          style={{ display: "block" }}
+          format="auto"
+          responsive="true"
+        />
         <IRatingGraph />
       </div>
     );
